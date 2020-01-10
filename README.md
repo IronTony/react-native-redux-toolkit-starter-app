@@ -3,7 +3,7 @@
 ## Roadmap
 
 ✅ Initial Setup<br/>
-🚫 Add Splashscreen (https://github.com/crazycodeboy/react-native-splash-screen)<br/>
+✅ Add Splashscreen (https://github.com/crazycodeboy/react-native-splash-screen)<br/>
 🚫 Add Toolbox (https://github.com/panz3r/react-native-toolbox)<br/>
 🚫 Add `redux`<br/>
 🚫 Add `redux-persist` (https://github.com/rt2zz/redux-persist)<br/>
