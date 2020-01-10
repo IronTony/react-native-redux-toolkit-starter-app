@@ -63,3 +63,5 @@ buck-out/
 
 # project
 .vscode/
+android/.settings
+android/.project
