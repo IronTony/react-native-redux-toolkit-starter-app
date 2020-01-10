@@ -1,35 +1,31 @@
-# react-native-starter-app
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+# React Native Starter App
+> A React Native template to bootstrap your next app!
+
+[![License](https://img.shields.io/github/license/IronTony/react-native-starter-app)](LICENSE)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-## Scripts
+[![Issues](https://img.shields.io/github/issues/IronTony/react-native-starter-app.svg)](https://github.com/IronTony/react-native-starter-app/issues)
 
-### Generate app icons
+## Installation :inbox_tray:
 
-To setup the app icons:
+```bash
 
-- create an image at least `1024x1024px`
-- place it under `/assets` folder as `icon.png`
-- run
+> git clone https://github.com/IronTony/react-native-starter-app
 
-```sh
-yarn assets:icons
+> cd react-native-starter-app
+
+# Install dependencies
+> yarn
+
+# start on Android
+> yarn android
+# or start on iOS
+> yarn ios
+
 ```
 
-### Generate Splashscreen
-
-To setup the app splashscreen:
-
-- create an image at least `1242x2208px`
-- place it under `/assets` folder as `splashscreen.png`
-- run
-
-```sh
-yarn assets:splashscreen
-```
-
-## Roadmap
+## Roadmap :running:
 
 ✅ Initial Setup<br/>
 ✅ Add Splashscreen (https://github.com/crazycodeboy/react-native-splash-screen)<br/>
@@ -61,3 +57,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## License :scroll:
+
+Licensed under [Mozilla Public License Version 2.0](LICENSE)
