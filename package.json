@@ -3,11 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "postinstall": "yarn assets:icons && yarn assets:splashscreen",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "assets:icons": "rn-toolbox icons",
+    "assets:splashscreen": "rn-toolbox splash"
   },
   "dependencies": {
     "react": "16.9.0",
@@ -17,6 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/runtime": "^7.7.7",
+    "@panz3r/react-native-toolbox": "^1.1.0",
     "@react-native-community/eslint-config": "^0.0.6",
     "@react-native-community/eslint-plugin": "^1.0.0",
     "babel-jest": "^24.9.0",
