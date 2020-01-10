@@ -1,0 +1,33 @@
+{
+  "projectName": "react-native-starter-app",
+  "projectOwner": "IronTony",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "IronTony",
+      "name": "IronTony",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3645225?v=4",
+      "profile": "https://github.com/IronTony",
+      "contributions": [
+        "ideas",
+        "code",
+        "doc",
+        "bug",
+        "maintenance",
+        "platform",
+        "question",
+        "review",
+        "test",
+        "example"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
