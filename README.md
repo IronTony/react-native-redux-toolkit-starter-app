@@ -10,7 +10,6 @@
 ## Installation :inbox_tray:
 
 ```bash
-
 > git clone https://github.com/IronTony/react-native-starter-app
 
 > cd react-native-starter-app
@@ -22,7 +21,32 @@
 > yarn android
 # or start on iOS
 > yarn ios
+```
 
+## Scripts :wrench:
+
+### Generate app icons
+
+To setup the app icons:
+
+- create an image at least `1024x1024px`
+- place it under `/assets` folder as `icon.png`
+- run
+
+```sh
+yarn assets:icons
+```
+
+### Generate Splashscreen
+
+To setup the app splashscreen:
+
+- create an image at least `1242x2208px`
+- place it under `/assets` folder as `splashscreen.png`
+- run
+
+```sh
+yarn assets:splashscreen
 ```
 
 ## Roadmap :running:
