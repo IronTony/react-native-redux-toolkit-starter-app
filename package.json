@@ -8,7 +8,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint .",
+    "lint": "eslint ./src",
     "assets:icons": "rn-toolbox icons",
     "assets:splashscreen": "rn-toolbox splash"
   },
