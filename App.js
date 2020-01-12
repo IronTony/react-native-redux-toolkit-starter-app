@@ -23,7 +23,6 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import TestComponent from '@components';
 
 const App = () => {
   useEffect(() => {
@@ -34,8 +33,7 @@ const App = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <TestComponent />
-        {/* <ScrollView
+        <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}
         >
@@ -73,7 +71,7 @@ const App = () => {
             </View>
             <LearnMoreLinks />
           </View>
-        </ScrollView> */}
+        </ScrollView>
       </SafeAreaView>
     </>
   );
