@@ -1,3 +1,5 @@
+import produce from 'immer';
+
 import { GET_USER_INFO } from './types';
 
 const initialState = {
@@ -7,18 +9,13 @@ const initialState = {
   },
 };
 
-export default (state = initialState, action) => {
+export default produce((draft, action) => {
   switch (action.type) {
     case GET_USER_INFO:
-      return {
-        ...state,
-        user: {
-          name: 'Awesome',
-          surname: 'React Native Starter App',
-        },
+      draft.user = {
+        name: 'Awesome',
+        surname: 'React Native Starter App',
       };
-
-    default:
-      return state;
+      return;
   }
-};
+}, initialState);
