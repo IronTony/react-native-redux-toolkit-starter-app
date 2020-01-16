@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "postinstall": "yarn assets:icons && yarn assets:splashscreen",
+    "postinstall": "yarn assets:icons && yarn assets:splashscreen && yarn rndebugger-open",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
@@ -35,6 +35,7 @@
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.4",
     "prettier": "1.19.1",
+    "react-native-debugger-open": "^0.3.24",
     "react-test-renderer": "16.9.0",
     "redux-devtools-extension": "^2.13.8"
   },

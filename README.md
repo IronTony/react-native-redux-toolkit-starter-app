@@ -57,7 +57,7 @@ yarn assets:splashscreen
 ✅ Create tree folders structure<br/>
 ✅ Add `redux`<br/>
 ✅ Add `redux-persist` (https://github.com/rt2zz/redux-persist)<br/>
-🚫 Add `React Native Debugger`<br/>
+✅ Add `React Native Debugger`<br/>
 🚫 Add `reselect` 🤔🤔🤔<br/>
 🚫 Add `redux-saga`<br/>
 🚫 Add `i18next`<br/>
