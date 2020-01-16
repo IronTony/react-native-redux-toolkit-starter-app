@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Text, View } from 'react-native';
-import { connect, useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import SplashScreen from 'react-native-splash-screen';
 import { getUserInfoRequest } from '@redux/actions';
 import { makeSelectUser } from '@redux/user/selectors';
@@ -27,4 +27,4 @@ function Home() {
   );
 }
 
-export default React.memo(connect(null, null)(Home));
+export default React.memo(Home);
