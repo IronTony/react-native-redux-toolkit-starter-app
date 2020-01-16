@@ -22,6 +22,7 @@ module.exports = {
           '@routes': './src/routes',
           '@scenes': './src/scenes',
           '@services': './src/services',
+          '@theme': './src/theme',
           '@utils': './src/utils',
         },
       },
