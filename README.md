@@ -55,8 +55,8 @@ yarn assets:splashscreen
 ✅ Add Splashscreen (https://github.com/crazycodeboy/react-native-splash-screen)<br/>
 ✅ Add Toolbox (https://github.com/panz3r/react-native-toolbox)<br/>
 ✅ Create tree folders structure<br/>
-🚫 Add `redux`<br/>
-🚫 Add `redux-persist` (https://github.com/rt2zz/redux-persist)<br/>
+✅ Add `redux`<br/>
+✅ Add `redux-persist` (https://github.com/rt2zz/redux-persist)<br/>
 🚫 Add `React Native Debugger`<br/>
 🚫 Add `reselect` 🤔🤔🤔<br/>
 🚫 Add `redux-saga`<br/>
