@@ -7,6 +7,9 @@
 
 [![Issues](https://img.shields.io/github/issues/IronTony/react-native-starter-app.svg)](https://github.com/IronTony/react-native-starter-app/issues)
 
+[![Build](https://img.shields.io/badge/iOS%20Tested-success-brightgreen.svg)](https://github.com/IronTony/react-native-starter-app)
+[![Build](https://img.shields.io/badge/Android%20Tested-success-brightgreen.svg)](https://github.com/IronTony/react-native-starter-app)
+
 ## Installation :inbox_tray:
 
 ```bash
