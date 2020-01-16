@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "postinstall": "yarn assets:icons && yarn assets:splashscreen",
+    "postinstall": "yarn assets:icons && yarn assets:splashscreen && yarn rndebugger-open",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
@@ -24,12 +24,14 @@
     "@react-native-community/eslint-config": "^0.0.6",
     "@react-native-community/eslint-plugin": "^1.0.0",
     "babel-jest": "^24.9.0",
+    "babel-plugin-module-resolver": "^4.0.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.4",
     "prettier": "1.19.1",
+    "react-native-debugger-open": "^0.3.24",
     "react-test-renderer": "16.9.0"
   },
   "jest": {
