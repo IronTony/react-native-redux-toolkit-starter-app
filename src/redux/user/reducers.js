@@ -1,6 +1,6 @@
-import produce from 'immer';
+import { createReducer } from '@utils/redux';
 
-import { GET_USER_INFO } from './types';
+import { getUserInfoRequest } from './actions';
 
 const initialState = {
   user: {
@@ -9,13 +9,11 @@ const initialState = {
   },
 };
 
-export default produce((draft, action) => {
-  switch (action.type) {
-    case GET_USER_INFO:
-      draft.user = {
-        name: 'Awesome',
-        surname: 'React Native Starter App',
-      };
-      return;
-  }
-}, initialState);
+export default createReducer(initialState, {
+  [getUserInfoRequest]: (state, action) => {
+    state.user = {
+      name: 'Awesome',
+      surname: 'React Native Starter App',
+    };
+  },
+});
