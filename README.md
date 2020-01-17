@@ -62,7 +62,7 @@ yarn assets:splashscreen
 ✅ Add `redux-persist` (https://github.com/rt2zz/redux-persist)<br/>
 ✅ Add `React Native Debugger`<br/>
 ✅ Add `reselect` 🤔🤔🤔<br/>
-🚫 Add `redux-saga`<br/>
+✅ Add `redux-saga`<br/>
 🚫 Add `i18next`<br/>
 🚫 Add `react-navigation` ❤️<br/>
 

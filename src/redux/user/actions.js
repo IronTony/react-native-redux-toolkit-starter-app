@@ -1,5 +1,3 @@
-import { GET_USER_INFO } from './types';
+import { createAction } from '@utils/redux';
 
-export const getUserInfoRequest = () => ({
-  type: GET_USER_INFO,
-});
+export const getUserInfoRequest = createAction('GET_USER_INFO');

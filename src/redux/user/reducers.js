@@ -1,4 +1,6 @@
-import { GET_USER_INFO } from './types';
+import { createReducer } from '@utils/redux';
+
+import { getUserInfoRequest } from './actions';
 
 const initialState = {
   user: {
@@ -7,18 +9,11 @@ const initialState = {
   },
 };
 
-export default (state = initialState, action) => {
-  switch (action.type) {
-    case GET_USER_INFO:
-      return {
-        ...state,
-        user: {
-          name: 'Awesome',
-          surname: 'React Native Starter App',
-        },
-      };
-
-    default:
-      return state;
-  }
-};
+export default createReducer(initialState, {
+  [getUserInfoRequest]: (state, action) => {
+    state.user = {
+      name: 'Awesome',
+      surname: 'React Native Starter App',
+    };
+  },
+});
