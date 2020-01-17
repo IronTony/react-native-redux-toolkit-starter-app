@@ -13,7 +13,7 @@ export default createLatestSagas(
     [getUserInfoRequest]: fetchUserData,
     // [getUserInfoRespone]: storeUserData,
   },
-  'user',
+  'user', // Optional paramenter to improve saga error logging, see 'createLatestSagas' jsdoc
 );
 
 // To combine 'createLatestSagas' and 'createEverySagas',
