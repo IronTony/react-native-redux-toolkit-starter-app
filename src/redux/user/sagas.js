@@ -15,3 +15,10 @@ export default createLatestSagas(
   },
   'user',
 );
+
+// To combine 'createLatestSagas' and 'createEverySagas',
+// simply create a wrapping saga like this
+// export default function*() {
+//   yield fork(createLatestSagas({ ... }))
+//   yield fork(createEverySagas({ ... }))
+// }
