@@ -63,7 +63,7 @@ yarn assets:splashscreen
 ✅ Add `React Native Debugger`<br/>
 ✅ Add `reselect` 🤔🤔🤔<br/>
 ✅ Add `redux-saga`<br/>
-🚫 Add `i18next`<br/>
+✅ Add `i18next`<br/>
 🚫 Add `react-navigation` ❤️<br/>
 
 

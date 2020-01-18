@@ -1,5 +1,4 @@
 import { createReducer } from '@utils/redux';
-
 import { getUserInfoRequest } from './actions';
 
 const initialState = {
