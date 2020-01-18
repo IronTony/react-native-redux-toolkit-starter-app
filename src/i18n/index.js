@@ -11,8 +11,7 @@ const languageDetector = {
   detect: cb => {
     let prevLanguage;
     store.subscribe(() => {
-      const selector = selectBaseLanguage(store.getState());
-      const baseLanguage = selector;
+      const baseLanguage = selectBaseLanguage(store.getState());
       if (baseLanguage !== prevLanguage) {
         prevLanguage = baseLanguage;
         cb(baseLanguage);
