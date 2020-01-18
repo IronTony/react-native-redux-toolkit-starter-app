@@ -2,13 +2,15 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from '@redux/store';
-import Homepage from '@scenes/Home';
+import { useScreens } from 'react-native-screens';
+import AppContainer from '@routes';
 import '@i18n';
 
+useScreens();
 const App = () => (
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
-      <Homepage />
+      <AppContainer />
     </PersistGate>
   </Provider>
 );

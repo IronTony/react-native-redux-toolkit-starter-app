@@ -1,15 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { View, Button } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
-import { Trans, withTranslation } from 'react-i18next';
+import { Trans, useTranslation, withTranslation } from 'react-i18next';
 import SplashScreen from 'react-native-splash-screen';
+import { NavigationContext } from 'react-navigation';
 import { getUserInfoRequest, setLocale } from '@redux/actions';
 import { selectUserInfo } from '@redux/user/selectors';
 import styles from './styles';
 
 function Home() {
+  const [t] = useTranslation();
   const dispatch = useDispatch();
   const userData = useSelector(selectUserInfo);
+  const navigation = useContext(NavigationContext);
 
   useEffect(() => {
     SplashScreen.hide();
@@ -26,8 +29,21 @@ function Home() {
         i18nKey="Homepage:welcome"
         values={userData}
       />
-      <Button onPress={() => dispatch(setLocale('it'))} title="Italian" />
-      <Button onPress={() => dispatch(setLocale('en'))} title="English" />
+      <Button
+        onPress={() => dispatch(setLocale('it'))}
+        title={t('Homepage:italian')}
+      />
+      <Button
+        onPress={() => dispatch(setLocale('en'))}
+        title={t('Homepage:english')}
+      />
+
+      <View>
+        <Button
+          onPress={() => navigation.navigate('AnotherPage')}
+          title={t('Homepage:goToAnotherPage')}
+        />
+      </View>
     </View>
   );
 }
