@@ -4,7 +4,6 @@ import { persistStore, persistCombineReducers } from 'redux-persist';
 import createSagaMiddleware from 'redux-saga';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import AsyncStorage from '@react-native-community/async-storage';
-
 import reducers from '@redux/reducers';
 import rootSaga from '@redux/rootSaga';
 
@@ -13,7 +12,7 @@ const persistConfig = {
   storage: AsyncStorage,
   // There is an issue in the source code of redux-persist (default setTimeout does not cleaning)
   timeout: null,
-  whitelist: [],
+  whitelist: ['translation'],
 };
 
 // Setup Middlewares

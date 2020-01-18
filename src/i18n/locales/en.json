@@ -1,0 +1,10 @@
+{
+  "common": {},
+  "Homepage": {
+    "welcome": "Welcome {{name}} {{surname}}"
+  },
+  "Settings": {
+    "italian": "Italiano",
+    "english": "English"
+  }
+}
