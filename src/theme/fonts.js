@@ -1,4 +1,4 @@
-const fonts = {
+const fontFamily = {
   latoThin: 'Lato-Thin',
   latoThinItalic: 'Lato-ThinItalic',
   latoLight: 'Lato-Light',
@@ -11,4 +11,17 @@ const fonts = {
   latoBlackItalic: 'Lato-BlackItalic',
 };
 
-export default fonts;
+const fonts = {
+  thin: fontFamily.latoThin,
+  thinItalic: fontFamily.latoThinItalic,
+  light: fontFamily.latoLight,
+  lightItalic: fontFamily.latoLightItalic,
+  regular: fontFamily.latoRegular,
+  italic: fontFamily.latoItalic,
+  bold: fontFamily.latoBold,
+  boldItalic: fontFamily.latoBoldItalic,
+  black: fontFamily.latoBlack,
+  blackItalic: fontFamily.latoBlackItalic,
+};
+
+export { fonts };

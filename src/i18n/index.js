@@ -2,7 +2,7 @@ import { Text } from 'react-native';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import { defaultLanguage, languagesResources } from './languageConfig';
-import { makeSelectBaseLanguage } from '@redux/translation/selectors';
+import { selectBaseLanguage } from '@redux/translation/selectors';
 import { store } from '@redux/store';
 
 const languageDetector = {
@@ -11,7 +11,7 @@ const languageDetector = {
   detect: cb => {
     let prevLanguage;
     store.subscribe(() => {
-      const selector = makeSelectBaseLanguage(store.getState());
+      const selector = selectBaseLanguage(store.getState());
       const baseLanguage = selector;
       if (baseLanguage !== prevLanguage) {
         prevLanguage = baseLanguage;

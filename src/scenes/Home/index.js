@@ -4,13 +4,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Trans, withTranslation } from 'react-i18next';
 import SplashScreen from 'react-native-splash-screen';
 import { getUserInfoRequest, setLocale } from '@redux/actions';
-import { makeSelectUser } from '@redux/user/selectors';
+import { selectUserInfo } from '@redux/user/selectors';
 import styles from './styles';
-import { COLORS } from '@theme/colors';
 
 function Home() {
   const dispatch = useDispatch();
-  const userData = useSelector(makeSelectUser);
+  const userData = useSelector(selectUserInfo);
 
   useEffect(() => {
     SplashScreen.hide();
@@ -23,7 +22,7 @@ function Home() {
   return (
     <View style={styles.container}>
       <Trans
-        style={{ color: COLORS.TEXT.PRIMARY }}
+        style={styles.mainText}
         i18nKey="Homepage:welcome"
         values={userData}
       />
