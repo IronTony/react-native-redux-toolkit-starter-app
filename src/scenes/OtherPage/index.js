@@ -13,12 +13,22 @@ function OtherPage() {
   return (
     <View style={styles.container}>
       <Trans style={styles.mainText} i18nKey="AnotherPage:welcome" />
-      <Button onPress={() => dispatch(setLocale('it'))} status="primary">
-        {t('Homepage:italian')}
-      </Button>
-      <Button onPress={() => dispatch(setLocale('en'))} status="basic">
-        {t('Homepage:english')}
-      </Button>
+      <View style={styles.languangeContainer}>
+        <Button
+          onPress={() => dispatch(setLocale('it'))}
+          style={styles.button}
+          status="primary"
+        >
+          {t('common:italian')}
+        </Button>
+        <Button
+          onPress={() => dispatch(setLocale('en'))}
+          style={styles.button}
+          status="basic"
+        >
+          {t('common:english')}
+        </Button>
+      </View>
     </View>
   );
 }

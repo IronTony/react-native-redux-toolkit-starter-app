@@ -1,9 +1,11 @@
 {
-  "common": {},
-  "Homepage": {
-    "welcome": "Benvenuto {{name}} {{surname}}",
+  "common": {
     "italian": "Italiano",
-    "english": "Inglese",
+    "english": "Inglese"
+  },
+  "Homepage": {
+    "welcome": "Grazie per usare il {{name}} {{surname}}\n😍 😘 🙏🏻",
+    "releasedWithLove": "Creato e rilasciato con ❤️ per voi",
     "goToAnotherPage": "Vai in un'altra pagina"
   },
   "AnotherPage": {

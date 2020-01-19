@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Trans, useTranslation, withTranslation } from 'react-i18next';
 import SplashScreen from 'react-native-splash-screen';
 import { NavigationContext } from 'react-navigation';
-import { Button } from '@ui-kitten/components';
+import { Button, Icon } from '@ui-kitten/components';
 import { getUserInfoRequest, setLocale } from '@redux/actions';
 import { selectUserInfo } from '@redux/user/selectors';
 import styles from './styles';
@@ -30,15 +30,31 @@ function Home() {
         i18nKey="Homepage:welcome"
         values={userData}
       />
-      <Button onPress={() => dispatch(setLocale('it'))} status="primary">
-        {t('Homepage:italian')}
-      </Button>
-      <Button onPress={() => dispatch(setLocale('en'))} status="basic">
-        {t('Homepage:english')}
-      </Button>
+      <Trans style={styles.subText} i18nKey="Homepage:releasedWithLove" />
 
-      <View>
-        <Button onPress={() => navigation.navigate('AnotherPage')}>
+      <View style={styles.languangeContainer}>
+        <Button
+          onPress={() => dispatch(setLocale('it'))}
+          style={styles.button}
+          status="primary"
+        >
+          {t('common:italian')}
+        </Button>
+        <Button
+          onPress={() => dispatch(setLocale('en'))}
+          style={styles.button}
+          status="basic"
+        >
+          {t('common:english')}
+        </Button>
+      </View>
+
+      <View style={styles.buttonGoToContainer}>
+        <Button
+          onPress={() => navigation.navigate('AnotherPage')}
+          style={styles.navigationButton}
+          icon={() => <Icon name="ios-options" pack="ionicons" />}
+        >
           {t('Homepage:goToAnotherPage')}
         </Button>
       </View>

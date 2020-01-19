@@ -28,6 +28,7 @@
     "react-native-screens": "^2.0.0-alpha.25",
     "react-native-splash-screen": "^3.2.0",
     "react-native-svg": "^11.0.1",
+    "react-native-vector-icons": "^6.6.0",
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^2.0.15",
     "react-redux": "^7.1.3",
