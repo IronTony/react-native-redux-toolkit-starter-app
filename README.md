@@ -64,7 +64,7 @@ yarn assets:splashscreen
 ✅ Add `reselect` 🤔🤔🤔<br/>
 ✅ Add `redux-saga`<br/>
 ✅ Add `i18next`<br/>
-🚫 Add `react-navigation` ❤️<br/>
+✅ Add `react-navigation` ❤️<br/>
 
 
 ## Contributors ✨

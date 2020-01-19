@@ -1,10 +1,12 @@
 {
   "common": {},
   "Homepage": {
-    "welcome": "Welcome {{name}} {{surname}}"
+    "welcome": "Welcome {{name}} {{surname}}",
+    "italian": "Italian",
+    "english": "English",
+    "goToAnotherPage": "Go to another page"
   },
-  "Settings": {
-    "italian": "Italiano",
-    "english": "English"
+  "AnotherPage": {
+    "welcome": "Welcome to another page"
   }
 }
