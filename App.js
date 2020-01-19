@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
-import { useScreens } from 'react-native-screens';
+import { enableScreens } from 'react-native-screens';
 import { store, persistor } from '@redux/store';
 import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
 import { mapping, light as lightTheme } from '@eva-design/eva';
@@ -10,8 +10,7 @@ import { MaterialIconsPack } from '@components/IconAdapter/material-icons';
 import { IoniconsIconsPack } from '@components/IconAdapter/ionicons-icons';
 import '@i18n';
 
-// eslint-disable-next-line react-hooks/rules-of-hooks
-useScreens();
+enableScreens();
 
 const App = () => (
   <Provider store={store}>
