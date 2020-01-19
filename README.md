@@ -66,7 +66,7 @@ yarn assets:splashscreen
 ✅ Add `i18next`<br/>
 ✅ Add `react-navigation` ❤️<br/>
 🚫 Add `react-native-dotenv` or `react-native-config` 🤔🤔🤔<br/>
-🚫 Add UI Design System (`Native base` or `UI Kitten`)<br/>
+✅ Add UI Design System (`UI Kitten`)<br/>
 
 
 ## Contributors ✨
