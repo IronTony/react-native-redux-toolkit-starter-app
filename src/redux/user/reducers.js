@@ -3,15 +3,15 @@ import { getUserInfoRequest } from './actions';
 
 const initialState = {
   user: {
-    name: 'Name',
-    surname: 'Surname',
+    name: 'Awesome',
+    surname: 'React Native Starter App',
   },
 };
 
 export default createReducer(initialState, {
   [getUserInfoRequest]: (state, action) => {
     state.user = {
-      name: 'Awesome',
+      name: 'Marvellous',
       surname: 'React Native Starter App',
     };
   },
