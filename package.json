@@ -34,8 +34,8 @@
     "reselect": "^4.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.7",
-    "@babel/runtime": "^7.7.7",
+    "@babel/core": "7.8.3",
+    "@babel/runtime": "7.8.3",
     "@panz3r/react-native-toolbox": "^1.2.0",
     "@react-native-community/eslint-config": "^0.0.6",
     "@react-native-community/eslint-plugin": "^1.0.0",
