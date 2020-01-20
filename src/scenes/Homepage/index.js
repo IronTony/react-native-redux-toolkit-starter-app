@@ -7,6 +7,7 @@ import { NavigationContext } from 'react-navigation';
 import { Button, Icon } from '@ui-kitten/components';
 import { getUserInfoRequest, setLocale } from '@redux/actions';
 import { selectUserInfo } from '@redux/user/selectors';
+import env from 'env';
 import styles from './styles';
 
 function Home() {
@@ -22,6 +23,8 @@ function Home() {
   useEffect(() => {
     dispatch(getUserInfoRequest());
   }, [dispatch]);
+
+  console.log('env: ', env.DEV_API);
 
   return (
     <View style={styles.container}>
