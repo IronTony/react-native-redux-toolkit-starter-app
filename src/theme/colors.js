@@ -32,4 +32,4 @@ const COLORS = {
   },
 };
 
-export { COLORS };
+export { COLORS, PALETTE };

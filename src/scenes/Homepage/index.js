@@ -24,7 +24,7 @@ function Home() {
     dispatch(getUserInfoRequest());
   }, [dispatch]);
 
-  console.log('env: ', env.DEV_API);
+  console.log('env: ', env.API_URL);
 
   return (
     <View style={styles.container}>

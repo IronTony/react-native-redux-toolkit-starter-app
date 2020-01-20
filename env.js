@@ -2,13 +2,13 @@ import active from './active.env';
 
 const envs = {
   stage: {
-    DEV_API: 'http://staging.api.com',
+    API_URL: 'http://staging.api.com',
   },
   prod: {
-    DEV_API: 'http://prod.api.com',
+    API_URL: 'http://prod.api.com',
   },
   dev: {
-    DEV_API: 'http://dev.api.com',
+    API_URL: 'http://dev.api.com',
   },
 };
 
