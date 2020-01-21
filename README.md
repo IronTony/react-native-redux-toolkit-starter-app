@@ -65,8 +65,8 @@ yarn assets:splashscreen
 ✅ Add `redux-saga`<br/>
 ✅ Add `i18next`<br/>
 ✅ Add `react-navigation` ❤️<br/>
-🚫 Add `react-native-dotenv` or `react-native-config` 🤔🤔🤔<br/>
 ✅ Add UI Design System (`UI Kitten`)<br/>
+✅ Add `Env`variables selection experimental way ⚗️⚗️⚗️<br />
 
 
 ## Contributors ✨

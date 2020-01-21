@@ -1,4 +1,15 @@
 {
   "name": "ReactNativeStarterApp",
-  "displayName": "ReactNativeStarterApp"
+  "displayName": "ReactNativeStarterApp",
+  "environments": {
+    "development": {
+      "API_URL": "http://dev.api.com"
+    },
+    "staging": {
+      "API_URL": "http://staging.api.com"
+    },
+    "production": {
+      "API_URL": "http://prod.api.com"
+    }
+  }
 }
