@@ -15,6 +15,7 @@ module.exports = {
         ],
         root: ['.'],
         alias: {
+          '@env': './src/env.js',
           '@api': './src/api',
           '@components': './src/components',
           '@i18n': './src/i18n',

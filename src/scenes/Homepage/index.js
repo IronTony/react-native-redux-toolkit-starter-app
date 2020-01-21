@@ -7,7 +7,7 @@ import { NavigationContext } from 'react-navigation';
 import { Button, Icon } from '@ui-kitten/components';
 import { getUserInfoRequest, setLocale } from '@redux/actions';
 import { selectUserInfo } from '@redux/user/selectors';
-import env from 'env';
+import EnvInfoView from '@components/AppVersion';
 import styles from './styles';
 
 function Home() {
@@ -23,8 +23,6 @@ function Home() {
   useEffect(() => {
     dispatch(getUserInfoRequest());
   }, [dispatch]);
-
-  console.log('env: ', env.API_URL);
 
   return (
     <View style={styles.container}>
@@ -61,6 +59,8 @@ function Home() {
           {t('Homepage:goToAnotherPage')}
         </Button>
       </View>
+
+      <EnvInfoView />
     </View>
   );
 }
