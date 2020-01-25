@@ -1,14 +1,28 @@
-# React Native Starter App
+# React Native Starter App <!-- omit in toc -->
 > A React Native template to bootstrap your next app!
 
 [![License](https://img.shields.io/github/license/IronTony/react-native-starter-app)](LICENSE)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-screen.svg?style=flat)](#contributors-:sparkles:)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Issues](https://img.shields.io/github/issues/IronTony/react-native-starter-app.svg)](https://github.com/IronTony/react-native-starter-app/issues)
 
 [![Build](https://img.shields.io/badge/iOS%20Tested-success-brightgreen.svg)](https://github.com/IronTony/react-native-starter-app)
 [![Build](https://img.shields.io/badge/Android%20Tested-success-brightgreen.svg)](https://github.com/IronTony/react-native-starter-app)
+
+# Table of Contents <!-- omit in toc -->
+- [Installation :inbox_tray:](#installation-inbox_tray)
+- [Environment Setup :globe_with_meridians:](#environment-setup-globe_with_meridians)
+- [Scripts :wrench:](#scripts-wrench)
+  - [Run the app](#run-the-app)
+  - [Generate app icons](#generate-app-icons)
+  - [Generate Splashscreen](#generate-splashscreen)
+  - [Setup iOS](#setup-ios)
+- [Roadmap :running:](#roadmap-running)
+- [Contributors :sparkles:](#contributors-sparkles)
+- [License :scroll:](#license-scroll)
+
+---
 
 ## Installation :inbox_tray:
 
@@ -20,13 +34,39 @@
 # Install dependencies
 > yarn
 
-# start on Android
-> yarn android
-# or start on iOS
-> yarn ios
+# if needed, setup iOS development environment
+yarn setup:ios
 ```
 
+See [`environment`](#environment-setup-:globe_with_meridians:) section for how to configure env variables.
+
+See [`scripts`](#scripts-:wrench:) section for how to run the app.
+
+---
+
+## Environment Setup :globe_with_meridians:
+
+`React Native Starter App` environments variables management is based on a custom script and the `app.json` config file.
+
+Define your environment variables inside `app.json` inside the `environments` object under the desired
+environment key (such as `development`, `staging` or `production`) and then run the app for the required env 
+using one of the available run scripts (e.g. `ios:dev`).
+
+---
+
 ## Scripts :wrench:
+
+### Run the app
+
+To run the app use one of the following scripts:
+
+- `yarn android:dev`, to start the app on Android with the `development` environment variables.
+- `yarn android:stage`, to start the app on Android with the `staging` environment variables.
+- `yarn android:prod`, to start the app on Android with the `production` environment variables.
+
+- `yarn ios:dev`, to start the app on iOS with the `development` environment variables.
+- `yarn ios:stage`, to start the app on iOS with the `staging` environment variables.
+- `yarn ios:prod`, to start the app on iOS with the `production` environment variables.
 
 ### Generate app icons
 
@@ -52,6 +92,18 @@ To setup the app splashscreen:
 yarn assets:splashscreen
 ```
 
+### Setup iOS
+
+To setup the environment to run on iOS, run
+
+```sh
+yarn setup:ios
+```
+
+this will run `cocoapods` to install all the required dependencies.
+
+---
+
 ## Roadmap :running:
 
 ✅ Initial Setup<br/>
@@ -68,8 +120,9 @@ yarn assets:splashscreen
 ✅ Add UI Design System (`UI Kitten`)<br/>
 ✅ Add `Env`variables selection experimental way ⚗️⚗️⚗️<br />
 
+---
 
-## Contributors ✨
+## Contributors :sparkles:
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
@@ -88,6 +141,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+---
 
 ## License :scroll:
 
