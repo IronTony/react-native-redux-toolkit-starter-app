@@ -1,25 +1,34 @@
 import { Text } from 'react-native';
+import AsyncStorage from '@react-native-community/async-storage';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import { defaultLanguage, languagesResources } from './languageConfig';
-import { selectBaseLanguage } from '@redux/translation/selectors';
-import { store } from '@redux/store';
+
+const LOCALE_PERSISTENCE_KEY = 'app_locale';
 
 const languageDetector = {
   type: 'languageDetector',
   async: true,
-  detect: cb => {
-    let prevLanguage;
-    store.subscribe(() => {
-      const baseLanguage = selectBaseLanguage(store.getState());
-      if (baseLanguage !== prevLanguage) {
-        prevLanguage = baseLanguage;
-        cb(baseLanguage);
-      }
-    });
-  },
   init: () => {},
-  cacheUserLanguage: () => {},
+  cacheUserLanguage: locale => {
+    AsyncStorage.setItem(LOCALE_PERSISTENCE_KEY, locale);
+  },
+  detect: cb => {
+    AsyncStorage.getItem(LOCALE_PERSISTENCE_KEY)
+      .then(locale => {
+        if (!locale) {
+          return Promise.reject();
+        }
+
+        cb(locale);
+      })
+      .catch(() => {
+        console.log('Failed to retrieve stored locale!');
+        console.log('Will use defaultLanguage:', defaultLanguage);
+
+        cb(defaultLanguage);
+      });
+  },
 };
 
 i18n
