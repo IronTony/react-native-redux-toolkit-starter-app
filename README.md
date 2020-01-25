@@ -1,14 +1,28 @@
-# React Native Starter App
+# React Native Starter App <!-- omit in toc -->
 > A React Native template to bootstrap your next app!
 
 [![License](https://img.shields.io/github/license/IronTony/react-native-starter-app)](LICENSE)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-screen.svg?style=flat)](#contributors-:sparkles:)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Issues](https://img.shields.io/github/issues/IronTony/react-native-starter-app.svg)](https://github.com/IronTony/react-native-starter-app/issues)
 
 [![Build](https://img.shields.io/badge/iOS%20Tested-success-brightgreen.svg)](https://github.com/IronTony/react-native-starter-app)
 [![Build](https://img.shields.io/badge/Android%20Tested-success-brightgreen.svg)](https://github.com/IronTony/react-native-starter-app)
+
+# Table of Contents <!-- omit in toc -->
+- [Installation :inbox_tray:](#installation-inbox_tray)
+- [Environment Setup :globe_with_meridians:](#environment-setup-globe_with_meridians)
+- [Scripts :wrench:](#scripts-wrench)
+  - [Run the app](#run-the-app)
+  - [Generate app icons](#generate-app-icons)
+  - [Generate Splashscreen](#generate-splashscreen)
+  - [Setup iOS](#setup-ios)
+- [Roadmap :running:](#roadmap-running)
+- [Contributors :sparkles:](#contributors-sparkles)
+- [License :scroll:](#license-scroll)
+
+---
 
 ## Installation :inbox_tray:
 
@@ -108,7 +122,7 @@ this will run `cocoapods` to install all the required dependencies.
 
 ---
 
-## Contributors ✨
+## Contributors :sparkles:
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
