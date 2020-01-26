@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-// import { getAdjustedFontSize } from '@utils';
 import { COLORS } from '@theme/colors';
 import { fonts } from '@theme/fonts';
 
