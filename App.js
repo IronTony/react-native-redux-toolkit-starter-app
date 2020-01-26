@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { enableScreens } from 'react-native-screens';
@@ -11,15 +11,13 @@ import AppContainer from '@routes';
 enableScreens();
 
 const App = () => (
-  <Suspense fallback={<Splashscreen />}>
+  <StyleProvider style={getTheme()}>
     <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <StyleProvider style={getTheme()}>
-          <AppContainer />
-        </StyleProvider>
+      <PersistGate loading={<Splashscreen />} persistor={persistor}>
+        <AppContainer />
       </PersistGate>
     </Provider>
-  </Suspense>
+  </StyleProvider>
 );
 
 export default App;
