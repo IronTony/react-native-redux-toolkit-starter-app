@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Body, Button, Header, Icon, Left, Right, Text } from 'native-base';
-import { Trans, withTranslation } from 'react-i18next';
+import { Trans } from 'react-i18next';
 import { COLORS } from '@theme/colors';
 import styles from './styles';
 
@@ -76,4 +76,4 @@ GenericHeader.defaultProps = {
   onBackClicked: null,
 };
 
-export default React.memo(withTranslation()(GenericHeader));
+export default React.memo(GenericHeader);
