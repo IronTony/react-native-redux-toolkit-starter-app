@@ -19,6 +19,7 @@ const AppNavigator = createStackNavigator(
     defaultNavigationOptions: {
       // this is to have a RTL transition on both systems
       ...TransitionPresets.SlideFromRightIOS,
+      headerShown: false,
     },
   },
 );

@@ -4,9 +4,12 @@ import { fonts } from '@theme/fonts';
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
     backgroundColor: COLORS.PRIMARY,
+  },
+  content: {
+    alignItems: 'center',
     flex: 1,
+    flexGrow: 1,
     justifyContent: 'center',
     padding: 15,
   },
@@ -36,6 +39,15 @@ const styles = StyleSheet.create({
   navigationButton: {
     backgroundColor: COLORS.LIGHT,
     borderWidth: 0,
+  },
+  buttonText: {
+    fontFamily: fonts.regular,
+  },
+  iconContent: {
+    marginRight: 0,
+  },
+  headerIconContent: {
+    color: COLORS.HEADER.HEADER_TEXT,
   },
 });
 

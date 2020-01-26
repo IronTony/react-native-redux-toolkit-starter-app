@@ -117,7 +117,9 @@ this will run `cocoapods` to install all the required dependencies.
 ✅ Add `redux-saga`<br/>
 ✅ Add `i18next`<br/>
 ✅ Add `react-navigation` ❤️<br/>
-✅ Add UI Design System (`UI Kitten`)<br/>
+~~✅ Add UI Design System (`UI Kitten`)<br/>~~
+✅ Remove UIKitten<br />
+✅ Add UI Design System (`NativeBase`)<br />
 ✅ Add `Env`variables selection experimental way ⚗️⚗️⚗️<br />
 
 ---
