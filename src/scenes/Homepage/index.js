@@ -52,7 +52,7 @@ const Home = () => {
           <Button
             onPress={switchLocaleToIt}
             style={styles.button}
-            status={currentLocale === 'it' ? 'primary' : 'basic'}
+            success={currentLocale === 'it'}
           >
             <Text style={styles.buttonText}>{t('common:italian')}</Text>
           </Button>
@@ -60,7 +60,7 @@ const Home = () => {
           <Button
             onPress={switchLocaleToEn}
             style={styles.button}
-            status={currentLocale === 'en' ? 'primary' : 'basic'}
+            success={currentLocale === 'en'}
           >
             <Text style={styles.buttonText}>{t('common:english')}</Text>
           </Button>
