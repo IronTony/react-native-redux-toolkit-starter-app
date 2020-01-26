@@ -13,7 +13,10 @@ const GenericHeader = ({
   onBackClicked,
 }) => {
   return (
-    <Header androidStatusBarColor={COLORS.BAR_COLOR}>
+    <Header
+      androidStatusBarColor={COLORS.BAR_COLOR}
+      style={styles.headerContainer}
+    >
       <Left style={styles.flex1}>
         {/*
           The GenericHeader component accepts an onBackClicked prop.
@@ -39,7 +42,7 @@ const GenericHeader = ({
         {LeftAction}
       </Left>
 
-      <Body style={styles.flex1}>
+      <Body style={styles.bodyContainer}>
         {/*
           You can pass the page name or a component that will be rendered in the middle of your Header
          */}

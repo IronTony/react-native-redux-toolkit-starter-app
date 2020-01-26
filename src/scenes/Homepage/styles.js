@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     marginRight: 0,
   },
   headerIconContent: {
-    color: COLORS.HEADER_TEXT,
+    color: COLORS.HEADER.HEADER_TEXT,
   },
 });
 
