@@ -4,13 +4,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Trans, useTranslation, withTranslation } from 'react-i18next';
 import SplashScreen from 'react-native-splash-screen';
 import { NavigationContext } from 'react-navigation';
-import { Button, Icon } from '@ui-kitten/components';
+import { Button, Container, Content, Icon, Text } from 'native-base';
 import { getUserInfoRequest, setLocale } from '@redux/actions';
 import { selectUserInfo } from '@redux/user/selectors';
 import EnvInfoView from '@components/AppVersion';
+import GenericHeader from '@components/GenericHeader';
 import styles from './styles';
 
-function Home() {
+const Home = () => {
   const [t] = useTranslation();
   const dispatch = useDispatch();
   const userData = useSelector(selectUserInfo);
@@ -25,44 +26,55 @@ function Home() {
   }, [dispatch]);
 
   return (
-    <View style={styles.container}>
-      <Trans
-        style={styles.mainText}
-        i18nKey="Homepage:welcome"
-        values={userData}
+    <Container style={styles.container}>
+      <GenericHeader
+        BodyHeader={
+          <Icon
+            type="FontAwesome5"
+            name="react"
+            style={styles.headerIconContent}
+          />
+        }
       />
-      <Trans style={styles.subText} i18nKey="Homepage:releasedWithLove" />
+      <Content contentContainerStyle={styles.content}>
+        <Trans
+          style={styles.mainText}
+          i18nKey="Homepage:welcome"
+          values={userData}
+        />
+        <Trans style={styles.subText} i18nKey="Homepage:releasedWithLove" />
 
-      <View style={styles.languangeContainer}>
-        <Button
-          onPress={() => dispatch(setLocale('it'))}
-          style={styles.button}
-          status="primary"
-        >
-          {t('common:italian')}
-        </Button>
-        <Button
-          onPress={() => dispatch(setLocale('en'))}
-          style={styles.button}
-          status="basic"
-        >
-          {t('common:english')}
-        </Button>
-      </View>
+        <View style={styles.languangeContainer}>
+          <Button
+            onPress={() => dispatch(setLocale('it'))}
+            style={styles.button}
+          >
+            <Text style={styles.buttonText}>{t('common:italian')}</Text>
+          </Button>
+          <Button
+            onPress={() => dispatch(setLocale('en'))}
+            style={styles.button}
+          >
+            <Text style={styles.buttonText}>{t('common:english')}</Text>
+          </Button>
+        </View>
 
-      <View style={styles.buttonGoToContainer}>
-        <Button
-          onPress={() => navigation.navigate('AnotherPage')}
-          style={styles.navigationButton}
-          icon={() => <Icon name="ios-options" pack="ionicons" />}
-        >
-          {t('Homepage:goToAnotherPage')}
-        </Button>
-      </View>
+        <View style={styles.buttonGoToContainer}>
+          <Button
+            onPress={() => navigation.navigate('AnotherPage')}
+            style={styles.navigationButton}
+          >
+            <Icon name="ios-options" style={styles.iconContent} />
+            <Text style={styles.buttonText}>
+              {t('Homepage:goToAnotherPage')}
+            </Text>
+          </Button>
+        </View>
 
-      <EnvInfoView />
-    </View>
+        <EnvInfoView />
+      </Content>
+    </Container>
   );
-}
+};
 
 export default React.memo(withTranslation()(Home));

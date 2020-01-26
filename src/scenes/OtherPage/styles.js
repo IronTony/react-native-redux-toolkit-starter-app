@@ -4,9 +4,12 @@ import { fonts } from '@theme/fonts';
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
     backgroundColor: COLORS.PRIMARY,
+  },
+  content: {
+    alignItems: 'center',
     flex: 1,
+    flexGrow: 1,
     justifyContent: 'center',
     padding: 15,
   },
@@ -20,6 +23,9 @@ const styles = StyleSheet.create({
   },
   button: {
     margin: 8,
+  },
+  buttonText: {
+    fontFamily: fonts.regular,
   },
 });
 
