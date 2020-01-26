@@ -1,16 +1,22 @@
 import React, { useCallback } from 'react';
 import { View } from 'react-native';
-import { useDispatch } from 'react-redux';
-import { Trans, useTranslation, withTranslation } from 'react-i18next';
-import { Button, Container, Content, Text } from 'native-base';
+import { Trans, useTranslation } from 'react-i18next';
 import { withNavigation } from 'react-navigation';
-import { setLocale } from '@redux/actions';
+import { Button, Container, Content, Text } from 'native-base';
 import GenericHeader from '@components/GenericHeader';
 import styles from './styles';
 
 const OtherPage = ({ navigation }) => {
-  const [t] = useTranslation();
-  const dispatch = useDispatch();
+  const [t, i18n] = useTranslation();
+
+  const currentLocale = i18n.language;
+  const switchLocaleToEn = useCallback(() => {
+    i18n.changeLanguage('en');
+  }, [i18n]);
+
+  const switchLocaleToIt = useCallback(() => {
+    i18n.changeLanguage('it');
+  }, [i18n]);
 
   const goBack = useCallback(() => {
     navigation.navigate('Home');
@@ -19,7 +25,7 @@ const OtherPage = ({ navigation }) => {
   return (
     <Container style={styles.container}>
       <GenericHeader
-        onBackClicked={() => goBack()}
+        onBackClicked={goBack}
         pageName={t('AnotherPage:OtherPage')}
       />
       <Content contentContainerStyle={styles.content}>
@@ -27,14 +33,17 @@ const OtherPage = ({ navigation }) => {
           <Trans style={styles.mainText} i18nKey="AnotherPage:welcome" />
           <View style={styles.languangeContainer}>
             <Button
-              onPress={() => dispatch(setLocale('it'))}
+              onPress={switchLocaleToIt}
               style={styles.button}
+              success={currentLocale === 'it'}
             >
               <Text style={styles.buttonText}>{t('common:italian')}</Text>
             </Button>
+
             <Button
-              onPress={() => dispatch(setLocale('en'))}
+              onPress={switchLocaleToEn}
               style={styles.button}
+              success={currentLocale === 'en'}
             >
               <Text style={styles.buttonText}>{t('common:english')}</Text>
             </Button>
@@ -45,4 +54,4 @@ const OtherPage = ({ navigation }) => {
   );
 };
 
-export default React.memo(withTranslation()(withNavigation(OtherPage)));
+export default React.memo(withNavigation(OtherPage));

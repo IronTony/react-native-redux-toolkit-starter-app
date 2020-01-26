@@ -12,7 +12,7 @@ const persistConfig = {
   storage: AsyncStorage,
   // There is an issue in the source code of redux-persist (default setTimeout does not cleaning)
   timeout: null,
-  whitelist: ['translation'],
+  whitelist: [],
 };
 
 // Setup Middlewares

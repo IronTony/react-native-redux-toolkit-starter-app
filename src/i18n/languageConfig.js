@@ -6,4 +6,7 @@ import it from './locales/it.json';
 export const defaultLanguage = 'en';
 
 // Export here your language files import
-export const languagesResources = { en, it };
+export const languagesResources = {
+  en,
+  it,
+};

@@ -1,25 +1,29 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useCallback } from 'react';
 import { View } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
-import { Trans, useTranslation, withTranslation } from 'react-i18next';
-import SplashScreen from 'react-native-splash-screen';
+import { Trans, useTranslation } from 'react-i18next';
 import { NavigationContext } from 'react-navigation';
 import { Button, Container, Content, Icon, Text } from 'native-base';
-import { getUserInfoRequest, setLocale } from '@redux/actions';
+import { getUserInfoRequest } from '@redux/actions';
 import { selectUserInfo } from '@redux/user/selectors';
 import EnvInfoView from '@components/AppVersion';
 import GenericHeader from '@components/GenericHeader';
 import styles from './styles';
 
 const Home = () => {
-  const [t] = useTranslation();
+  const [t, i18n] = useTranslation();
   const dispatch = useDispatch();
   const userData = useSelector(selectUserInfo);
   const navigation = useContext(NavigationContext);
 
-  useEffect(() => {
-    SplashScreen.hide();
-  }, []);
+  const currentLocale = i18n.language;
+  const switchLocaleToEn = useCallback(() => {
+    i18n.changeLanguage('en');
+  }, [i18n]);
+
+  const switchLocaleToIt = useCallback(() => {
+    i18n.changeLanguage('it');
+  }, [i18n]);
 
   useEffect(() => {
     dispatch(getUserInfoRequest());
@@ -46,14 +50,17 @@ const Home = () => {
 
         <View style={styles.languangeContainer}>
           <Button
-            onPress={() => dispatch(setLocale('it'))}
+            onPress={switchLocaleToIt}
             style={styles.button}
+            success={currentLocale === 'it'}
           >
             <Text style={styles.buttonText}>{t('common:italian')}</Text>
           </Button>
+
           <Button
-            onPress={() => dispatch(setLocale('en'))}
+            onPress={switchLocaleToEn}
             style={styles.button}
+            success={currentLocale === 'en'}
           >
             <Text style={styles.buttonText}>{t('common:english')}</Text>
           </Button>
@@ -77,4 +84,4 @@ const Home = () => {
   );
 };
 
-export default React.memo(withTranslation()(Home));
+export default React.memo(Home);
