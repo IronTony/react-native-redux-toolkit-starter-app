@@ -3,10 +3,10 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { enableScreens } from 'react-native-screens';
 import { getTheme, StyleProvider } from 'native-base';
-import Splashscreen from '@components/Splashscreen';
-import '@i18n';
 import { store, persistor } from '@redux/store';
+import Splashscreen from '@components/Splashscreen';
 import AppContainer from '@routes';
+import '@i18n';
 
 enableScreens();
 
