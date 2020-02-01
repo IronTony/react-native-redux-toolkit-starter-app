@@ -121,6 +121,7 @@ this will run `cocoapods` to install all the required dependencies.
 ✅ Remove UIKitten<br />
 ✅ Add UI Design System (`NativeBase`)<br />
 ✅ Add `Env`variables selection experimental way ⚗️⚗️⚗️<br />
+✅ Add Typescript (optional use. Read the DOC above)<br />
 🚫 Add Travis<br />
 🚫 Add DependaBot<br />
 

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import SplashScreen from 'react-native-splash-screen';
+import { View } from 'native-base';
 
 /**
  * An empty component used to manage SplashScreen from Suspense fallback
@@ -12,7 +13,8 @@ const Splashscreen = () => {
     };
   });
 
-  return null;
+  // To avoid strange crash if i18next load takes too much! 🙀🙀🙀
+  return <View />;
 };
 
 export default React.memo(Splashscreen);

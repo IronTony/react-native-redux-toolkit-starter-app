@@ -24,6 +24,7 @@ i18n
       wait: true,
       defaultTransParent: Text,
       transSupportBasicHtmlNodes: false,
+      useSuspense: false,
     },
   });
 
