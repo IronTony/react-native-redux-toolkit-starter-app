@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
+import { View } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
-import { View } from 'native-base';
 
 /**
  * An empty component used to manage SplashScreen from Suspense fallback

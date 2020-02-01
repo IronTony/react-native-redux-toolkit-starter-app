@@ -111,7 +111,7 @@ Our hint is to create all files as below:
  - files with logic and Views with tsx extension
  - files with Stylesheet and others with ts extension
 
-*REMEBER: the entry point file in the root of the project MUST be index.js*
+*REMEMBER: the entry point file in the root of the project MUST be index.js*
 
 ---
 
