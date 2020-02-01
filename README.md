@@ -52,6 +52,11 @@ Define your environment variables inside `app.json` inside the `environments` ob
 environment key (such as `development`, `staging` or `production`) and then run the app for the required env 
 using one of the available run scripts (e.g. `ios:dev`).
 
+If you want to use IDEs such Xcode or Android Studio, you have to set up the ENV variables with these commands:
+- `yarn env:dev`, to set the development ENV variables
+- `yarn env:stage`, to set the staging ENV variables
+- `yarn env:prod`, to set the production ENV variables
+
 ---
 
 ## Scripts :wrench:
