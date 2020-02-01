@@ -7,7 +7,6 @@ const LOCALE_PERSISTENCE_KEY = 'app_locale';
 const RNLanguageDetector = {
   type: 'languageDetector',
   async: true,
-  init: () => {},
   detect: async cb => {
     try {
       // Retrieve cached locale
@@ -33,6 +32,7 @@ const RNLanguageDetector = {
       cb(defaultLanguage);
     }
   },
+  init: () => {},
   cacheUserLanguage: locale => {
     AsyncStorage.setItem(LOCALE_PERSISTENCE_KEY, locale);
   },
