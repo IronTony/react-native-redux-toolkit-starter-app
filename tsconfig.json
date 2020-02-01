@@ -10,7 +10,8 @@
     "moduleResolution": "node",
     "noEmit": true,
     "target": "esnext",
-    "noImplicitAny": false,
+    "noImplicitAny": false, // set to true to be explicit and declare all types now
+    // "strict": true,  // enable it to use fully Typescript set of invasive rules
     "baseUrl": ".",
       "paths": {
         "@*": ["src/*"],
