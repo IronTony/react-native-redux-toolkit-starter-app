@@ -102,6 +102,17 @@ yarn setup:ios
 
 this will run `cocoapods` to install all the required dependencies.
 
+
+### Typescript (optional)
+
+The use of Typescript in the project is not mandatory.
+You can just write all your code using plain Javascript.
+Our hint is to create all files as below:
+ - files with logic and Views with tsx extension
+ - files with Stylesheet and others with ts extension
+
+*REMEMBER: the entry point file in the root of the project MUST be index.js*
+
 ---
 
 ## Roadmap :running:
@@ -117,10 +128,9 @@ this will run `cocoapods` to install all the required dependencies.
 ✅ Add `redux-saga`<br/>
 ✅ Add `i18next`<br/>
 ✅ Add `react-navigation` ❤️<br/>
-~~✅ Add UI Design System (`UI Kitten`)<br/>~~
-✅ Remove UIKitten<br />
 ✅ Add UI Design System (`NativeBase`)<br />
 ✅ Add `Env`variables selection experimental way ⚗️⚗️⚗️<br />
+✅ Add Typescript (optional use. Read the DOC above)<br />
 🚫 Add Travis<br />
 🚫 Add DependaBot<br />
 

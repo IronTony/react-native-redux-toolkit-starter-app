@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { View } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 
 /**
@@ -12,7 +13,8 @@ const Splashscreen = () => {
     };
   });
 
-  return null;
+  // To avoid strange crash if i18next load takes too much! 🙀🙀🙀
+  return <View />;
 };
 
 export default React.memo(Splashscreen);

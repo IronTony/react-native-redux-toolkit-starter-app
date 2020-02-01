@@ -15,7 +15,7 @@ import { all, spawn, takeEvery, takeLatest } from 'redux-saga/effects';
  *
  * @public
  */
-export function createAction(type) {
+export function createAction(type): any {
   function actionCreator(payload) {
     return {
       type,
@@ -52,7 +52,7 @@ export function createAction(type) {
  *
  * @public
  */
-export function createReducer(initialState, actionsMap) {
+export function createReducer(initialState, actionsMap): any {
   return function(state = initialState, action) {
     return produce(state, draft => {
       const caseReducer = actionsMap[action.type];
@@ -73,7 +73,7 @@ export function createReducer(initialState, actionsMap) {
  *
  * @public
  */
-export function createLatestSagas(sagasMap, moduleName = '') {
+export function createLatestSagas(sagasMap, moduleName = ''): any {
   // Extract action patterns from supplied map
   const actionPatterns = Object.keys(sagasMap);
 
@@ -109,7 +109,7 @@ export function createLatestSagas(sagasMap, moduleName = '') {
  *
  * @public
  */
-export function createEverySagas(sagasMap, moduleName = '') {
+export function createEverySagas(sagasMap, moduleName = ''): any {
   // Extract action patterns from supplied map
   const actionPatterns = Object.keys(sagasMap);
 

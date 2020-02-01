@@ -26,7 +26,7 @@ const Home = () => {
   }, [i18n]);
 
   useEffect(() => {
-    dispatch(getUserInfoRequest());
+    dispatch(getUserInfoRequest(''));
   }, [dispatch]);
 
   return (
