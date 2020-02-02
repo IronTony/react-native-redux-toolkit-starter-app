@@ -117,8 +117,10 @@ Our hint is to create all files as below:
  - files with Stylesheet and others with `ts` extension
  
 To enable full Typescript checks, just open the `tsconfig.json` file and chage as below:<br/>
-`"noImplicitAny": true, // set to true to be explicit and declare all types now`<br/>
-`"strict": true,  // enable it to use fully Typescript set of invasive rules`<br/>
+```
+"noImplicitAny": true, // set to true to be explicit and declare all types now<br/>
+"strict": true,  // enable it to use fully Typescript set of invasive rules<br/>
+```
 
 *REMEMBER: the entry point file in the root of the project MUST be index.js*
 
