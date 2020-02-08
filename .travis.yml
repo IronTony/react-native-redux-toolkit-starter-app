@@ -1,5 +1,5 @@
-- stage: Deploy Android 🤖
-  if: branch = master AND type = push
+- stage: Dev Build Android 🤖
+  # if: branch = master AND type = push
   language: android
   jdk: oraclejdk8
   android:
@@ -13,14 +13,15 @@
       - extra-google-google_play_services
   before_install:
     - nvm install 13.7.0
+    - nvm alias default v13.7.0
     - gem install bundler
     - bundle install
   before_script:
     - ./internals/scripts/travis/gitconfig.sh
   install: yarn
-  script: npm run deployment:android
+  script: yarn android:dev
 
-  - stage: Deploy iOS 🍏
+  - stage: Dev Build iOS 🍏
   if: branch = master AND type = push
   language: node_js
   node_js: 13.7.0
@@ -30,4 +31,4 @@
   before_script:
     - ./internals/scripts/travis/gitconfig.sh
   install: yarn
-  script: npm run deployment:ios
+  script: yarn ios:dev
