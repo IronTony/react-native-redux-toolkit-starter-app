@@ -9,7 +9,7 @@ function* fetchUserData(action) {
 //  if needed 'createEverySagas' can be used to map entries as takeEvery.
 export default createLatestSagas(
   {
-    [getUserInfoRequest]: fetchUserData,
+    [getUserInfoRequest as any]: fetchUserData,
     // [getUserInfoRespone]: storeUserData,
   },
   'user', // Optional paramenter to improve saga error logging, see 'createLatestSagas' jsdoc

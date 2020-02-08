@@ -10,6 +10,7 @@ import {
   REGISTER,
 } from 'redux-persist';
 import createSagaMiddleware from 'redux-saga';
+import devToolsEnhancer from 'remote-redux-devtools';
 import AsyncStorage from '@react-native-community/async-storage';
 import reducers from '@redux/reducers';
 import rootSaga from '@redux/rootSaga';
@@ -42,6 +43,8 @@ const persistedReducer = persistCombineReducers(persistConfig, reducers);
 const store = configureStore({
   reducer: persistedReducer,
   middleware,
+  devTools: process.env.NODE_ENV !== 'production',
+  enhancers: [devToolsEnhancer({ realtime: true })],
 });
 
 // Start rootSaga
