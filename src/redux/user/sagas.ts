@@ -1,5 +1,4 @@
 import { createLatestSagas } from '@utils/redux';
-
 import { getUserInfoRequest } from './actions';
 
 function* fetchUserData(action) {

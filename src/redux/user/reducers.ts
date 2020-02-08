@@ -1,4 +1,4 @@
-import { createReducer } from '@utils/redux';
+import { createReducer } from '@reduxjs/toolkit';
 import { getUserInfoRequest } from './actions';
 
 const initialState = {
