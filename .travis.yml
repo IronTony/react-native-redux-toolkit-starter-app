@@ -1,5 +1,5 @@
 - stage: Dev Build Android 🤖
-  # if: branch = master AND type = push
+  if: branch = master AND type = push
   language: android
   jdk: oraclejdk8
   android:
