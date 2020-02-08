@@ -1,0 +1,34 @@
+- stage: Dev Build Android 🤖
+  if: branch = master AND type = push
+  language: android
+  jdk: oraclejdk8
+  android:
+    components:
+      - tools
+      - platform-tools
+      - build-tools-28.0.3
+      - android-16
+      - android-28
+      - extra-google-m2repository
+      - extra-google-google_play_services
+  before_install:
+    - nvm install 13.7.0
+    - nvm alias default v13.7.0
+    - gem install bundler
+    - bundle install
+  before_script:
+    - ./internals/scripts/travis/gitconfig.sh
+  install: yarn
+  script: yarn android:dev
+
+  - stage: Dev Build iOS 🍏
+  if: branch = master AND type = push
+  language: node_js
+  node_js: 13.7.0
+  os: osx
+  osx_image: xcode11.3.1
+  before_install: bundle install
+  before_script:
+    - ./internals/scripts/travis/gitconfig.sh
+  install: yarn
+  script: yarn ios:dev
