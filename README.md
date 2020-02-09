@@ -132,10 +132,9 @@ To enable full Typescript checks, just open the `tsconfig.json` file and chage a
 ✅ Add Splashscreen (https://github.com/crazycodeboy/react-native-splash-screen)<br/>
 ✅ Add Toolbox (https://github.com/panz3r/react-native-toolbox)<br/>
 ✅ Create tree folders structure<br/>
-✅ Add `redux`<br/>
+✅ Add `redux-toolkit`<br/>
 ✅ Add `redux-persist` (https://github.com/rt2zz/redux-persist)<br/>
 ✅ Add `React Native Debugger`<br/>
-✅ Add `reselect`<br/>
 ✅ Add `redux-saga`<br/>
 ✅ Add `i18next`<br/>
 ✅ Add `react-navigation` ❤️<br/>
