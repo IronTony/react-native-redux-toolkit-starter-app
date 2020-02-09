@@ -9,10 +9,8 @@ const initialState = {
 };
 
 export default createReducer(initialState, {
-  [getUserInfoRequest as any]: state => {
-    state.user = {
-      name: 'Marvellous',
-      surname: 'React Native Starter App',
-    };
+  [getUserInfoRequest]: state => {
+    state.user.name = 'Marvellous';
+    state.user.surname = 'React Native Starter App';
   },
 });

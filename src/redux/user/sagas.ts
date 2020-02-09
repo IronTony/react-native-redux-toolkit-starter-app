@@ -1,7 +1,8 @@
+import { PayloadAction } from '@reduxjs/toolkit';
 import { createLatestSagas } from '@utils/redux';
 import { getUserInfoRequest } from './actions';
 
-function* fetchUserData(action) {
+function* fetchUserData(action: PayloadAction) {
   console.log('Retrieving user data based on action:', action);
 }
 
@@ -9,7 +10,7 @@ function* fetchUserData(action) {
 //  if needed 'createEverySagas' can be used to map entries as takeEvery.
 export default createLatestSagas(
   {
-    [getUserInfoRequest as any]: fetchUserData,
+    [getUserInfoRequest]: fetchUserData,
     // [getUserInfoRespone]: storeUserData,
   },
   'user', // Optional paramenter to improve saga error logging, see 'createLatestSagas' jsdoc
