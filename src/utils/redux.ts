@@ -1,10 +1,5 @@
-import {
-  all,
-  spawn,
-  takeEvery,
-  takeLatest,
-  ActionPattern,
-} from 'redux-saga/effects';
+import { PayloadActionCreator, PayloadAction } from '@reduxjs/toolkit';
+import { all, spawn, takeEvery, takeLatest } from 'redux-saga/effects';
 
 // createLatestSagas
 //  Returned rootSaga is inspired by code at https://redux-saga.js.org/docs/advanced/RootSaga.html
@@ -18,10 +13,13 @@ import {
  *
  * @public
  */
-export function createLatestSagas<
-  AP extends ActionPattern,
-  Fn extends (...args: any[]) => any
->(sagasMap: Record<AP, Fn>, moduleName: string = ''): IterableIterator<void> {
+export function createLatestSagas<P = void, T extends string = string>(
+  sagasMap: Record<
+    PayloadActionCreator<P, T>,
+    (action?: PayloadAction<P, T>) => Generator
+  >,
+  moduleName: string = '',
+) {
   // Extract action patterns from supplied map
   const actionPatterns = Object.keys(sagasMap);
 
@@ -32,7 +30,7 @@ export function createLatestSagas<
         spawn(function*() {
           while (true) {
             try {
-              yield takeLatest<AP, Fn>(actionPattern, sagasMap[actionPattern]);
+              yield takeLatest(actionPattern, sagasMap[actionPattern]);
               break;
             } catch (e) {
               console.log(
@@ -57,10 +55,13 @@ export function createLatestSagas<
  *
  * @public
  */
-export function createEverySagas<
-  AP extends ActionPattern,
-  Fn extends (...args: any[]) => any
->(sagasMap: Record<AP, Fn>, moduleName: string = ''): IterableIterator<void> {
+export function createEverySagas<P = void, T extends string = string>(
+  sagasMap: Record<
+    PayloadActionCreator<P, T>,
+    (action?: PayloadAction<P, T>) => Generator
+  >,
+  moduleName: string = '',
+) {
   // Extract action patterns from supplied map
   const actionPatterns = Object.keys(sagasMap);
 
@@ -71,7 +72,7 @@ export function createEverySagas<
         spawn(function*() {
           while (true) {
             try {
-              yield takeEvery<AP, Fn>(actionPattern, sagasMap[actionPattern]);
+              yield takeEvery(actionPattern, sagasMap[actionPattern]);
               break;
             } catch (e) {
               console.log(
