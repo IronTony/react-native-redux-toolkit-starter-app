@@ -1,8 +1,15 @@
-import { Platform } from 'react-native';
-import { createStore, applyMiddleware } from 'redux';
-import { persistStore, persistCombineReducers } from 'redux-persist';
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
+import {
+  persistStore,
+  persistCombineReducers,
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from 'redux-persist';
 import createSagaMiddleware from 'redux-saga';
-import { composeWithDevTools } from 'redux-devtools-extension';
 import AsyncStorage from '@react-native-community/async-storage';
 import reducers from '@redux/reducers';
 import rootSaga from '@redux/rootSaga';
@@ -17,19 +24,26 @@ const persistConfig = {
 
 // Setup Middlewares
 const sagaMiddleware = createSagaMiddleware();
-const multipleApplyMiddleware = applyMiddleware(sagaMiddleware);
+const middleware = [
+  ...getDefaultMiddleware({
+    thunk: false,
+    // This is needed because redux-persist will prompt an error.  Redux-persist is using default redux configuration and redux-starter-kit is waiting for a string.
+    serializableCheck: {
+      ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+    },
+  }),
+  sagaMiddleware,
+];
 
 // Setup Reducers
 const persistedReducer = persistCombineReducers(persistConfig, reducers);
 
-// Setup Enhancers
-const enhancers =
-  Platform.OS === 'ios'
-    ? composeWithDevTools(multipleApplyMiddleware)
-    : multipleApplyMiddleware;
-
 // Create Store
-const store = createStore(persistedReducer, enhancers);
+const store = configureStore({
+  reducer: persistedReducer,
+  middleware,
+  devTools: process.env.NODE_ENV !== 'production',
+});
 
 // Start rootSaga
 sagaMiddleware.run(rootSaga);

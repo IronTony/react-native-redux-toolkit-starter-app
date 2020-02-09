@@ -1,4 +1,4 @@
-import { createReducer } from '@utils/redux';
+import { createReducer } from '@reduxjs/toolkit';
 import { getUserInfoRequest } from './actions';
 
 const initialState = {
@@ -10,9 +10,7 @@ const initialState = {
 
 export default createReducer(initialState, {
   [getUserInfoRequest]: state => {
-    state.user = {
-      name: 'Marvellous',
-      surname: 'React Native Starter App',
-    };
+    state.user.name = 'Marvellous';
+    state.user.surname = 'React Native Starter App';
   },
 });

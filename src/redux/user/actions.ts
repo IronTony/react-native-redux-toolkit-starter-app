@@ -1,3 +1,3 @@
-import { createAction } from '@utils/redux';
+import { createAction } from '@reduxjs/toolkit';
 
 export const getUserInfoRequest = createAction('GET_USER_INFO');

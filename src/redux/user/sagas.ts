@@ -1,8 +1,8 @@
+import { PayloadAction } from '@reduxjs/toolkit';
 import { createLatestSagas } from '@utils/redux';
-
 import { getUserInfoRequest } from './actions';
 
-function* fetchUserData(action) {
+function* fetchUserData(action: PayloadAction) {
   console.log('Retrieving user data based on action:', action);
 }
 
