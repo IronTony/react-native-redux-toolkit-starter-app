@@ -24,7 +24,13 @@
     "_ios": "react-native run-ios",
     "ios:dev": "run-s env:dev _ios",
     "ios:stage": "run-s env:stage _ios",
-    "ios:prod": "run-s env:prod _ios"
+    "ios:prod": "run-s env:prod _ios",
+    "android:bundle:create": "rm -rf android/app/build && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
+    "android:assemble:debug": "cd android && ./gradlew assembleDebug",
+    "ios:bundle:create": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios",
+    "ios:assemble:debug": "xcodebuild -quiet -workspace ios/ReactNativeStarterApp.xcworkspace -scheme ReactNativeStarterApp -configuration Release -sdk iphonesimulator -destination platform='iOS Simulator',OS=13.3,name='iPhone 11 Pro Max' CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO",
+    "build:dev:android": "run-s env:dev android:bundle:create android:assemble:debug",
+    "build:dev:ios": "run-s env:dev setup:ios ios:assemble:debug"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.7.1",

@@ -1,34 +1,48 @@
-- stage: Dev Build Android 🤖
-  if: branch = master AND type = push
-  language: android
-  jdk: oraclejdk8
-  android:
-    components:
-      - tools
-      - platform-tools
-      - build-tools-28.0.3
-      - android-16
-      - android-28
-      - extra-google-m2repository
-      - extra-google-google_play_services
-  before_install:
-    - nvm install 13.7.0
-    - nvm alias default v13.7.0
-    - gem install bundler
-    - bundle install
-  before_script:
-    - ./internals/scripts/travis/gitconfig.sh
-  install: yarn
-  script: yarn android:dev
+branches:
+  only:
+    - master
+cache: false
 
-  - stage: Dev Build iOS 🍏
-  if: branch = master AND type = push
-  language: node_js
-  node_js: 13.7.0
-  os: osx
-  osx_image: xcode11.3.1
-  before_install: bundle install
-  before_script:
-    - ./internals/scripts/travis/gitconfig.sh
-  install: yarn
-  script: yarn ios:dev
+jobs:
+  include:
+    - stage: Dev Build Android 🤖
+      env:
+        global:
+          - ANDROID_API_LEVEL=28
+          - ANDROID_BUILD_TOOLS_VERSION=28.0.3
+          - ADB_INSTALL_TIMEOUT=20 # minutes (2 minutes by default)
+      language: android
+      jdk: oraclejdk8
+      android:
+        components:
+          - tools
+          - platform-tools
+          - build-tools-$ANDROID_BUILD_TOOLS_VERSION
+          - android-$ANDROID_API_LEVEL
+          - extra
+          - add-on
+          - extra-google-m2repository
+          - extra-android-m2repository
+      before_install:
+        - yes | sdkmanager "platforms;android-28"
+        - nvm install 13.7.0
+        - nvm alias default v13.7.0
+        - gem install bundler
+        - bundle install
+      install: yarn
+      script: yarn build:dev:android
+
+    - stage: Dev Build iOS 🍏
+      language: node_js
+      node_js: 13.7.0
+      os: osx
+      osx_image: xcode11.3
+      arch: arm64
+      before_script:
+        - nvm install 13.7.0
+        - nvm alias default v13.7.0
+        - npm install -g react-native-cli
+        - gem install bundler
+        - bundle install
+      install: yarn
+      script: yarn build:dev:ios
