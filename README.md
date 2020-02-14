@@ -139,7 +139,7 @@ To enable full Typescript checks, just open the `tsconfig.json` file and chage a
 ✅ Add `React Native Debugger`<br/>
 ✅ Add `redux-saga`<br/>
 ✅ Add `i18next`<br/>
-✅ Add `react-navigation` ❤️<br/>
+✅ Add `react-navigation v5` ❤️<br/>
 ✅ Add UI Design System (`NativeBase`)<br />
 ✅ Add `Env`variables selection experimental way ⚗️⚗️⚗️<br />
 ✅ Add Typescript (optional use. Read the DOC above)<br />
