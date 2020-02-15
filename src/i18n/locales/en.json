@@ -17,6 +17,7 @@
     "OtherPage": "Other Page"
   },
   "ModalPage": {
+    "PageName": "Modal Page",
     "thisIsAModal": "This is a modal!"
   }
 }

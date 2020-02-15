@@ -3,8 +3,19 @@ import { COLORS } from '@theme/colors';
 import { fonts } from '@theme/fonts';
 
 const styles = StyleSheet.create({
-  mainText: {
-    color: COLORS.TEXT.PRIMARY,
+  container: {
+    backgroundColor: COLORS.PRIMARY,
+  },
+  content: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  headerIconContent: {
+    marginRight: 10,
+  },
+  pageTitle: {
+    color: COLORS.TEXT.SECONDARY,
     fontFamily: fonts.regular,
     textAlign: 'center',
   },

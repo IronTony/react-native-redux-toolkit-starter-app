@@ -1,14 +1,15 @@
-import React, { useCallback, useContext } from 'react';
+import React, { useCallback } from 'react';
 import { View } from 'react-native';
 import { Trans, useTranslation } from 'react-i18next';
 import { Button, Container, Content, Text } from 'native-base';
-import { NavigationContext } from '@react-navigation/native';
+import { useNavigation, StackActions } from '@react-navigation/native';
 import GenericHeader from '@components/GenericHeader';
 import styles from './styles';
 
 const OtherPage = () => {
   const [t, i18n] = useTranslation();
-  const navigation = useContext(NavigationContext);
+  const navigation = useNavigation();
+  const popAction = StackActions.pop();
 
   const currentLocale = i18n.language;
   const switchLocaleToEn = useCallback(() => {
@@ -20,8 +21,8 @@ const OtherPage = () => {
   }, [i18n]);
 
   const goBack = useCallback(() => {
-    navigation.navigate('Home');
-  }, [navigation]);
+    navigation.dispatch(popAction);
+  }, [navigation, popAction]);
 
   return (
     <Container style={styles.container}>
