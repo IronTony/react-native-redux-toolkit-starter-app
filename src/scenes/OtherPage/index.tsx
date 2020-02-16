@@ -9,7 +9,7 @@ import styles from './styles';
 const OtherPage = () => {
   const [t, i18n] = useTranslation();
   const navigation = useNavigation();
-  const popAction = StackActions.pop();
+  const popAction = useCallback(() => StackActions.pop(), []);
 
   const currentLocale = i18n.language;
   const switchLocaleToEn = useCallback(() => {

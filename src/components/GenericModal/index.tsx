@@ -7,7 +7,7 @@ import styles from './styles';
 
 const ModalPage = ({ children, pageTitle }) => {
   const navigation = useNavigation();
-  const popAction = StackActions.pop();
+  const popAction = useCallback(() => StackActions.pop(), []);
 
   const closeModal = useCallback(() => {
     navigation.dispatch(popAction);
