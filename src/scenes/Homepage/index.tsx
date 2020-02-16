@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useCallback } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import { View } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { Trans, useTranslation } from 'react-i18next';
-import { NavigationContext } from 'react-navigation';
+import { useNavigation } from '@react-navigation/native';
 import { Button, Container, Content, Icon, Text } from 'native-base';
 import { getUserInfoRequest } from '@redux/actions';
 import { selectUserInfo } from '@redux/user/selectors';
@@ -14,7 +14,7 @@ const Home = () => {
   const [t, i18n] = useTranslation();
   const dispatch = useDispatch();
   const userData = useSelector(selectUserInfo);
-  const navigation = useContext(NavigationContext);
+  const navigation = useNavigation();
 
   const currentLocale = i18n.language;
   const switchLocaleToEn = useCallback(() => {
@@ -68,12 +68,21 @@ const Home = () => {
 
         <View style={styles.buttonGoToContainer}>
           <Button
-            onPress={() => navigation.navigate('AnotherPage')}
+            onPress={() => navigation.navigate('Main', { screen: 'OtherPage' })}
             style={styles.navigationButton}
           >
             <Icon name="ios-options" style={styles.iconContent} />
             <Text style={styles.buttonText}>
               {t('Homepage:goToAnotherPage')}
+            </Text>
+          </Button>
+
+          <Button
+            style={[styles.navigationButtonBordered, styles.marginTop10]}
+            onPress={() => navigation.navigate('MyModal')}
+          >
+            <Text style={styles.navigationButtonBorderedText}>
+              {t('Homepage:openModal')}
             </Text>
           </Button>
         </View>

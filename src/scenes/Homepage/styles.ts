@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { COLORS } from '@theme/colors';
+import { COLORS, PALETTE } from '@theme/colors';
 import { fonts } from '@theme/fonts';
 
 const styles = StyleSheet.create({
@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
   navigationButton: {
     backgroundColor: COLORS.LIGHT,
     borderWidth: 0,
+    justifyContent: 'center',
   },
   buttonText: {
     fontFamily: fonts.regular,
@@ -48,6 +49,19 @@ const styles = StyleSheet.create({
   },
   headerIconContent: {
     color: COLORS.HEADER.HEADER_TEXT,
+  },
+  navigationButtonBordered: {
+    backgroundColor: PALETTE.TRANSPARENT,
+    borderWidth: 1,
+    borderColor: PALETTE.ALIZARIN,
+    justifyContent: 'center',
+  },
+  navigationButtonBorderedText: {
+    color: COLORS.TEXT.SECONDARY,
+    fontFamily: fonts.regular,
+  },
+  marginTop10: {
+    marginTop: 10,
   },
 });
 

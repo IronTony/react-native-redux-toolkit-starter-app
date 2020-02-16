@@ -9,10 +9,15 @@
   "Homepage": {
     "welcome": "Grazie per usare il {{name}} {{surname}}\n😍 😘 🙏🏻",
     "releasedWithLove": "Creato e rilasciato con ❤️ per voi",
-    "goToAnotherPage": "Vai in un'altra pagina"
+    "goToAnotherPage": "Vai in un'altra pagina",
+    "openModal": "Apri la modale"
   },
   "AnotherPage": {
     "welcome": "Benvenuto in un'altra pagina",
     "OtherPage": "Altra Pagina"
+  },
+  "ModalPage": {
+    "PageName": "Modale",
+    "thisIsAModal": "Questa è una modale!"
   }
 }
