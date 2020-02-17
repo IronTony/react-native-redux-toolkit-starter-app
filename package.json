@@ -33,7 +33,7 @@
     "build:dev:ios": "run-s env:dev setup:ios ios:assemble:debug"
   },
   "dependencies": {
-    "@react-native-community/async-storage": "^1.7.1",
+    "@react-native-community/async-storage": "^1.8.0",
     "@react-native-community/masked-view": "^0.1.6",
     "@react-navigation/native": "^5.0.3",
     "@react-navigation/stack": "^5.0.3",
