@@ -144,7 +144,7 @@ To enable full Typescript checks, just open the `tsconfig.json` file and chage a
 ✅ Add `Env`variables selection experimental way ⚗️⚗️⚗️<br />
 ✅ Add Typescript (optional use. Read the DOC above)<br />
 ✅ Add Travis<br />
-🚫 Add DependaBot<br />
+✅ Add DependaBot<br />
 
 ---
 
