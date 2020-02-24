@@ -1136,10 +1136,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@panz3r/react-native-toolbox@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@panz3r/react-native-toolbox/-/react-native-toolbox-1.2.0.tgz#a38d35376a3cd51f96a124ca228d41f6e90cc980"
-  integrity sha512-9IyB6f7u29z5j6BkS8EdgGDvJ1rjPiTIWgjByDeQbIUzkYe1ehIlCOfzw1da7O7Lcp7fru9E8CiO6Euw5PfcCQ==
+"@panz3r/react-native-toolbox@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@panz3r/react-native-toolbox/-/react-native-toolbox-1.3.0.tgz#587ff27eaab396ade483d6a2032e7fe2b65a52b2"
+  integrity sha512-cDKB2Wb3Uol7GuJpCGagGUZezVo7S0AtB5z1MGP6p8fqOghH1c8d98sn2oztGm3G0djyAPR9qMkV6NXFB29vpA==
   dependencies:
     colors "^1.3.3"
     commander "^2.20.0"
