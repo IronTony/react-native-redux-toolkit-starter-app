@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.8.0",
-    "@react-native-community/masked-view": "^0.1.6",
+    "@react-native-community/masked-view": "^0.1.7",
     "@react-navigation/native": "^5.0.3",
     "@react-navigation/stack": "^5.0.5",
     "@reduxjs/toolkit": "^1.2.3",
