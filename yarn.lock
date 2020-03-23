@@ -6454,10 +6454,10 @@ react-native-splash-screen@^3.2.0:
   resolved "https://registry.yarnpkg.com/react-native-splash-screen/-/react-native-splash-screen-3.2.0.tgz#d47ec8557b1ba988ee3ea98d01463081b60fff45"
   integrity sha512-Ls9qiNZzW/OLFoI25wfjjAcrf2DZ975hn2vr6U9gyuxi2nooVbzQeFoQS5vQcbCt9QX5NY8ASEEAtlLdIa6KVg==
 
-react-native-svg@^11.0.1:
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-11.0.1.tgz#e92e7e9f9cb2604333fd5014fd4edcf62fea6496"
-  integrity sha512-XriIwSoe9eTtKyqxpNC6POSOqmXAB9mZQOm5tMoaimEqQOMfzgYrBoF9nY6VPGmaH5dRlWBqnnBf389APiZFcQ==
+react-native-svg@^12.0.3:
+  version "12.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-12.0.3.tgz#5dcc0e73efca50c8cfff098b20404551fad4aa5e"
+  integrity sha512-ZuZUHMVpF4AX1pNGvHOCZLUuMC5oG6LQnwImJTRw8avKYhpUQdGDWwqi6YtPfYszKx+DwepFeq1uWlAFMzB4qQ==
   dependencies:
     css-select "^2.1.0"
     css-tree "^1.0.0-alpha.39"
