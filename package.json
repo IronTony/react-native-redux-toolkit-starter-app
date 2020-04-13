@@ -75,7 +75,7 @@
     "jest": "^25.2.4",
     "metro-react-native-babel-preset": "^0.59.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "2.0.2",
+    "prettier": "2.0.4",
     "react-native-debugger-open": "^0.3.24",
     "react-test-renderer": "16.13.0",
     "remote-redux-devtools": "^0.5.16",
