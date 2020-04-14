@@ -31,18 +31,3 @@ jobs:
         - bundle install
       install: yarn
       script: yarn build:dev:android
-
-    - stage: Dev Build iOS 🍏
-      language: node_js
-      node_js: 13.7.0
-      os: osx
-      osx_image: xcode11.4
-      arch: arm64
-      before_script:
-        - nvm install 13.7.0
-        - nvm alias default v13.7.0
-        - npm install -g react-native-cli
-        - gem install bundler
-        - bundle install
-      install: yarn
-      script: yarn build:dev:ios
