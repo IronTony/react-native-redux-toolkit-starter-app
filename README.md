@@ -26,6 +26,18 @@
 
 ---
 
+## Rename project and bundles :globe_with_meridians:
+
+To rename the project and bundles, just follow these steps:
+
+# iOS & Android
+Run `npx react-native-rename [name] -b [bundle-identifier]` from project roor
+
+Example:
+`npx react-native-rename "Test New App" -b com.webbable.testnewapp`
+
+---
+
 ## Installation :inbox_tray:
 
 ```bash
