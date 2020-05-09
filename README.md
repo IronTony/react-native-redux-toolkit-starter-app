@@ -26,18 +26,6 @@
 
 ---
 
-## Rename project and bundles :globe_with_meridians:
-
-To rename the project and bundles, just follow these steps:
-
-# iOS & Android
-Run `npx react-native-rename [name] -b [bundle-identifier]` from project roor
-
-Example:
-`npx react-native-rename "Test New App" -b com.webbable.testnewapp`
-
----
-
 ## Installation :inbox_tray:
 
 ```bash
@@ -55,6 +43,18 @@ yarn setup:ios
 See [`environment`](#environment-setup-:globe_with_meridians:) section for how to configure env variables.
 
 See [`scripts`](#scripts-:wrench:) section for how to run the app.
+
+---
+
+## Rename project and bundles 📝📦
+
+To rename the project and bundles, just follow these steps:
+
+### iOS & Android
+Run `npx react-native-rename [name] -b [bundle-identifier]` from the project root
+
+Example:
+`npx react-native-rename "Test New App" -b com.webbable.testnewapp`
 
 ---
 
