@@ -14,6 +14,7 @@
 
 # Table of Contents <!-- omit in toc -->
 - [Installation :inbox_tray:](#installation-inbox_tray)
+- [Rename project and bundles 📝📦](#rename-project-and-bundles)
 - [Environment Setup :globe_with_meridians:](#environment-setup-globe_with_meridians)
 - [Scripts :wrench:](#scripts-wrench)
   - [Run the app](#run-the-app)
