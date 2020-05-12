@@ -14,7 +14,7 @@
 
 # Table of Contents <!-- omit in toc -->
 - [Installation :inbox_tray:](#installation-inbox_tray)
-- [Rename project and bundles 📝📦](#rename-project-and-bundles_📝📦)
+- [Rename project and bundles](#rename-project-and-bundles-memo_package)
 - [Environment Setup :globe_with_meridians:](#environment-setup-globe_with_meridians)
 - [Scripts :wrench:](#scripts-wrench)
   - [Run the app](#run-the-app)
@@ -47,7 +47,7 @@ See [`scripts`](#scripts-:wrench:) section for how to run the app.
 
 ---
 
-## Rename project and bundles 📝📦
+## Rename project and bundles :memo::package:
 
 To rename the project and bundles, just follow these steps:
 
