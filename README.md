@@ -159,6 +159,11 @@ To enable full Typescript checks, just open the `tsconfig.json` file and chage a
 ✅ Add Travis<br />
 ✅ Add DependaBot<br />
 
+#### Other branches for other features
+
+🚧 GraphQL (Apollo client)
+🚧 Shared Elements animation
+
 ---
 
 ## Contributors :sparkles:
