@@ -161,7 +161,7 @@ To enable full Typescript checks, just open the `tsconfig.json` file and chage a
 
 #### Other branches for other features
 
-🚧 GraphQL (Apollo client)
+🚧 GraphQL (Apollo client) <br/>
 🚧 Shared Elements animation
 
 ---
