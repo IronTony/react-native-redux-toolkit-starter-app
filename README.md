@@ -12,6 +12,8 @@
 [![Build](https://img.shields.io/badge/iOS%20Tested-success-brightgreen.svg)](https://github.com/IronTony/react-native-starter-app)
 [![Build](https://img.shields.io/badge/Android%20Tested-success-brightgreen.svg)](https://github.com/IronTony/react-native-starter-app)
 
+<a href="https://www.buymeacoffee.com/IronTony" target="_blank" style="display: block; width: 200px"><img src="https://cdn.buymeacoffee.com/buttons/lato-orange.png" alt="Buy Me A Coffee" style="height: 35px !important;width: 150px !important;" ></a>
+
 # Table of Contents <!-- omit in toc -->
 - [Installation :inbox_tray:](#installation-inbox_tray)
 - [Rename project and bundles :memo: :package:](#rename-project-and-bundles-memo-package)
