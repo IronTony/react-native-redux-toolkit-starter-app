@@ -82,7 +82,7 @@
     "react-test-renderer": "16.13.1",
     "remote-redux-devtools": "^0.5.16",
     "shx": "^0.3.2",
-    "ts-jest": "^25.4.0",
+    "ts-jest": "^25.5.1",
     "tslint": "^6.1.2"
   },
   "jest": {
