@@ -1,5 +1,5 @@
 # React Native Starter App <!-- omit in toc -->
-> A React Native template to bootstrap your next app!
+> A React Native boilerplate app to bootstrap your next app!
 
 [![License](https://img.shields.io/github/license/IronTony/react-native-starter-app)](LICENSE)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-screen.svg?style=flat)](#contributors-:sparkles:)
