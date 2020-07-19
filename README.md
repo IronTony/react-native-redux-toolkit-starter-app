@@ -1,4 +1,4 @@
-# React Native Boilerplate App <!-- omit in toc -->
+# React Native Boilerplate App Starter <!-- omit in toc -->
 > A React Native boilerplate app to bootstrap your next app!
 
 [![License](https://img.shields.io/github/license/IronTony/react-native-starter-app)](LICENSE)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
