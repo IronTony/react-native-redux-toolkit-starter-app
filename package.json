@@ -43,7 +43,7 @@
     "react": "16.13.1",
     "react-i18next": "^11.7.0",
     "react-native": "0.62.2",
-    "react-native-gesture-handler": "^1.6.1",
+    "react-native-gesture-handler": "^1.7.0",
     "react-native-localize": "1.4.0",
     "react-native-reanimated": "1.10.1",
     "react-native-safe-area-context": "^3.1.1",
