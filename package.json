@@ -47,7 +47,7 @@
     "react-native-localize": "1.4.0",
     "react-native-reanimated": "1.10.2",
     "react-native-safe-area-context": "^3.1.1",
-    "react-native-screens": "^2.9.0",
+    "react-native-screens": "^2.10.1",
     "react-native-splash-screen": "^3.2.0",
     "react-native-svg": "12.1.0",
     "react-native-version-number": "^0.3.6",
