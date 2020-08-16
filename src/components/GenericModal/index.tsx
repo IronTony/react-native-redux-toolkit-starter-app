@@ -1,11 +1,11 @@
-import React, { useCallback } from 'react';
-import { TouchableOpacity } from 'react-native';
-import { Container, Content, Icon, Text } from 'native-base';
+import React, { useCallback, FC } from 'react';
+import { TouchableOpacity, ScrollView } from 'react-native';
+import { Container, Icon, Text } from 'native-base';
 import { StackActions, useNavigation } from '@react-navigation/native';
 import GenericHeader from '@components/GenericHeader';
 import styles from './styles';
 
-const ModalPage = ({ children, pageTitle }) => {
+const ModalPage: FC = ({ children, pageTitle }) => {
   const navigation = useNavigation();
   const popAction = useCallback(() => StackActions.pop(), []);
 
@@ -27,7 +27,7 @@ const ModalPage = ({ children, pageTitle }) => {
           </TouchableOpacity>
         }
       />
-      <Content contentContainerStyle={styles.content}>{children}</Content>
+      <ScrollView contentContainerStyle={styles.content}>{children}</ScrollView>
     </Container>
   );
 };

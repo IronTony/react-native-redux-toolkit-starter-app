@@ -1,12 +1,12 @@
-import React, { useCallback } from 'react';
-import { View } from 'react-native';
+import React, { useCallback, FC } from 'react';
+import { View, ScrollView } from 'react-native';
 import { Trans, useTranslation } from 'react-i18next';
-import { Button, Container, Content, Text } from 'native-base';
+import { Button, Container, Text } from 'native-base';
 import { useNavigation, StackActions } from '@react-navigation/native';
 import GenericHeader from '@components/GenericHeader';
 import styles from './styles';
 
-const OtherPage = () => {
+const OtherPage: FC = () => {
   const [t, i18n] = useTranslation();
   const navigation = useNavigation();
   const popAction = useCallback(() => StackActions.pop(), []);
@@ -30,7 +30,7 @@ const OtherPage = () => {
         onBackClicked={goBack}
         pageName={t('AnotherPage:OtherPage')}
       />
-      <Content contentContainerStyle={styles.content}>
+      <ScrollView contentContainerStyle={styles.content}>
         <View style={styles.container}>
           <Trans style={styles.mainText} i18nKey="AnotherPage:welcome" />
           <View style={styles.languangeContainer}>
@@ -51,7 +51,7 @@ const OtherPage = () => {
             </Button>
           </View>
         </View>
-      </Content>
+      </ScrollView>
     </Container>
   );
 };

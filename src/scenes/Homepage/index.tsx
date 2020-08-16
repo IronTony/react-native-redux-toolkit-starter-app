@@ -1,16 +1,16 @@
-import React, { useEffect, useCallback } from 'react';
-import { View } from 'react-native';
+import React, { useEffect, useCallback, FC } from 'react';
+import { View, ScrollView } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { Trans, useTranslation } from 'react-i18next';
 import { useNavigation } from '@react-navigation/native';
-import { Button, Container, Content, Icon, Text } from 'native-base';
+import { Button, Container, Icon, Text } from 'native-base';
 import { getUserInfoRequest } from '@redux/actions';
 import { selectUserInfo } from '@redux/user/selectors';
 import EnvInfoView from '@components/AppVersion';
 import GenericHeader from '@components/GenericHeader';
 import styles from './styles';
 
-const Home = () => {
+const Home: FC = () => {
   const [t, i18n] = useTranslation();
   const dispatch = useDispatch();
   const userData = useSelector(selectUserInfo);
@@ -40,7 +40,7 @@ const Home = () => {
           />
         }
       />
-      <Content contentContainerStyle={styles.content}>
+      <ScrollView contentContainerStyle={styles.content}>
         <Trans
           style={styles.mainText}
           i18nKey="Homepage:welcome"
@@ -88,7 +88,7 @@ const Home = () => {
         </View>
 
         <EnvInfoView />
-      </Content>
+      </ScrollView>
     </Container>
   );
 };
