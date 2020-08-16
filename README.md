@@ -1,20 +1,23 @@
 # React Native Boilerplate App Starter <!-- omit in toc -->
+
 > A React Native boilerplate app to bootstrap your next app!
 
-[![License](https://img.shields.io/github/license/IronTony/react-native-starter-app)](LICENSE)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![License](https://img.shields.io/github/license/IronTony/react-native-boilerplate-starter-app)](LICENSE)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-screen.svg?style=flat)](#contributors-:sparkles:)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-[![Issues](https://img.shields.io/github/issues/IronTony/react-native-starter-app.svg)](https://github.com/IronTony/react-native-starter-app/issues)
+[![Issues](https://img.shields.io/github/issues/IronTony/react-native-boilerplate-starter-app.svg)](https://github.com/IronTony/react-native-boilerplate-starter-app/issues)
 
-<img src="https://img.icons8.com/color/48/000000/travis-ci.png" width="30px" /> [![Build](https://travis-ci.com/IronTony/react-native-starter-app.svg?branch=master)](https://travis-ci.com/IronTony/react-native-starter-app)
+<img src="https://img.icons8.com/color/48/000000/travis-ci.png" width="30px" /> [![Build](https://travis-ci.com/IronTony/react-native-boilerplate-starter-app.svg?branch=master)](https://travis-ci.com/IronTony/react-native-boilerplate-starter-app)
 
-[![Build](https://img.shields.io/badge/iOS%20Tested-success-brightgreen.svg)](https://github.com/IronTony/react-native-starter-app)
-[![Build](https://img.shields.io/badge/Android%20Tested-success-brightgreen.svg)](https://github.com/IronTony/react-native-starter-app)
+[![Build](https://img.shields.io/badge/iOS%20Tested-success-brightgreen.svg)](https://github.com/IronTony/react-native-boilerplate-starter-app)
+[![Build](https://img.shields.io/badge/Android%20Tested-success-brightgreen.svg)](https://github.com/IronTony/react-native-boilerplate-starter-app)
 
 <a href="https://www.buymeacoffee.com/IronTony" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/lato-blue.png" alt="Buy Me A Coffee" width="217px" /></a>
 
 # Table of Contents <!-- omit in toc -->
+
 - [Installation :inbox_tray:](#installation-inbox_tray)
 - [Rename project and bundles :memo: :package:](#rename-project-and-bundles-memo-package)
 - [Environment Setup :globe_with_meridians:](#environment-setup-globe_with_meridians)
@@ -32,9 +35,9 @@
 ## Installation :inbox_tray:
 
 ```bash
-> git clone https://github.com/IronTony/react-native-starter-app
+> git clone https://github.com/IronTony/react-native-boilerplate-starter-app
 
-> cd react-native-starter-app
+> cd react-native-boilerplate-starter-app
 
 # Install dependencies
 > yarn
@@ -54,6 +57,7 @@ See [`scripts`](#scripts-:wrench:) section for how to run the app.
 To rename the project and bundles, just follow these steps:
 
 ### iOS & Android
+
 Run `npx react-native-rename [name] -b [bundle-identifier]` from the project root
 
 Example:
@@ -66,10 +70,11 @@ Example:
 `React Native Starter App` environments variables management is based on a custom script and the `app.json` config file.
 
 Define your environment variables inside `app.json` inside the `environments` object under the desired
-environment key (such as `development`, `staging` or `production`) and then run the app for the required env 
+environment key (such as `development`, `staging` or `production`) and then run the app for the required env
 using one of the available run scripts (e.g. `ios:dev`).
 
 If you want to use IDEs such Xcode or Android Studio, you have to set up the ENV variables with these commands:
+
 - `yarn env:dev`, to set the development ENV variables
 - `yarn env:stage`, to set the staging ENV variables
 - `yarn env:prod`, to set the production ENV variables
@@ -124,22 +129,23 @@ yarn setup:ios
 
 this will run `cocoapods` to install all the required dependencies.
 
-
 ### Typescript (optional)
 
 The use of Typescript in the project is not mandatory.
 You can just write all your code using plain Javascript.
 Our hint is to create all files as below:
- - files with logic and Views with `tsx` extension
- - files with Stylesheet and others with `ts` extension
- 
+
+- files with logic and Views with `tsx` extension
+- files with Stylesheet and others with `ts` extension
+
 To enable full Typescript checks, just open the `tsconfig.json` file and chage as below:<br/>
+
 ```
 "noImplicitAny": true, // set to true to be explicit and declare all types now<br/>
 "strict": true,  // enable it to use fully Typescript set of invasive rules<br/>
 ```
 
-*REMEMBER: the entry point file in the root of the project MUST be index.js*
+_REMEMBER: the entry point file in the root of the project MUST be index.js_
 
 ---
 
@@ -177,13 +183,14 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/IronTony"><img src="https://avatars3.githubusercontent.com/u/3645225?v=4" width="100px;" alt=""/><br /><sub><b>IronTony</b></sub></a><br /><a href="#ideas-IronTony" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/IronTony/react-native-starter-app/commits?author=IronTony" title="Code">💻</a> <a href="https://github.com/IronTony/react-native-starter-app/commits?author=IronTony" title="Documentation">📖</a> <a href="https://github.com/IronTony/react-native-starter-app/issues?q=author%3AIronTony" title="Bug reports">🐛</a> <a href="#maintenance-IronTony" title="Maintenance">🚧</a> <a href="#platform-IronTony" title="Packaging/porting to new platform">📦</a> <a href="#question-IronTony" title="Answering Questions">💬</a> <a href="https://github.com/IronTony/react-native-starter-app/pulls?q=is%3Apr+reviewed-by%3AIronTony" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/IronTony/react-native-starter-app/commits?author=IronTony" title="Tests">⚠️</a> <a href="#example-IronTony" title="Examples">💡</a></td>
-    <td align="center"><a href="http://panz3r.dev"><img src="https://avatars3.githubusercontent.com/u/1754457?v=4" width="100px;" alt=""/><br /><sub><b>Mattia Panzeri</b></sub></a><br /><a href="#ideas-panz3r" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/IronTony/react-native-starter-app/commits?author=panz3r" title="Documentation">📖</a> <a href="#tool-panz3r" title="Tools">🔧</a></td>
+    <td align="center"><a href="https://github.com/IronTony"><img src="https://avatars3.githubusercontent.com/u/3645225?v=4" width="100px;" alt=""/><br /><sub><b>IronTony</b></sub></a><br /><a href="#ideas-IronTony" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/IronTony/react-native-boilerplate-starter-app/commits?author=IronTony" title="Code">💻</a> <a href="https://github.com/IronTony/react-native-boilerplate-starter-app/commits?author=IronTony" title="Documentation">📖</a> <a href="https://github.com/IronTony/react-native-boilerplate-starter-app/issues?q=author%3AIronTony" title="Bug reports">🐛</a> <a href="#maintenance-IronTony" title="Maintenance">🚧</a> <a href="#platform-IronTony" title="Packaging/porting to new platform">📦</a> <a href="#question-IronTony" title="Answering Questions">💬</a> <a href="https://github.com/IronTony/react-native-boilerplate-starter-app/pulls?q=is%3Apr+reviewed-by%3AIronTony" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/IronTony/react-native-boilerplate-starter-app/commits?author=IronTony" title="Tests">⚠️</a> <a href="#example-IronTony" title="Examples">💡</a></td>
+    <td align="center"><a href="http://panz3r.dev"><img src="https://avatars3.githubusercontent.com/u/1754457?v=4" width="100px;" alt=""/><br /><sub><b>Mattia Panzeri</b></sub></a><br /><a href="#ideas-panz3r" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/IronTony/react-native-boilerplate-starter-app/commits?author=panz3r" title="Documentation">📖</a> <a href="#tool-panz3r" title="Tools">🔧</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
