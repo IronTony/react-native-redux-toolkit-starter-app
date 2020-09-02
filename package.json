@@ -46,7 +46,7 @@
     "react-native-gesture-handler": "^1.7.0",
     "react-native-localize": "1.4.1",
     "react-native-reanimated": "1.13.0",
-    "react-native-safe-area-context": "^3.1.6",
+    "react-native-safe-area-context": "^3.1.7",
     "react-native-screens": "^2.10.1",
     "react-native-splash-screen": "^3.2.0",
     "react-native-svg": "12.1.0",
