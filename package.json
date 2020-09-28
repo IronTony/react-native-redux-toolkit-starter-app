@@ -65,7 +65,7 @@
     "@types/jest": "^26.0.14",
     "@types/node": "14.11.1",
     "@types/react": "16.9.49",
-    "@types/react-native": "0.63.19",
+    "@types/react-native": "0.63.22",
     "@types/react-test-renderer": "^16.9.3",
     "@typescript-eslint/eslint-plugin": "2.31.0",
     "@typescript-eslint/parser": "2.33.0",
