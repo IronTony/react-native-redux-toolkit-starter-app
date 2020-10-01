@@ -20,12 +20,14 @@
 
 - [Installation :inbox_tray:](#installation-inbox_tray)
 - [Rename project and bundles :memo: :package:](#rename-project-and-bundles-memo-package)
+  - [iOS & Android](#ios--android)
 - [Environment Setup :globe_with_meridians:](#environment-setup-globe_with_meridians)
 - [Scripts :wrench:](#scripts-wrench)
   - [Run the app](#run-the-app)
   - [Generate app icons](#generate-app-icons)
   - [Generate Splashscreen](#generate-splashscreen)
   - [Setup iOS](#setup-ios)
+  - [Typescript (optional)](#typescript-optional)
 - [Roadmap :running:](#roadmap-running)
 - [Contributors :sparkles:](#contributors-sparkles)
 - [License :scroll:](#license-scroll)
@@ -35,9 +37,10 @@
 ## Installation :inbox_tray:
 
 ```bash
-> git clone https://github.com/IronTony/react-native-boilerplate-starter-app
+# Setup your project
+> npx degit IronTony/react-native-boilerplate-starter-app your-new-app
 
-> cd react-native-boilerplate-starter-app
+> cd your-new-app
 
 # Install dependencies
 > yarn
