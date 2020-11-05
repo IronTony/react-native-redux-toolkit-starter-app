@@ -81,7 +81,7 @@
     "react-native-debugger-open": "^0.3.25",
     "react-test-renderer": "16.13.1",
     "remote-redux-devtools": "^0.5.16",
-    "shx": "^0.3.2",
+    "shx": "^0.3.3",
     "ts-jest": "26.4.1",
     "tslint": "^6.1.3"
   },
