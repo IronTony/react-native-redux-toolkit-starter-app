@@ -838,10 +838,10 @@
     pirates "^4.0.0"
     source-map-support "^0.5.16"
 
-"@babel/runtime@7.12.1":
-  version "7.12.1"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.1.tgz#b4116a6b6711d010b2dad3b7b6e43bf1b9954740"
-  integrity sha512-J5AIf3vPj3UwXaAzb5j1xM4WAQDX3EMgemF8rjCP3SoW09LfRKAXQKt6CoVYl230P6iWdRcBbnLDDdnqWxZSCA==
+"@babel/runtime@7.12.5", "@babel/runtime@^7.0.0", "@babel/runtime@^7.12.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3":
+  version "7.12.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
+  integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1444,31 +1444,30 @@
   resolved "https://registry.yarnpkg.com/@react-native-community/masked-view/-/masked-view-0.1.10.tgz#5dda643e19e587793bc2034dd9bf7398ad43d401"
   integrity sha512-rk4sWFsmtOw8oyx8SD3KSvawwaK7gRBSEIy2TAwURyGt+3TizssXP1r8nx3zY+R7v2vYYHXZ+k2/GULAT/bcaQ==
 
-"@react-navigation/core@^5.13.0":
-  version "5.13.0"
-  resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-5.13.0.tgz#2cd7b39fc921698dc6d47f5f41e9ad671936195f"
-  integrity sha512-h6Y8daT1Q1ARSS6swjES+lO/ydBHmopIWCcMNs3PPjGZOQizqgvzq+h2lU9w+tZApEDad/mXP0mwYXheR2D91w==
+"@react-navigation/core@^5.14.0":
+  version "5.14.0"
+  resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-5.14.0.tgz#7cfba86ca3042ddc4542bd3422b73b3cf3553f61"
+  integrity sha512-FAF7pFxqUtpkY7ylod5IYmwz0rbuYul4qqn0jKc8LHzHdZJd9pbKrJb9GIjx9Y0Zucj8XUEyE8S0SEM0JiF9PA==
   dependencies:
-    "@react-navigation/routers" "^5.5.0"
+    "@react-navigation/routers" "^5.6.0"
     escape-string-regexp "^4.0.0"
     nanoid "^3.1.15"
     query-string "^6.13.6"
     react-is "^16.13.0"
-    use-subscription "^1.5.0"
 
-"@react-navigation/native@5.8.0":
-  version "5.8.0"
-  resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-5.8.0.tgz#793e45aa3cb8d30733fc3b3fb8202da5c9772e6f"
-  integrity sha512-oIckbpcv4GMyHub8oV+rbVT7CDbUDSaQ0xW1tvDuooHnIZOwuQitA+JDslPW7dQK4U8uJIkdl8upWn0hnotDkQ==
+"@react-navigation/native@5.8.6":
+  version "5.8.6"
+  resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-5.8.6.tgz#a853a93a7daf995beb0bb1051693caf9efc4c31e"
+  integrity sha512-MCfOF1gZaugElyT0KxSA15VXGBt5RBCIW2SevZwIy41juKBxJeiCa41HTE7o5tbasp1EHtE0SzgIYz/0tneoxQ==
   dependencies:
-    "@react-navigation/core" "^5.13.0"
+    "@react-navigation/core" "^5.14.0"
     escape-string-regexp "^4.0.0"
     nanoid "^3.1.15"
 
-"@react-navigation/routers@^5.5.0":
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/@react-navigation/routers/-/routers-5.5.0.tgz#77a9aa230cfc458b72aa84344e4fcaf3bb753c71"
-  integrity sha512-IUT37OPKu0AHEbECBvhvx8IafkoMVxyY82ldR4BhLYdKYVwgjK111m8WpkezbCeaMBkLHpamQHAMFjLFY4et9w==
+"@react-navigation/routers@^5.6.0":
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/@react-navigation/routers/-/routers-5.6.0.tgz#90f56691b68cbab8d144503a66fa2a1742234d7e"
+  integrity sha512-sQRJVv5g0Zou1wouEnX/zKQi5QJEIccTd7oLy9ex2MJKjALTsfWUMWaFCZQLZjBJqT7Hz2GKp+VKlep6Dzq7Wg==
   dependencies:
     nanoid "^3.1.15"
 
@@ -3367,10 +3366,10 @@ escodegen@^1.14.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-prettier@^6.0.0, eslint-config-prettier@^6.10.1, eslint-config-prettier@^6.14.0:
-  version "6.14.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.14.0.tgz#390e7863a8ae99970981933826476169285b3a27"
-  integrity sha512-DbVwh0qZhAC7CNDWcq8cBdK6FcVHiMTKmCypOPWeZkp9hJ8xYwTaWSa6bb6cjfi8KOeJy0e9a8Izxyx+O4+gCQ==
+eslint-config-prettier@^6.0.0, eslint-config-prettier@^6.10.1, eslint-config-prettier@^6.15.0:
+  version "6.15.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.15.0.tgz#7f93f6cb7d45a92f1537a70ecc06366e1ac6fed9"
+  integrity sha512-a1+kOYLR8wMGustcgAjdydMsQ2A/2ipRPwRKUmfYaSxc9ZPcrku080Ctl6zrZzZNs/U82MjSv+qKREkoq3bJaw==
   dependencies:
     get-stdin "^6.0.0"
 
@@ -8764,13 +8763,6 @@ use-subscription@^1.0.0:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/use-subscription/-/use-subscription-1.4.1.tgz#edcbcc220f1adb2dd4fa0b2f61b6cc308e620069"
   integrity sha512-7+IIwDG/4JICrWHL/Q/ZPK5yozEnvRm6vHImu0LKwQlmWGKeiF7mbAenLlK/cTNXrTtXHU/SFASQHzB6+oSJMQ==
-  dependencies:
-    object-assign "^4.1.1"
-
-use-subscription@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/use-subscription/-/use-subscription-1.5.0.tgz#0df66fdf97b9a340147ad72f76fac1db6f56d240"
-  integrity sha512-/FVRiB2I7NDjzWoNBYPt6YkkvleMm/lFtxj1hH6nX2TVrJ/5UTbovw9OE1efv2Zl0HoAYuTjM7zHd9OsABn5sg==
   dependencies:
     object-assign "^4.1.1"
 
