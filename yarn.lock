@@ -7096,10 +7096,10 @@ react-native-localize@2.0.1:
   resolved "https://registry.yarnpkg.com/react-native-localize/-/react-native-localize-2.0.1.tgz#a5bf2f2910260ac2574d5ca5d5f95dc8bbc4ac1f"
   integrity sha512-Tuf26iH7/pHd+yCAORD2EPLhkHdGTMEUXMiiKb4Pz69dE48R7C+MA30EqubE6qTlvAs6gHM+2E5dzLAxcGH5UA==
 
-react-native-reanimated@1.13.1:
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-1.13.1.tgz#c370c32cc4d447ae896cb029bb9c6a2f7608c5b4"
-  integrity sha512-3sF46jts9MbktgIasf0sTM8uhOYO5a5Q3YyQ4X1jjSE82n/fY2nW3XTFsLGfLEpK2ir4XSDhQWVgFHazaXZTww==
+react-native-reanimated@1.13.2:
+  version "1.13.2"
+  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-1.13.2.tgz#1ae5457b24b4913d173a5a064bb28eae7783d293"
+  integrity sha512-O+WhgxSjOIzcVdAAvx+h2DY331Ek1knKlaq+jsNLpC1fhRy9XTdOObovgob/aF2ve9uJfPEawCx8381g/tUJZQ==
   dependencies:
     fbjs "^1.0.0"
 
