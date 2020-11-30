@@ -57,7 +57,7 @@
     "typescript": "4.1.2"
   },
   "devDependencies": {
-    "@babel/core": "7.12.3",
+    "@babel/core": "7.12.9",
     "@babel/runtime": "7.12.5",
     "@panz3r/react-native-toolbox": "^2.0.0",
     "@react-native-community/eslint-config": "^2.0.0",
