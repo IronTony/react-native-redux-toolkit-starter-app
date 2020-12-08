@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
   backButtonIcon: {
     color: COLORS.HEADER.HEADER_TEXT,
     marginRight: 8,
+    fontSize: 20,
   },
   bodyContainer: {
     alignItems: 'center',

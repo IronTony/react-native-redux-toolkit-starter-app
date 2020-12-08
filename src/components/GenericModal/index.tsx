@@ -1,11 +1,16 @@
-import React, { useCallback, FC } from 'react';
+import React, { useCallback, FC, ReactNode } from 'react';
 import { TouchableOpacity, ScrollView } from 'react-native';
 import { Container, Icon, Text } from 'native-base';
 import { StackActions, useNavigation } from '@react-navigation/native';
 import GenericHeader from '@components/GenericHeader';
 import styles from './styles';
 
-const ModalPage: FC = ({ children, pageTitle }) => {
+interface IModalPage {
+  children: ReactNode;
+  pageTitle: string;
+}
+
+const ModalPage: FC<IModalPage> = ({ children, pageTitle }) => {
   const navigation = useNavigation();
   const popAction = useCallback(() => StackActions.pop(), []);
 
@@ -19,11 +24,7 @@ const ModalPage: FC = ({ children, pageTitle }) => {
         BodyHeader={<Text style={styles.pageTitle}>{pageTitle}</Text>}
         RightAction={
           <TouchableOpacity onPress={() => closeModal()}>
-            <Icon
-              type="Ionicons"
-              name="md-close"
-              style={styles.headerIconContent}
-            />
+            <Icon type="MaterialCommunityIcons" name="close" style={styles.headerIconContent} />
           </TouchableOpacity>
         }
       />

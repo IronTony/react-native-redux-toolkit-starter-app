@@ -3,13 +3,16 @@
   "displayName": "ReactNativeStarterApp",
   "environments": {
     "development": {
-      "API_URL": "http://dev.api.com"
+      "API_URL": "https://ghibliapi.herokuapp.com",
+      "ENV": "development"
     },
     "staging": {
-      "API_URL": "http://staging.api.com"
+      "API_URL": "https://ghibliapi.herokuapp.com",
+      "ENV": "staging"
     },
     "production": {
-      "API_URL": "http://prod.api.com"
+      "API_URL": "https://ghibliapi.herokuapp.com",
+      "ENV": "production"
     }
   }
 }

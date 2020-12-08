@@ -1,36 +1,31 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { FC, memo, ReactNode } from 'react';
 import { Body, Button, Header, Icon, Left, Right, Text } from 'native-base';
 import { Trans } from 'react-i18next';
 import { COLORS } from '@theme/colors';
 import styles from './styles';
 
-const GenericHeader = ({
-  BodyHeader,
-  LeftAction,
-  pageName,
-  RightAction,
-  onBackClicked,
-}) => {
+interface IGenericHeader {
+  BodyHeader?: ReactNode;
+  LeftAction?: ReactNode;
+  pageName?: string;
+  RightAction?: ReactNode;
+  onBackClicked?: () => void;
+}
+
+const GenericHeader: FC<IGenericHeader> = ({ BodyHeader, LeftAction, pageName, RightAction, onBackClicked }) => {
   return (
-    <Header
-      androidStatusBarColor={COLORS.BAR_COLOR}
-      style={styles.headerContainer}
-    >
+    <Header androidStatusBarColor={COLORS.BAR_COLOR} style={styles.headerContainer}>
       <Left style={styles.flex1}>
         {/*
           The GenericHeader component accepts an onBackClicked prop.
           The route where you want to go is specified in the import of this Header in your scene component
         */}
         {!!onBackClicked && (
-          <Button
-            onPress={onBackClicked}
-            style={styles.backButtonContainer}
-            transparent
-          >
+          <Button onPress={onBackClicked} style={styles.backButtonContainer} transparent>
             <Icon
+              type="SimpleLineIcons"
               // Ionicons icon is the default
-              name="ios-arrow-back"
+              name="arrow-left"
               style={styles.backButtonIcon}
             />
             <Trans style={styles.backButtonStyle} i18nKey="Header:back" />
@@ -60,20 +55,4 @@ const GenericHeader = ({
   );
 };
 
-GenericHeader.propTypes = {
-  BodyHeader: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
-  LeftAction: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
-  pageName: PropTypes.string,
-  RightAction: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
-  onBackClicked: PropTypes.func,
-};
-
-GenericHeader.defaultProps = {
-  BodyHeader: null,
-  LeftAction: null,
-  pageName: '',
-  RightAction: null,
-  onBackClicked: null,
-};
-
-export default React.memo(GenericHeader);
+export default memo(GenericHeader);

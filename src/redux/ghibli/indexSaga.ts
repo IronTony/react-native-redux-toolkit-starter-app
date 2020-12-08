@@ -1,8 +1,8 @@
 import { all, AllEffect, call, ForkEffect, spawn } from 'redux-saga/effects';
-import userSagas from '@redux/ghibli/sagas';
+import filmSaga from './sagas';
 
-function* rootSaga(): Generator<AllEffect<ForkEffect<void>>, any, unknown> {
-  const sagas = [userSagas];
+function* filmsRootSaga(): Generator<AllEffect<ForkEffect<void>>, void, unknown> {
+  const sagas = [filmSaga];
 
   yield all(
     sagas.map((saga) =>
@@ -20,4 +20,4 @@ function* rootSaga(): Generator<AllEffect<ForkEffect<void>>, any, unknown> {
   );
 }
 
-export default rootSaga;
+export default filmsRootSaga;

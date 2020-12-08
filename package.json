@@ -30,7 +30,9 @@
     "ios:bundle:create": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios",
     "ios:assemble:debug": "xcodebuild -quiet -workspace ios/ReactNativeStarterApp.xcworkspace -scheme ReactNativeStarterApp -configuration Release -sdk iphonesimulator -destination platform='iOS Simulator',OS=13.3,name='iPhone 11 Pro Max' CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO",
     "build:dev:android": "run-s env:dev android:bundle:create android:assemble:debug",
-    "build:dev:ios": "run-s env:dev setup:ios ios:assemble:debug"
+    "build:dev:ios": "run-s env:dev setup:ios ios:assemble:debug",
+    "dependencies:checkCircular": "madge src/ --circular",
+    "dependencies:graph": "madge src/ --circular --image deps-graph.svg"
   },
   "dependencies": {
     "@react-native-community/async-storage": "1.12.1",
@@ -50,11 +52,13 @@
     "react-native-screens": "^2.15.0",
     "react-native-splash-screen": "^3.2.0",
     "react-native-svg": "12.1.0",
+    "react-native-vector-icons": "^7.1.0",
     "react-native-version-number": "^0.3.6",
     "react-redux": "^7.2.2",
     "redux-persist": "^6.0.0",
     "redux-saga": "^1.1.3",
-    "typescript": "4.1.2"
+    "typescript": "4.1.2",
+    "with-query": "^1.3.0"
   },
   "devDependencies": {
     "@babel/core": "7.12.9",
@@ -66,6 +70,7 @@
     "@types/node": "14.14.10",
     "@types/react": "17.0.0",
     "@types/react-native": "0.63.37",
+    "@types/react-redux": "^7.1.11",
     "@types/react-test-renderer": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "4.9.0",
     "@typescript-eslint/parser": "4.9.0",
@@ -75,6 +80,7 @@
     "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-prettier": "3.2.0",
     "jest": "26.6.3",
+    "madge": "^3.12.0",
     "metro-react-native-babel-preset": "^0.64.0",
     "npm-run-all": "^4.1.5",
     "prettier": "2.2.1",
@@ -87,5 +93,18 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "madge": {
+    "tsConfig": "./tsconfig.json",
+    "fileExtensions": "ts",
+    "excludeRegExp": [
+      ".*\\.test\\.ts$",
+      ".*\\.test\\.tsx$"
+    ],
+    "detectiveOptions": {
+      "ts": {
+        "skipTypeImports": true
+      }
+    }
   }
 }

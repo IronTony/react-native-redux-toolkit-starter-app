@@ -9,6 +9,7 @@ target 'ReactNativeStarterApp' do
   use_react_native!(:path => config["reactNativePath"])
 
   pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
   target 'ReactNativeStarterAppTests' do
     inherit! :complete

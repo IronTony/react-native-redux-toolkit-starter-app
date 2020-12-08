@@ -1,5 +1,6 @@
 import AsyncStorage from '@react-native-community/async-storage';
 import { findBestAvailableLanguage } from 'react-native-localize';
+import noop from 'lodash/noop';
 import { defaultLanguage, languagesResources } from './languageConfig';
 
 const LOCALE_PERSISTENCE_KEY = 'app_locale';
@@ -7,12 +8,10 @@ const LOCALE_PERSISTENCE_KEY = 'app_locale';
 const RNLanguageDetector = {
   type: 'languageDetector',
   async: true,
-  detect: async cb => {
+  detect: async (cb: (detectedLocale: string) => void): Promise<void> => {
     try {
       // Retrieve cached locale
-      const persistedLocale = await AsyncStorage.getItem(
-        LOCALE_PERSISTENCE_KEY,
-      );
+      const persistedLocale = await AsyncStorage.getItem(LOCALE_PERSISTENCE_KEY);
 
       // If not found, detect from device
       if (!persistedLocale) {
@@ -32,8 +31,8 @@ const RNLanguageDetector = {
       cb(defaultLanguage);
     }
   },
-  init: () => {},
-  cacheUserLanguage: locale => {
+  init: noop,
+  cacheUserLanguage: (locale: string): void => {
     AsyncStorage.setItem(LOCALE_PERSISTENCE_KEY, locale);
   },
 };

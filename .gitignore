@@ -31,6 +31,11 @@ build/
 .gradle
 local.properties
 *.iml
+android/app/release
+
+# Android
+*.hprof
+*.old
 
 # node.js
 #
