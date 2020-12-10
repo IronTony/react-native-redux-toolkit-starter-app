@@ -12,7 +12,7 @@ module.exports = {
   rules: {
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/explicit-function-return-type': [
-      1,
+      'warn',
       {
         allowExpressions: true,
         allowHigherOrderFunctions: true,

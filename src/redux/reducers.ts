@@ -1,7 +1,7 @@
-import user from './user/reducers';
+import { allFilmsReducer } from '@redux/ghibli/reducers';
 
 const reducers = {
-  user,
+  films: allFilmsReducer,
 };
 
 export default reducers;

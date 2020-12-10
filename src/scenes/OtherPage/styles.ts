@@ -7,16 +7,14 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.PRIMARY,
   },
   content: {
-    alignItems: 'center',
     flex: 1,
     flexGrow: 1,
-    justifyContent: 'center',
     padding: 15,
   },
   mainText: {
     color: COLORS.TEXT.PRIMARY,
     fontFamily: fonts.regular,
-    textAlign: 'center',
+    paddingVertical: 10,
   },
   languangeContainer: {
     flexDirection: 'row',

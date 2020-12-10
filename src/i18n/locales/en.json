@@ -7,7 +7,7 @@
     "back": "Back"
   },
   "Homepage": {
-    "welcome": "Thank you to use the {{name}} {{surname}}\n😍 😘 🙏🏻",
+    "welcome": "Thank you for using the React Native Starter App\n😍 😘 🙏🏻",
     "releasedWithLove": "Created and released with ❤️ for you",
     "goToAnotherPage": "Go to another page",
     "openModal": "Open Modal"

@@ -1,8 +1,5 @@
-import React from 'react';
-import {
-  createStackNavigator,
-  TransitionPresets,
-} from '@react-navigation/stack';
+import React, { FC } from 'react';
+import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
 import Homepage from '@scenes/Homepage';
 import OtherPage from '@scenes/OtherPage';
 import ModalPage from '@scenes/ModalPage';
@@ -11,7 +8,7 @@ import { routeOverlayOption } from './routeOptions';
 const RootStack = createStackNavigator();
 const MainStack = createStackNavigator();
 
-export const MainStackScreen = () => {
+export const MainStackScreen: FC = () => {
   return (
     <MainStack.Navigator initialRouteName={'Home'}>
       <MainStack.Screen
@@ -34,7 +31,7 @@ export const MainStackScreen = () => {
   );
 };
 
-export const RootStackScreen = () => {
+export const RootStackScreen: FC = () => {
   return (
     <RootStack.Navigator mode="modal" screenOptions={routeOverlayOption}>
       <RootStack.Screen

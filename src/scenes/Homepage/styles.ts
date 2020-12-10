@@ -51,10 +51,11 @@ const styles = StyleSheet.create({
     color: COLORS.HEADER.HEADER_TEXT,
   },
   navigationButtonBordered: {
+    alignSelf: 'center',
     backgroundColor: PALETTE.TRANSPARENT,
-    borderWidth: 1,
     borderColor: PALETTE.ALIZARIN,
-    justifyContent: 'center',
+    borderWidth: 1,
+    marginTop: 15,
   },
   navigationButtonBorderedText: {
     color: COLORS.TEXT.SECONDARY,
