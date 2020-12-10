@@ -64,7 +64,7 @@ To rename the project and bundles, just follow these steps:
 Run `npx react-native-rename [name] -b [bundle-identifier]` from the project root
 
 Example:
-`npx react-native-rename "Test New App" -b com.webbable.testnewapp`
+`npx react-native-rename "Test New App" -b com.testnewapp`
 
 ---
 
