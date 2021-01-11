@@ -69,7 +69,7 @@
     "@types/jest": "^26.0.20",
     "@types/node": "14.14.19",
     "@types/react": "17.0.0",
-    "@types/react-native": "0.63.43",
+    "@types/react-native": "0.63.45",
     "@types/react-redux": "^7.1.15",
     "@types/react-test-renderer": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "4.11.1",
