@@ -38,7 +38,7 @@
     "@react-native-community/async-storage": "1.12.1",
     "@react-native-community/masked-view": "0.1.10",
     "@react-navigation/native": "5.8.10",
-    "@react-navigation/stack": "5.12.8",
+    "@react-navigation/stack": "5.13.0",
     "@reduxjs/toolkit": "^1.5.0",
     "i18next": "19.8.4",
     "native-base": "^2.13.15",
