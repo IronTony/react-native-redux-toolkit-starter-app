@@ -43,7 +43,7 @@
     "i18next": "19.8.7",
     "native-base": "^2.15.2",
     "react": "16.13.1",
-    "react-i18next": "^11.8.5",
+    "react-i18next": "^11.8.6",
     "react-native": "0.63.4",
     "react-native-gesture-handler": "^1.9.0",
     "react-native-localize": "2.0.1",
