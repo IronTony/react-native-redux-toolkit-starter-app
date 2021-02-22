@@ -172,7 +172,7 @@ _REMEMBER: the entry point file in the root of the project MUST be index.js_
 
 #### Other branches for other features
 
-🚧 Design System (remove Nativebase with UIKitten)
+🚧 Design System (remove Nativebase with UIKitten) <br/>
 🚧 GraphQL (Apollo client) <br/>
 🚧 Shared Elements animation
 
