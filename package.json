@@ -40,7 +40,7 @@
     "@react-navigation/native": "5.9.3",
     "@react-navigation/stack": "5.14.3",
     "@reduxjs/toolkit": "^1.5.0",
-    "i18next": "19.8.7",
+    "i18next": "19.9.1",
     "native-base": "^2.15.2",
     "react": "16.13.1",
     "react-i18next": "^11.8.8",
