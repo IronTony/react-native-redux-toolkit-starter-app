@@ -29,6 +29,7 @@
   - [Setup iOS](#setup-ios)
   - [Typescript (optional)](#typescript-optional)
 - [Roadmap :running:](#roadmap-running)
+    - [Other branches for other features](#other-branches-for-other-features)
 - [Contributors :sparkles:](#contributors-sparkles)
 - [License :scroll:](#license-scroll)
 
@@ -164,7 +165,8 @@ _REMEMBER: the entry point file in the root of the project MUST be index.js_
 ✅ Add `redux-saga`<br/>
 ✅ Add `i18next`<br/>
 ✅ Add `react-navigation v5` ❤️<br/>
-✅ Add UI Design System (`NativeBase`)<br />
+❌ Removed `native-base` br />
+✅ Add new UI Design System (`UIKitten v5`)<br />
 ✅ Add `Env`variables selection experimental way ⚗️⚗️⚗️<br />
 ✅ Add Typescript (optional use. Read the DOC above)<br />
 ✅ Add Travis<br />
@@ -172,7 +174,6 @@ _REMEMBER: the entry point file in the root of the project MUST be index.js_
 
 #### Other branches for other features
 
-🚧 Design System (remove Nativebase with UIKitten) <br/>
 🚧 GraphQL (Apollo client) <br/>
 🚧 Shared Elements animation
 
