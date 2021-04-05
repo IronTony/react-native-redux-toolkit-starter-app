@@ -1,10 +1,11 @@
 import { StyleSheet } from 'react-native';
-import { COLORS } from '@theme/colors';
+import { palette } from '@theme/colors';
 import { fonts } from '@theme/fonts';
+import theme from '@theme';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: COLORS.PRIMARY,
+    backgroundColor: theme.colors.primary,
   },
   content: {
     flex: 1,
@@ -12,7 +13,7 @@ const styles = StyleSheet.create({
     padding: 15,
   },
   mainText: {
-    color: COLORS.TEXT.PRIMARY,
+    color: palette.CLOUDS,
     fontFamily: fonts.regular,
     paddingVertical: 10,
   },

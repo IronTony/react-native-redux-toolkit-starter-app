@@ -1,8 +1,9 @@
 import React, { useCallback, FC, ReactNode } from 'react';
-import { TouchableOpacity, ScrollView } from 'react-native';
-import { Container, Icon, Text } from 'native-base';
+import { TouchableOpacity, ScrollView, Text } from 'react-native';
 import { StackActions, useNavigation } from '@react-navigation/native';
+import { Icon } from '@ui-kitten/components';
 import GenericHeader from '@components/GenericHeader';
+import NHCSafeAreaView from '@components/NHCSafeAreaView';
 import styles from './styles';
 
 interface IModalPage {
@@ -19,17 +20,19 @@ const ModalPage: FC<IModalPage> = ({ children, pageTitle }) => {
   }, [navigation, popAction]);
 
   return (
-    <Container style={styles.container}>
+    <NHCSafeAreaView>
       <GenericHeader
         BodyHeader={<Text style={styles.pageTitle}>{pageTitle}</Text>}
         RightAction={
-          <TouchableOpacity onPress={() => closeModal()}>
-            <Icon type="MaterialCommunityIcons" name="close" style={styles.headerIconContent} />
+          <TouchableOpacity onPress={closeModal}>
+            <Icon pack="MaterialCommunityIcons" name="close" style={styles.headerIconContent} />
           </TouchableOpacity>
         }
       />
-      <ScrollView contentContainerStyle={styles.content}>{children}</ScrollView>
-    </Container>
+      <ScrollView contentContainerStyle={styles.content} style={styles.container}>
+        {children}
+      </ScrollView>
+    </NHCSafeAreaView>
   );
 };
 

@@ -8,7 +8,7 @@ const EnvInfoView: FC = () => {
   return (
     <View>
       {/* This is just to show you how to get values from the generated ENV file */}
-      <Text style={styles.infoText}>{`API: ${env.API_URL}`}</Text>
+      <Text style={styles.infoText}>{`ENV: ${env.ENV}`}</Text>
 
       <Text style={styles.infoText}>{`v.${VersionNumber.appVersion}-${VersionNumber.buildVersion}`}</Text>
     </View>

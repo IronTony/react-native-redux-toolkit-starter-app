@@ -21,7 +21,7 @@ i18n
     },
 
     react: {
-      wait: true,
+      useSuspense: true,
       defaultTransParent: Text,
       transSupportBasicHtmlNodes: false,
     },

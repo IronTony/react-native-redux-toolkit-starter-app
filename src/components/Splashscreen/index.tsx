@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { FC, useEffect } from 'react';
 import { View } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 
 /**
  * An empty component used to manage SplashScreen from Suspense fallback
  */
-const Splashscreen = () => {
+const Splashscreen: FC = () => {
   useEffect(() => {
     return () => {
       // Hide Splashscreen when Fallback get willUnmount

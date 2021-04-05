@@ -1,10 +1,10 @@
 import { StyleSheet } from 'react-native';
-import { COLORS } from '@theme/colors';
+import { palette } from '@theme/colors';
 import { fonts } from '@theme/fonts';
 
 const styles = StyleSheet.create({
   mainText: {
-    color: COLORS.TEXT.PRIMARY,
+    color: palette.CLOUDS,
     fontFamily: fonts.regular,
     textAlign: 'center',
   },

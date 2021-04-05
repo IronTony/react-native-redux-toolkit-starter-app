@@ -1,11 +1,12 @@
-import React, { useCallback, FC, useEffect } from 'react';
-import { View, ScrollView, FlatList, Text } from 'react-native';
+import * as React from 'react';
+import { useCallback, FC, useEffect } from 'react';
+import { View, ScrollView, Text, FlatList } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { Container } from 'native-base';
 import { useNavigation, StackActions } from '@react-navigation/native';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllFilmsRequest } from '@redux/actions';
 import { allFilms } from '@redux/ghibli/selectors';
+import NHCSafeAreaView from '@components/NHCSafeAreaView';
 import GenericHeader from '@components/GenericHeader';
 import styles from './styles';
 
@@ -34,14 +35,15 @@ const OtherPage: FC = () => {
   );
 
   return (
-    <Container style={styles.container}>
-      <GenericHeader onBackClicked={goBack} pageName={t('AnotherPage:OtherPage')} />
-      <ScrollView contentContainerStyle={styles.content}>
+    <NHCSafeAreaView>
+      <GenericHeader onBackClicked={goBack} title={t('AnotherPage:OtherPage')} />
+
+      <ScrollView contentContainerStyle={styles.content} style={styles.container}>
         <View style={styles.container}>
           <FlatList data={allMovies} renderItem={renderItem} keyExtractor={(item) => item.id} />
         </View>
       </ScrollView>
-    </Container>
+    </NHCSafeAreaView>
   );
 };
 

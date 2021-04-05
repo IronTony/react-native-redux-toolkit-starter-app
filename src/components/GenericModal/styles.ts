@@ -1,10 +1,10 @@
 import { StyleSheet } from 'react-native';
-import { COLORS } from '@theme/colors';
+import { palette } from '@theme/colors';
 import { fonts } from '@theme/fonts';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: COLORS.PRIMARY,
+    backgroundColor: palette.MIDNIGHT_BLUE,
   },
   content: {
     flex: 1,
@@ -12,11 +12,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   headerIconContent: {
+    fontSize: 24,
     marginRight: 10,
   },
   pageTitle: {
-    color: COLORS.TEXT.SECONDARY,
+    color: palette.ALIZARIN,
     fontFamily: fonts.regular,
+    fontSize: 20,
     textAlign: 'center',
   },
 });

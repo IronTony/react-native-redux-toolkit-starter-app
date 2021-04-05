@@ -1,38 +1,49 @@
 import { StyleSheet } from 'react-native';
-import { COLORS } from '@theme/colors';
 import { fonts } from '@theme/fonts';
+import theme from '@theme';
 
 const styles = StyleSheet.create({
-  flex1: {
-    flex: 1,
-  },
   headerContainer: {
-    backgroundColor: COLORS.HEADER.BACKGROUND,
+    backgroundColor: theme.colors.headerBackground,
+    paddingHorizontal: theme.spacing.lg,
+    zIndex: 9999,
   },
-  backButtonContainer: {
-    borderRadius: 20,
-    paddingHorizontal: 20,
-    paddingVertical: 5,
+  HeaderShadow: {
+    elevation: 3,
+    shadowColor: theme.colors.cardShadow,
+    shadowOffset: { width: 0, height: 5 },
+    shadowOpacity: 0.7,
+    shadowRadius: 3,
+    zIndex: 1,
   },
-  backButtonStyle: {
-    color: COLORS.HEADER.HEADER_TEXT,
-    fontFamily: fonts.bold,
-    fontSize: 18,
-  },
+  backButtonContainer: {},
+  // backButtonStyle: {
+  //   color: theme.colors.backButtonText,
+  //   fontFamily: fonts.boldOS,
+  //   fontSize: 18,
+  // },
   backButtonIcon: {
-    color: COLORS.HEADER.HEADER_TEXT,
+    color: theme.colors.primary,
     marginRight: 8,
-    fontSize: 20,
+    fontSize: 24,
   },
   bodyContainer: {
     alignItems: 'center',
     flex: 1,
   },
   mainPageTitle: {
-    flex: 0,
+    color: theme.colors.primary,
     fontFamily: fonts.bold,
-    fontSize: 18,
+    fontSize: 24,
+    lineHeight: 24,
     textAlign: 'center',
+    width: 220,
+  },
+  BodyContent: {
+    alignItems: 'center',
+    flex: 1,
+    justifyContent: 'center',
+    width: '100%',
   },
 });
 

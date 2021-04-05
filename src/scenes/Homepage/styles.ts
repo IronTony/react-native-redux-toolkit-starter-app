@@ -1,10 +1,11 @@
 import { StyleSheet } from 'react-native';
-import { COLORS, PALETTE } from '@theme/colors';
+import { palette } from '@theme/colors';
 import { fonts } from '@theme/fonts';
+import theme from '@theme';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: COLORS.PRIMARY,
+    backgroundColor: theme.colors.primary,
   },
   content: {
     alignItems: 'center',
@@ -20,14 +21,14 @@ const styles = StyleSheet.create({
     margin: 8,
   },
   mainText: {
-    color: COLORS.TEXT.PRIMARY,
+    color: palette.WHITE,
     fontFamily: fonts.bold,
     fontSize: 30,
     paddingBottom: 20,
     textAlign: 'center',
   },
   subText: {
-    color: COLORS.CONTRAST,
+    color: palette.WHITE,
     fontFamily: fonts.regular,
     fontSize: 13,
     paddingBottom: 20,
@@ -37,28 +38,32 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   navigationButton: {
-    backgroundColor: COLORS.LIGHT,
+    backgroundColor: palette.SUN_FLOWER,
     borderWidth: 0,
     justifyContent: 'center',
   },
   buttonText: {
+    color: palette.WHITE,
     fontFamily: fonts.regular,
   },
   iconContent: {
-    marginRight: 0,
+    color: palette.WHITE,
+    marginRight: 5,
+    fontSize: 20,
   },
   headerIconContent: {
-    color: COLORS.HEADER.HEADER_TEXT,
+    color: palette.PETER_RIVER,
+    fontSize: 35,
   },
   navigationButtonBordered: {
     alignSelf: 'center',
-    backgroundColor: PALETTE.TRANSPARENT,
-    borderColor: PALETTE.ALIZARIN,
+    backgroundColor: palette.TRANSPARENT,
+    borderColor: palette.ALIZARIN,
     borderWidth: 1,
     marginTop: 15,
   },
   navigationButtonBorderedText: {
-    color: COLORS.TEXT.SECONDARY,
+    color: palette.WHITE,
     fontFamily: fonts.regular,
   },
   marginTop10: {

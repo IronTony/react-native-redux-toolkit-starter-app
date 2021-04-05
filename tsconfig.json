@@ -1,24 +1,28 @@
 {
   "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["es2017"],
     "allowJs": true,
+    "jsx": "react-native",
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true, // enable it to use fully Typescript set of invasive rules
     "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
     "declaration": true, // Generate corresponding .d.ts file
     "esModuleInterop": true,
     "experimentalDecorators": true, // Enables experimental support for ES decorators
     "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file.
-    "isolatedModules": true,
-    "jsx": "react",
-    "lib": ["es6"],
+
     "moduleResolution": "node",
-    "noEmit": true,
+
     "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statement
     "noImplicitAny": false, // set to true to be explicit and declare all types now
-    "noUnusedLocals": false, // Report errors on unused locals
+    "noUnusedLocals": true, // Report errors on unused locals
     "noUnusedParameters": true, // Report errors on unused parameters
     "resolveJsonModule": true,
     "skipLibCheck": true, // Skip type checking of all declaration files
-    "target": "esnext",
-    // "strict": true,  // enable it to use fully Typescript set of invasive rules
+
     "baseUrl": ".",
       "paths": {
         "@*": ["src/*"],
