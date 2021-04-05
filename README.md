@@ -165,7 +165,7 @@ _REMEMBER: the entry point file in the root of the project MUST be index.js_
 ✅ Add `redux-saga`<br/>
 ✅ Add `i18next`<br/>
 ✅ Add `react-navigation v5` ❤️<br/>
-❌ Removed `native-base` br />
+❌ Removed `native-base` <br/>
 ✅ Add new UI Design System (`UIKitten v5`)<br />
 ✅ Add `Env`variables selection experimental way ⚗️⚗️⚗️<br />
 ✅ Add Typescript (optional use. Read the DOC above)<br />
