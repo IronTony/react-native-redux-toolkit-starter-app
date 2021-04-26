@@ -47,7 +47,7 @@
     "@ui-kitten/components": "^5.0.0",
     "i18next": "20.2.1",
     "react": "16.13.1",
-    "react-i18next": "^11.8.12",
+    "react-i18next": "^11.8.13",
     "react-native": "0.63.4",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-localize": "2.0.3",
