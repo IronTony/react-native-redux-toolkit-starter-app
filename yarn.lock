@@ -7464,10 +7464,10 @@ react-native-iphone-x-helper@^1.3.0:
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
   integrity sha512-HOf0jzRnq2/aFUcdCJ9w9JGzN3gdEg0zFE4FyYlp4jtidqU03D5X7ZegGKfT1EWteR0gPBGp9ye5T5FvSWi9Yg==
 
-react-native-localize@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/react-native-localize/-/react-native-localize-2.0.2.tgz#b0df6a88cf9947489deaa828c4c29246681fde16"
-  integrity sha512-4Ii7lqiD9iL0LxTWifAiEsDcDPpvos/29fEVkHxgEDD7J5f+NROMkFSFomKgz1Cab1TmN5mau3o8yFmYrPFcnw==
+react-native-localize@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-localize/-/react-native-localize-2.0.3.tgz#fa91ecb01fa5e4495ab952a673c1562ec456d216"
+  integrity sha512-6SILy2yX/U1rTjF56/BiywcFXeO9AY8LmPF2p3TgP3Y2uKejxAOOQ4nzr+bAP1h+X5TaBmwTPBGNMZ1TttEJvA==
 
 react-native-reanimated@2.1.0:
   version "2.1.0"
