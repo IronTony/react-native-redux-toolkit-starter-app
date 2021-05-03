@@ -40,7 +40,7 @@
   "dependencies": {
     "@eva-design/eva": "^2.0.0",
     "@react-native-community/async-storage": "1.12.1",
-    "@react-native-community/masked-view": "0.1.10",
+    "@react-native-community/masked-view": "0.1.11",
     "@react-navigation/native": "5.9.4",
     "@react-navigation/stack": "5.14.4",
     "@reduxjs/toolkit": "^1.5.1",
