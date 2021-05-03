@@ -1,0 +1,44 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    timezone: Europe/Rome
+  open-pull-requests-limit: 10
+  reviewers:
+  - IronTony
+  labels:
+  - dependencies
+  ignore:
+  - dependency-name: typescript
+    versions:
+    - 4.2.4
+  - dependency-name: "@typescript-eslint/eslint-plugin"
+    versions:
+    - 4.14.0
+    - 4.15.2
+    - 4.19.0
+  - dependency-name: "@types/react-native"
+    versions:
+    - 0.63.50
+    - 0.64.2
+  - dependency-name: "@typescript-eslint/parser"
+    versions:
+    - 4.14.0
+    - 4.17.0
+  - dependency-name: "@react-navigation/stack"
+    versions:
+    - 5.14.1
+  - dependency-name: eslint
+    versions:
+    - 7.18.0
+  - dependency-name: "@babel/runtime"
+    versions:
+    - 7.13.8
+  - dependency-name: react-native-screens
+    versions:
+    - 2.18.0
+  - dependency-name: "@types/node"
+    versions:
+    - 14.14.28
