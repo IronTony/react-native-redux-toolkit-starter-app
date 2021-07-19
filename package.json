@@ -43,7 +43,7 @@
     "@react-native-community/masked-view": "0.1.11",
     "@react-navigation/native": "5.9.4",
     "@react-navigation/stack": "5.14.5",
-    "@reduxjs/toolkit": "^1.6.0",
+    "@reduxjs/toolkit": "^1.6.1",
     "@ui-kitten/components": "^5.1.0",
     "i18next": "20.3.2",
     "react": "17.0.2",
