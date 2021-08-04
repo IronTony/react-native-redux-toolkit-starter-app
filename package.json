@@ -41,7 +41,7 @@
     "@eva-design/eva": "^2.1.1",
     "@react-native-community/async-storage": "1.12.1",
     "@react-native-community/masked-view": "0.1.11",
-    "@react-navigation/native": "5.9.4",
+    "@react-navigation/native": "5.9.6",
     "@react-navigation/stack": "5.14.7",
     "@reduxjs/toolkit": "^1.6.1",
     "@ui-kitten/components": "^5.1.1",
