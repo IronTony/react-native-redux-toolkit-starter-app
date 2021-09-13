@@ -66,7 +66,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.15.0",
-    "@babel/runtime": "7.15.3",
+    "@babel/runtime": "7.15.4",
     "@panz3r/react-native-toolbox": "^2.1.0",
     "@react-native-community/eslint-config": "3.0.1",
     "@react-native-community/eslint-plugin": "^1.1.0",
