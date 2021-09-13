@@ -7553,10 +7553,10 @@ react-native-localize@2.1.4:
   resolved "https://registry.yarnpkg.com/react-native-localize/-/react-native-localize-2.1.4.tgz#d4a41d9e03908c739e436dba9499b9e761b4e2f6"
   integrity sha512-Cvow7TSUsyIPj6ddxqT2GnKexQ//Q2Ur6KAQSXIcrjvE2K7KzbbveMpGsBK0oKvF9X+5DcVVED3EVdZXcrEoBw==
 
-react-native-reanimated@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-2.2.0.tgz#a6412c56b4e591d1f00fac949f62d0c72c357c78"
-  integrity sha512-lOJDd+5w1gY6DHGXG2jD1dsjzQmXQ2699HUc3IztvI2WP4zUT+UAA+zSG+5JiBS5DUnTL8YhhkmUQmr1KNGO5w==
+react-native-reanimated@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-2.2.1.tgz#e9109aa2482c893266c5c0c546aebf1b764bf233"
+  integrity sha512-uyAlqFZCcriL3hPXq5zJ4KqAjxBoeinYoJogTIpwlEhmYfsP6oRNktq3PyYCu6/Dj5dXp7MXUcZInXyVSi/c9Q==
   dependencies:
     "@babel/plugin-transform-object-assign" "^7.10.4"
     fbjs "^3.0.0"
