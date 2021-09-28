@@ -70,7 +70,7 @@
     "@panz3r/react-native-toolbox": "^2.1.0",
     "@react-native-community/eslint-config": "3.0.1",
     "@react-native-community/eslint-plugin": "^1.1.0",
-    "@types/jest": "^27.0.1",
+    "@types/jest": "^27.0.2",
     "@types/node": "16.10.1",
     "@types/react": "17.0.21",
     "@types/react-native": "0.65.0",
