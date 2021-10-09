@@ -72,7 +72,7 @@
     "@react-native-community/eslint-plugin": "^1.1.0",
     "@types/jest": "^27.0.2",
     "@types/node": "16.10.2",
-    "@types/react": "17.0.24",
+    "@types/react": "17.0.27",
     "@types/react-native": "0.65.1",
     "@types/react-redux": "^7.1.18",
     "@types/react-test-renderer": "^17.0.1",
