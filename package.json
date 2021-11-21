@@ -33,9 +33,9 @@
     "ios:assemble:debug": "xcodebuild -quiet -workspace ios/ReactNativeStarterApp.xcworkspace -scheme ReactNativeStarterApp -configuration Release -sdk iphonesimulator -destination platform='iOS Simulator',OS=13.3,name='iPhone 11 Pro Max' CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO",
     "build:dev:android": "run-s env:dev android:bundle:create android:assemble:debug",
     "build:dev:ios": "run-s env:dev setup:ios ios:assemble:debug",
-    "pre-commit": "yarn lint && yarn lint-staged && yarn dependencies:checkCircular && yarn dependencies:graph",
-    "prettier:fix": "prettier --write ./src",
-    "prettier:check": "prettier --check ./src",
+    "pre-commit": "yarn lint-staged && yarn dependencies:checkCircular && yarn dependencies:graph",
+    "prettier-check:staged": "prettier --check \"./src/**/*.{js,jsx,ts,tsx}\"",
+    "prettier-format:staged": "prettier --write \"./src/**/*.{js,jsx,ts,tsx}\"",
     "dependencies:checkCircular": "madge src/ --circular",
     "dependencies:graph": "madge src/ --circular --image deps-graph.svg",
     "postinstall": "husky install"
@@ -106,8 +106,9 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "npm run prettier:fix",
-      "npm run prettier:check"
+      "eslint --max-warnings=0",
+      "npm run prettier-format:staged",
+      "npm run prettier-check:staged"
     ]
   },
   "madge": {
