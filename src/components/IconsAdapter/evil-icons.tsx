@@ -13,8 +13,8 @@ const createIconsMap = () => {
   );
 };
 
-const IconProvider = (name) => ({
-  toReactElement: (props) => EvilIconsIcon({ name, ...props }),
+const IconProvider = name => ({
+  toReactElement: props => EvilIconsIcon({ name, ...props }),
 });
 
 const EvilIconsIcon = ({ name, style }) => {

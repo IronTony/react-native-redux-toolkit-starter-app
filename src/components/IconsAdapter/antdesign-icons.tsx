@@ -13,8 +13,8 @@ const createIconsMap = () => {
   );
 };
 
-const IconProvider = (name) => ({
-  toReactElement: (props) => AntDesignIcon({ name, ...props }),
+const IconProvider = name => ({
+  toReactElement: props => AntDesignIcon({ name, ...props }),
 });
 
 const AntDesignIcon = ({ name, style }) => {

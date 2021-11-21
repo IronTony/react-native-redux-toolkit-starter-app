@@ -1,11 +1,11 @@
 import { all, AllEffect, call, ForkEffect, spawn } from 'redux-saga/effects';
 import userSagas from '@redux/ghibli/sagas';
 
-function* rootSaga(): Generator<AllEffect<ForkEffect<void>>, any, unknown> {
+function* rootSaga(): Generator<AllEffect<ForkEffect<void>>> {
   const sagas = [userSagas];
 
   yield all(
-    sagas.map((saga) =>
+    sagas.map(saga =>
       spawn(function* () {
         while (true) {
           try {

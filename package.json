@@ -1,12 +1,12 @@
 {
   "name": "react-native-starter-app",
-  "version": "3.4.0",
+  "version": "3.5.0",
   "private": true,
   "scripts": {
     "prepare": "run-p assets:* debugger:install",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ./src",
+    "lint": "eslint --fix --max-warnings=0 \"./src/**/*.{js,jsx,ts,tsx}\"",
     "lint:staged": "pretty-quick --staged && lint-staged",
     "clean:android": "cd android && ./gradlew cleanBuildCache && ./gradlew clean && cd ..",
     "clean:ios": "rm -rf ios/build",
@@ -33,6 +33,9 @@
     "ios:assemble:debug": "xcodebuild -quiet -workspace ios/ReactNativeStarterApp.xcworkspace -scheme ReactNativeStarterApp -configuration Release -sdk iphonesimulator -destination platform='iOS Simulator',OS=13.3,name='iPhone 11 Pro Max' CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO",
     "build:dev:android": "run-s env:dev android:bundle:create android:assemble:debug",
     "build:dev:ios": "run-s env:dev setup:ios ios:assemble:debug",
+    "pre-commit": "yarn lint && yarn lint-staged && yarn dependencies:checkCircular && yarn dependencies:graph",
+    "prettier:fix": "prettier --write ./src",
+    "prettier:check": "prettier --check ./src",
     "dependencies:checkCircular": "madge src/ --circular",
     "dependencies:graph": "madge src/ --circular --image deps-graph.svg",
     "postinstall": "husky install"
@@ -102,7 +105,10 @@
     "preset": "react-native"
   },
   "lint-staged": {
-    "*.{ts,tsx}": "eslint --cache --fix"
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "npm run prettier:fix",
+      "npm run prettier:check"
+    ]
   },
   "madge": {
     "tsConfig": "./tsconfig.json",

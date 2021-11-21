@@ -13,8 +13,8 @@ const createIconsMap = () => {
   );
 };
 
-const IconProvider = (name) => ({
-  toReactElement: (props) => SimpleLineIconsIcon({ name, ...props }),
+const IconProvider = name => ({
+  toReactElement: props => SimpleLineIconsIcon({ name, ...props }),
 });
 
 const SimpleLineIconsIcon = ({ name, style }) => {

@@ -13,8 +13,8 @@ const createIconsMap = () => {
   );
 };
 
-const IconProvider = (name) => ({
-  toReactElement: (props) => EntypoIcon({ name, ...props }),
+const IconProvider = name => ({
+  toReactElement: props => EntypoIcon({ name, ...props }),
 });
 
 const EntypoIcon = ({ name, style }) => {

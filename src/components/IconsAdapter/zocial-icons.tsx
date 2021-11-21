@@ -13,8 +13,8 @@ const createIconsMap = () => {
   );
 };
 
-const IconProvider = (name) => ({
-  toReactElement: (props) => ZocialIcon({ name, ...props }),
+const IconProvider = name => ({
+  toReactElement: props => ZocialIcon({ name, ...props }),
 });
 
 const ZocialIcon = ({ name, style }) => {

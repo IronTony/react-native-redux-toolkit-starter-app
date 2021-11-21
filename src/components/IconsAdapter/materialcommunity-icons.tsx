@@ -13,8 +13,8 @@ const createIconsMap = () => {
   );
 };
 
-const IconProvider = (name) => ({
-  toReactElement: (props) => MaterialCommunityIconsIcon({ name, ...props }),
+const IconProvider = name => ({
+  toReactElement: props => MaterialCommunityIconsIcon({ name, ...props }),
 });
 
 const MaterialCommunityIconsIcon = ({ name, style }) => {

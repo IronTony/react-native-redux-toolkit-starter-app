@@ -5,16 +5,13 @@ import { getAllFilmsFailed, getAllFilmsRequest, getAllFilmsSuccess } from './act
 import * as FilmsAPI from './apiCall';
 import { GetAllFilmsRequestPayload, GetAllFilmsSuccessPayload } from './types';
 
-function* getAllFilmsSaga({
-  payload,
-}: PayloadAction<GetAllFilmsRequestPayload>): Generator<
-  | CallEffect<any>
+function* getAllFilmsSaga({ payload }: PayloadAction<GetAllFilmsRequestPayload>): Generator<
+  | CallEffect
   | PutEffect<{
       payload: GetAllFilmsSuccessPayload;
       type: string;
     }>,
-  void,
-  unknown
+  void
 > {
   const { limit } = payload;
 
@@ -31,7 +28,7 @@ function* getAllFilmsSaga({
   }
 }
 
-function* artworkSaga(): Generator<ForkEffect<never>, void, unknown> {
+function* artworkSaga(): Generator<ForkEffect<never>, void> {
   yield takeLatest(getAllFilmsRequest.type, getAllFilmsSaga);
 }
 

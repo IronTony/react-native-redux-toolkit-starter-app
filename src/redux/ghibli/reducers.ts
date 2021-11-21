@@ -25,7 +25,7 @@ const initialState: IFilmsState = {
 };
 
 export const allFilmsReducer = createReducer(initialState, {
-  [getAllFilmsRequest.type]: (state) => {
+  [getAllFilmsRequest.type]: state => {
     state.loading = true;
     state.films = [];
   },
@@ -33,7 +33,7 @@ export const allFilmsReducer = createReducer(initialState, {
     state.loading = false;
     state.films = uniqBy(action.payload, 'id');
   },
-  [getAllFilmsFailed.type]: (state) => {
+  [getAllFilmsFailed.type]: state => {
     state.loading = false;
   },
 });

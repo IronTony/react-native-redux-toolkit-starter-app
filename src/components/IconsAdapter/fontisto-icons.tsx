@@ -13,8 +13,8 @@ const createIconsMap = () => {
   );
 };
 
-const IconProvider = (name) => ({
-  toReactElement: (props) => FontistoIcon({ name, ...props }),
+const IconProvider = name => ({
+  toReactElement: props => FontistoIcon({ name, ...props }),
 });
 
 const FontistoIcon = ({ name, style }) => {

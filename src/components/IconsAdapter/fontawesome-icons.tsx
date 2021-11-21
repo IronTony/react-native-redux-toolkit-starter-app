@@ -13,8 +13,8 @@ const createIconsMap = () => {
   );
 };
 
-const IconProvider = (name) => ({
-  toReactElement: (props) => FontAwesomeIcon({ name, ...props }),
+const IconProvider = name => ({
+  toReactElement: props => FontAwesomeIcon({ name, ...props }),
 });
 
 const FontAwesomeIcon = ({ name, style }) => {

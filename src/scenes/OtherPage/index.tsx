@@ -40,7 +40,7 @@ const OtherPage: FC = () => {
 
       <ScrollView contentContainerStyle={styles.content} style={styles.container}>
         <View style={styles.container}>
-          <FlatList data={allMovies} renderItem={renderItem} keyExtractor={(item) => item.id} />
+          <FlatList data={allMovies} renderItem={renderItem} keyExtractor={item => item.id} />
         </View>
       </ScrollView>
     </NHCSafeAreaView>

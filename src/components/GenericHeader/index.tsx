@@ -69,7 +69,7 @@ const GenericHeader: FC<IGenericHeader> = ({
           {RightAction}
         </View>
       )}
-      subtitle={(evaProps) => (!subtitle ? <></> : <Text {...evaProps}>{subtitle}</Text>)}
+      subtitle={evaProps => (!subtitle ? <></> : <Text {...evaProps}>{subtitle}</Text>)}
     />
   );
 };

@@ -27,6 +27,7 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-type-arguments': 'error',
         '@typescript-eslint/prefer-nullish-coalescing': 'error',
         '@typescript-eslint/prefer-optional-chain': 'error',
+        '@typescript-eslint/explicit-module-boundary-types': 'error',
       },
       parser: '@typescript-eslint/parser',
       parserOptions: {

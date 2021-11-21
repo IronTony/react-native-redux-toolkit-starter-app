@@ -13,8 +13,8 @@ const createIconsMap = () => {
   );
 };
 
-const IconProvider = (name) => ({
-  toReactElement: (props) => OcticonsIcon({ name, ...props }),
+const IconProvider = name => ({
+  toReactElement: props => OcticonsIcon({ name, ...props }),
 });
 
 const OcticonsIcon = ({ name, style }) => {

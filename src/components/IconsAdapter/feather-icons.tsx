@@ -13,8 +13,8 @@ const createIconsMap = () => {
   );
 };
 
-const IconProvider = (name) => ({
-  toReactElement: (props) => FeatherIcon({ name, ...props }),
+const IconProvider = name => ({
+  toReactElement: props => FeatherIcon({ name, ...props }),
 });
 
 const FeatherIcon = ({ name, style }) => {
