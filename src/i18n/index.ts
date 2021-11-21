@@ -10,6 +10,7 @@ i18n
   .init({
     debug: process.env.NODE_ENV === 'development',
     resources: languagesResources,
+    compatibilityJSON: 'v3',
     // language to use if translations in user language are not available.
     fallbackLng: defaultLanguage,
 
