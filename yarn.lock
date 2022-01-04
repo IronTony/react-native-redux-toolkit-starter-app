@@ -4595,10 +4595,10 @@ husky@7.0.4:
   resolved "https://registry.yarnpkg.com/husky/-/husky-7.0.4.tgz#242048245dc49c8fb1bf0cc7cfb98dd722531535"
   integrity sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==
 
-i18next@21.6.3:
-  version "21.6.3"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-21.6.3.tgz#6ab6ab1020e1f3bda71c4d1dc216ac39663d6641"
-  integrity sha512-2uuRGslNQ8m7TRllsVs4cZuei5X9OgoPRB/Sj5oadUpxZaW+NYv3srn7zR+h8bCMhkux9z8HtnJdQM5Mz+Govw==
+i18next@21.6.4:
+  version "21.6.4"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-21.6.4.tgz#4da52a429094112b33d4383b5f44aa4890dcb081"
+  integrity sha512-pk0Utxtq5g//Q9ONQ0w3+PRSwOFJ7+m4rAekhHHg1Xql0KcUjJU7DzmzweGy6DsrIQ1GM/t57wLeeGuyGKtjTg==
   dependencies:
     "@babel/runtime" "^7.12.0"
 
