@@ -8,8 +8,6 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.primary,
   },
   content: {
-    flex: 1,
-    flexGrow: 1,
     padding: 15,
   },
   mainText: {

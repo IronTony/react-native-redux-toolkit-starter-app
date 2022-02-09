@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useCallback, FC, useEffect } from 'react';
-import { View, ScrollView, Text, FlatList } from 'react-native';
+import { View, Text, FlatList } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { useNavigation, StackActions } from '@react-navigation/native';
 import { useDispatch, useSelector } from 'react-redux';
@@ -38,11 +38,13 @@ const OtherPage: FC = () => {
     <NHCSafeAreaView>
       <GenericHeader onBackClicked={goBack} title={t('AnotherPage:OtherPage')} />
 
-      <ScrollView contentContainerStyle={styles.content} style={styles.container}>
-        <View style={styles.container}>
-          <FlatList data={allMovies} renderItem={renderItem} keyExtractor={item => item.id} />
-        </View>
-      </ScrollView>
+      <FlatList
+        data={allMovies}
+        style={styles.container}
+        contentContainerStyle={styles.content}
+        renderItem={renderItem}
+        keyExtractor={item => item.id}
+      />
     </NHCSafeAreaView>
   );
 };

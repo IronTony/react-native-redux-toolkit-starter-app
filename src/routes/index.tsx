@@ -33,7 +33,7 @@ export const MainStackScreen: FC = () => {
 
 export const RootStackScreen: FC = () => {
   return (
-    <RootStack.Navigator mode="modal" screenOptions={routeOverlayOption}>
+    <RootStack.Navigator screenOptions={{ presentation: 'modal', ...routeOverlayOption }}>
       <RootStack.Screen
         name="Main"
         component={MainStackScreen}
