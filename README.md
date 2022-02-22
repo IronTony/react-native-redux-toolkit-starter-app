@@ -164,18 +164,13 @@ _REMEMBER: the entry point file in the root of the project MUST be index.js_
 ✅ Add `React Native Debugger`<br/>
 ✅ Add `redux-saga`<br/>
 ✅ Add `i18next`<br/>
-✅ Add `react-navigation v5` ❤️<br/>
+✅ Add `react-navigation v6` ❤️<br/>
 ❌ Removed `native-base` <br/>
 ✅ Add new UI Design System (`UIKitten v5`)<br />
-✅ Add `Env`variables selection experimental way ⚗️⚗️⚗️<br />
+✅ Add `Env` variables selection experimental way ⚗️⚗️⚗️<br />
 ✅ Add Typescript (optional use. Read the DOC above)<br />
 ✅ Add Travis<br />
 ✅ Add DependaBot<br />
-
-#### Other branches for other features
-
-🚧 GraphQL (Apollo client) <br/>
-🚧 Shared Elements animation
 
 ---
 
