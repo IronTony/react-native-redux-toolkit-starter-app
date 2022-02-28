@@ -48,7 +48,7 @@
     "@react-navigation/stack": "6.1.1",
     "@reduxjs/toolkit": "^1.7.2",
     "@ui-kitten/components": "^5.1.1",
-    "i18next": "21.6.11",
+    "i18next": "21.6.12",
     "react": "17.0.2",
     "react-i18next": "11.15.4",
     "react-native": "0.67.2",
