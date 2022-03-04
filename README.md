@@ -1,6 +1,6 @@
-# React Native Boilerplate App Starter <!-- omit in toc -->
+# React Native Redux Toolkit Start App <!-- omit in toc -->
 
-> A React Native boilerplate app to bootstrap your next app!
+> A React Native boilerplate app to bootstrap your next app wit Redux Toolkit and Saga!
 
 [![License](https://img.shields.io/github/license/IronTony/react-native-boilerplate-starter-app)](LICENSE)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-screen.svg?style=flat)](#contributors-:sparkles:)
@@ -39,7 +39,7 @@
 
 ```bash
 # Setup your project
-> npx degit IronTony/react-native-boilerplate-starter-app your-new-app
+> npx degit IronTony/react-native-redux-toolkit-starter-app your-new-app
 
 > cd your-new-app
 
