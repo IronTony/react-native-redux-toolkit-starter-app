@@ -1,6 +1,6 @@
 import { PayloadAction } from '@reduxjs/toolkit';
-import { call, CallEffect, ForkEffect, put, PutEffect, takeLatest } from 'redux-saga/effects';
 import isEmpty from 'lodash/isEmpty';
+import { call, CallEffect, ForkEffect, put, PutEffect, takeLatest } from 'redux-saga/effects';
 import { getAllFilmsFailed, getAllFilmsRequest, getAllFilmsSuccess } from './actions';
 import * as FilmsAPI from './apiCall';
 import { GetAllFilmsRequestPayload, GetAllFilmsSuccessPayload } from './types';

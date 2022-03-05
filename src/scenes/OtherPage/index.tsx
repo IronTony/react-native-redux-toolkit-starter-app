@@ -1,13 +1,13 @@
-import * as React from 'react';
-import { useCallback, FC, useEffect } from 'react';
-import { View, Text, FlatList } from 'react-native';
-import { useTranslation } from 'react-i18next';
+import GenericHeader from '@components/GenericHeader';
+import NHCSafeAreaView from '@components/NHCSafeAreaView';
 import { useNavigation, StackActions } from '@react-navigation/native';
-import { useDispatch, useSelector } from 'react-redux';
 import { getAllFilmsRequest } from '@redux/actions';
 import { allFilms } from '@redux/ghibli/selectors';
-import NHCSafeAreaView from '@components/NHCSafeAreaView';
-import GenericHeader from '@components/GenericHeader';
+import * as React from 'react';
+import { useCallback, FC, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { View, Text, FlatList } from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
 import styles from './styles';
 
 const OtherPage: FC = () => {

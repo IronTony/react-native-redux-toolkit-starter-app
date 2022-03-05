@@ -1,6 +1,6 @@
+import { Icon, TopNavigation } from '@ui-kitten/components';
 import React, { FC, memo, ReactNode } from 'react';
 import { StyleProp, Text, TouchableOpacity, View, ViewStyle } from 'react-native';
-import { Icon, TopNavigation } from '@ui-kitten/components';
 import styles from './styles';
 
 interface IGenericHeader {

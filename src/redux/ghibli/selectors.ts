@@ -1,5 +1,5 @@
-import { createSelector } from '@reduxjs/toolkit';
 import type { RootState } from '@redux/reducers';
+import { createSelector } from '@reduxjs/toolkit';
 
 const allFilmsSelector = (state: RootState) => state.films;
 

@@ -1,11 +1,11 @@
-import React, { useCallback, FC, memo } from 'react';
-import { View, ScrollView, Text } from 'react-native';
-import { Trans, useTranslation } from 'react-i18next';
+import EnvInfoView from '@components/AppVersion';
+import GenericHeader from '@components/GenericHeader';
+import NHCSafeAreaView from '@components/NHCSafeAreaView';
 import { useNavigation } from '@react-navigation/native';
 import { Button, Icon } from '@ui-kitten/components';
-import EnvInfoView from '@components/AppVersion';
-import NHCSafeAreaView from '@components/NHCSafeAreaView';
-import GenericHeader from '@components/GenericHeader';
+import React, { useCallback, FC, memo } from 'react';
+import { Trans, useTranslation } from 'react-i18next';
+import { View, ScrollView, Text } from 'react-native';
 import styles from './styles';
 
 const Home: FC = () => {

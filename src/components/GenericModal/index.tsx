@@ -1,9 +1,9 @@
-import React, { useCallback, FC, ReactNode } from 'react';
-import { TouchableOpacity, ScrollView, Text } from 'react-native';
-import { StackActions, useNavigation } from '@react-navigation/native';
-import { Icon } from '@ui-kitten/components';
 import GenericHeader from '@components/GenericHeader';
 import NHCSafeAreaView from '@components/NHCSafeAreaView';
+import { StackActions, useNavigation } from '@react-navigation/native';
+import { Icon } from '@ui-kitten/components';
+import React, { useCallback, FC, ReactNode } from 'react';
+import { TouchableOpacity, ScrollView, Text } from 'react-native';
 import styles from './styles';
 
 interface IModalPage {

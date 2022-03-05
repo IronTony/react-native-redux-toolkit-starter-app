@@ -1,6 +1,6 @@
-import { Text } from 'react-native';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import { Text } from 'react-native';
 import { defaultLanguage, languagesResources } from './languageConfig';
 import RNLanguageDetector from './languageDetector';
 

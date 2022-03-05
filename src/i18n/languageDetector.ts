@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-community/async-storage';
-import { findBestAvailableLanguage } from 'react-native-localize';
 import noop from 'lodash/noop';
+import { findBestAvailableLanguage } from 'react-native-localize';
 import { defaultLanguage, languagesResources } from './languageConfig';
 
 const LOCALE_PERSISTENCE_KEY = 'app_locale';

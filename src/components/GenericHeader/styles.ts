@@ -1,6 +1,6 @@
-import { StyleSheet } from 'react-native';
-import { fonts } from '@theme/fonts';
 import theme from '@theme';
+import { fonts } from '@theme/fonts';
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   headerContainer: {

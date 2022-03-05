@@ -1,7 +1,7 @@
+import env from '@env';
 import React, { FC } from 'react';
 import { Text, View } from 'react-native';
 import VersionNumber from 'react-native-version-number';
-import env from '@env';
 import styles from './styles';
 
 const EnvInfoView: FC = () => {

@@ -1,5 +1,5 @@
-import { StyleSheet } from 'react-native';
 import { palette } from '@theme/colors';
+import { StyleSheet } from 'react-native';
 
 const theme = {
   spacing: {
