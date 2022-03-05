@@ -1,5 +1,5 @@
-import { createRef } from 'react';
 import { NavigationContainerRef, StackActions } from '@react-navigation/native';
+import { createRef } from 'react';
 
 export const navigationRef = createRef<NavigationContainerRef>();
 export const isMountedRef = createRef();

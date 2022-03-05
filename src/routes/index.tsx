@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
 import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
 import Homepage from '@scenes/Homepage';
-import OtherPage from '@scenes/OtherPage';
 import ModalPage from '@scenes/ModalPage';
+import OtherPage from '@scenes/OtherPage';
+import React, { FC } from 'react';
 import { routeOverlayOption } from './routeOptions';
 
 const RootStack = createStackNavigator();

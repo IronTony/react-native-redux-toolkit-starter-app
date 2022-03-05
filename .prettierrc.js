@@ -5,4 +5,6 @@ module.exports = {
   printWidth: 120,
   bracketSpacing: true,
   arrowParens: 'avoid',
+  importOrder: ['<THIRD_PARTY_MODULES>', '^[./]'],
+  importOrderSeparation: false,
 };

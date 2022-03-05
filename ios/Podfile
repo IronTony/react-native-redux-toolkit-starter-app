@@ -20,8 +20,6 @@ target 'ReactNativeStarterApp' do
     # Pods for testing
   end
 
-  use_native_modules!
-
   # Enables Flipper.
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
