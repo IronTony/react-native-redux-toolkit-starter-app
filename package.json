@@ -6,7 +6,7 @@
     "prepare": "run-p assets:* debugger:install",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint --fix --max-warnings=0 \"./src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx}\"",
     "lint:staged": "pretty-quick --staged && lint-staged",
     "clean:android": "cd android && ./gradlew cleanBuildCache && ./gradlew clean && cd ..",
     "clean:ios": "rm -rf ios/build",
@@ -90,6 +90,7 @@
     "eslint": "8.10.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "7.0.4",
     "jest": "27.5.1",
     "lint-staged": "12.3.5",
@@ -109,7 +110,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint --max-warnings=0",
+      "eslint",
       "npm run prettier-format:staged",
       "npm run prettier-check:staged"
     ]
