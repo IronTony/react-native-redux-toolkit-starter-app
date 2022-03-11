@@ -110,7 +110,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint",
+      "eslint --max-warnings=0",
       "npm run prettier-format:staged",
       "npm run prettier-check:staged"
     ]
