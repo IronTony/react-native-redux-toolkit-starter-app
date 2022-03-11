@@ -292,7 +292,7 @@ PODS:
     - glog
   - react-native-flipper (0.137.0):
     - React-Core
-  - react-native-safe-area-context (4.0.1):
+  - react-native-safe-area-context (4.1.2):
     - RCT-Folly
     - RCTRequired
     - RCTTypeSafety
@@ -371,7 +371,7 @@ PODS:
     - React-Core
   - RNCMaskedView (0.1.11):
     - React
-  - RNGestureHandler (2.2.0):
+  - RNGestureHandler (2.3.0):
     - React-Core
   - RNLocalize (2.2.0):
     - React-Core
@@ -403,11 +403,11 @@ PODS:
     - React-RCTText
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNScreens (3.12.0):
+  - RNScreens (3.13.1):
     - React-Core
     - React-RCTImage
-  - RNSVG (12.1.1):
-    - React
+  - RNSVG (12.3.0):
+    - React-Core
   - RNVectorIcons (9.1.0):
     - React-Core
   - Yoga (1.14.0)
@@ -625,7 +625,7 @@ SPEC CHECKSUMS:
   React-jsinspector: 1e1e03345cf6d47779e2061d679d0a87d9ae73d8
   React-logger: 1e10789cb84f99288479ba5f20822ce43ced6ffe
   react-native-flipper: 9ce0e50fc10cb4786901de4fa4c8726b4651b1ad
-  react-native-safe-area-context: eec048ba481a7ec7b1bf9d7b7a78fb1103f4806d
+  react-native-safe-area-context: 114e9a74df2643012b9d6cc1460b94f3b6a90780
   react-native-splash-screen: 4312f786b13a81b5169ef346d76d33bc0c6dc457
   react-native-version-number: b415bbec6a13f2df62bf978e85bc0d699462f37f
   React-perflogger: 93d3f142d6d9a46e635f09ba0518027215a41098
@@ -642,11 +642,11 @@ SPEC CHECKSUMS:
   ReactCommon: 650e33cde4fb7d36781cd3143f5276da0abb2f96
   RNCAsyncStorage: b03032fdbdb725bea0bd9e5ec5a7272865ae7398
   RNCMaskedView: 0e1bc4bfa8365eba5fbbb71e07fbdc0555249489
-  RNGestureHandler: bf572f552ea324acd5b5464b8d30755b2d8c1de6
+  RNGestureHandler: 77d59828d40838c9fabb76a12d2d0a80c006906f
   RNLocalize: 6571ea792a7dcb6d217c98c14d9147e9417cef62
   RNReanimated: 32c91e28f5780937b8efc07ddde1bab8d373fe0b
-  RNScreens: 2559f98b0835103cbef3b26ba77fa61d4bb37ae7
-  RNSVG: 551acb6562324b1d52a4e0758f7ca0ec234e278f
+  RNScreens: 40a2cb40a02a609938137a1e0acfbf8fc9eebf19
+  RNSVG: 302bfc9905bd8122f08966dc2ce2d07b7b52b9f8
   RNVectorIcons: 7923e585eaeb139b9f4531d25a125a1500162a0b
   Yoga: 90dcd029e45d8a7c1ff059e8b3c6612ff409061a
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a

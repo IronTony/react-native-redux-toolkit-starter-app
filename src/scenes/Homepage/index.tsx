@@ -2,15 +2,16 @@ import EnvInfoView from '@components/AppVersion';
 import GenericHeader from '@components/GenericHeader';
 import NHCSafeAreaView from '@components/NHCSafeAreaView';
 import { useNavigation } from '@react-navigation/native';
+import { GenericNavigationProps } from '@routes/types';
 import { Button, Icon } from '@ui-kitten/components';
-import React, { useCallback, FC, memo } from 'react';
+import React, { useCallback, FC, memo, useRef } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { View, ScrollView, Text } from 'react-native';
 import styles from './styles';
 
 const Home: FC = () => {
   const [t, i18n] = useTranslation();
-  const navigation = useNavigation();
+  const navigation = useNavigation<GenericNavigationProps>();
   const currentLocale = i18n.language;
 
   const switchLocaleToEn = useCallback(() => {

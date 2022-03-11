@@ -25,6 +25,7 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': 'off',
         // All the @typescript-eslint/* rules here...
         '@typescript-eslint/no-unnecessary-type-arguments': 'error',
+        '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/prefer-nullish-coalescing': 'error',
         '@typescript-eslint/prefer-optional-chain': 'error',
         '@typescript-eslint/explicit-module-boundary-types': 'error',
