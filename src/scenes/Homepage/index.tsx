@@ -4,7 +4,7 @@ import NHCSafeAreaView from '@components/NHCSafeAreaView';
 import { useNavigation } from '@react-navigation/native';
 import { GenericNavigationProps } from '@routes/types';
 import { Button, Icon } from '@ui-kitten/components';
-import React, { useCallback, FC, memo, useRef } from 'react';
+import React, { useCallback, FC, memo } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { View, ScrollView, Text } from 'react-native';
 import styles from './styles';
