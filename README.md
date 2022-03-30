@@ -2,6 +2,8 @@
 
 > A React Native boilerplate app to bootstrap your next app wit Redux Toolkit and Saga!
 
+## 🔥🔥 Checkout also my brand new React Native React-Query (no redux toolkit) [here](https://github.com/IronTony/react-native-react-query-starter-app) 🔥🔥
+
 [![License](https://img.shields.io/github/license/IronTony/react-native-redux-toolkit-starter-app)](LICENSE)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-screen.svg?style=flat)](#contributors-:sparkles:)
 
@@ -165,7 +167,6 @@ _REMEMBER: the entry point file in the root of the project MUST be index.js_
 ✅ Add `redux-saga`<br/>
 ✅ Add `i18next`<br/>
 ✅ Add `react-navigation v6` ❤️<br/>
-❌ Removed `native-base` <br/>
 ✅ Add new UI Design System (`UIKitten v5`)<br />
 ✅ Add `Env` variables selection experimental way ⚗️⚗️⚗️<br />
 ✅ Add Typescript (optional use. Read the DOC above)<br />
