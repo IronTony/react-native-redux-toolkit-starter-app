@@ -2,6 +2,10 @@
 
 > A React Native boilerplate app to bootstrap your next app wit Redux Toolkit and Saga!
 
+<div align="center">
+    <img src="./react-native-starter-kit.png" width="100%" /> 
+</div>
+
 ## 🔥🔥 Checkout also my brand new React Native React-Query (no redux toolkit) [here](https://github.com/IronTony/react-native-react-query-starter-app) 🔥🔥
 
 [![License](https://img.shields.io/github/license/IronTony/react-native-redux-toolkit-starter-app)](LICENSE)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -20,6 +24,7 @@
 
 # Table of Contents <!-- omit in toc -->
 
+- [🔥🔥 Checkout also my brand new React Native React-Query (no redux toolkit) here 🔥🔥](#-checkout-also-my-brand-new-react-native-react-query-no-redux-toolkit-here-)
 - [Installation :inbox_tray:](#installation-inbox_tray)
 - [Rename project and bundles :memo: :package:](#rename-project-and-bundles-memo-package)
   - [iOS & Android](#ios--android)
@@ -31,7 +36,7 @@
   - [Setup iOS](#setup-ios)
   - [Typescript (optional)](#typescript-optional)
 - [Roadmap :running:](#roadmap-running)
-    - [Other branches for other features](#other-branches-for-other-features)
+- [Screenshots](#screenshots)
 - [Contributors :sparkles:](#contributors-sparkles)
 - [License :scroll:](#license-scroll)
 
@@ -172,6 +177,22 @@ _REMEMBER: the entry point file in the root of the project MUST be index.js_
 ✅ Add Typescript (optional use. Read the DOC above)<br />
 ✅ Add Travis<br />
 ✅ Add DependaBot<br />
+
+---
+
+## Screenshots
+
+<div align="center">
+    <img src="./screenshots/screenshot1.png" width="50%" />
+</div>
+
+<div align="center">
+    <img src="./screenshots/screenshot2.png" width="50%" /> 
+</div>
+
+<div align="center">
+    <img src="./screenshots/screenshot3.png" width="50%" />
+</div>
 
 ---
 
