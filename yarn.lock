@@ -3908,10 +3908,10 @@ eslint-plugin-prettier@4.0.0:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-react-hooks@^4.0.7, eslint-plugin-react-hooks@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.3.0.tgz#318dbf312e06fab1c835a4abef00121751ac1172"
-  integrity sha512-XslZy0LnMn+84NEG9jSGR6eGqaZB3133L8xewQo3fQagbQuGt7a63gf+P1NGKZavEYEC3UXaWEAA/AqDkuN6xA==
+eslint-plugin-react-hooks@^4.0.7, eslint-plugin-react-hooks@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.4.0.tgz#71c39e528764c848d8253e1aa2c7024ed505f6c4"
+  integrity sha512-U3RVIfdzJaeKDQKEJbz5p3NW8/L80PCATJAfuojwbaEL+gBjfGdhUcGde+WGUW46Q5sr/NgxevsIiDtNXrvZaQ==
 
 eslint-plugin-react-native-globals@^0.1.1:
   version "0.1.2"
@@ -7650,10 +7650,10 @@ react-native-debugger-open@^0.3.25:
     minimist "^1.2.0"
     semver "^5.4.1"
 
-react-native-flipper@^0.140.0:
-  version "0.140.0"
-  resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.140.0.tgz#fcda8e4b0c634a7f7da7bb3744796f5b339031b5"
-  integrity sha512-dsDMEU0+NPOYq5U30xTwvdCUQC9yJ6ADu61W260er4ROggrwJyFJlRQ36rBdcys0A/p8I2LI82teyhiO9RNoFQ==
+react-native-flipper@^0.142.0:
+  version "0.142.0"
+  resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.142.0.tgz#f5e6863efea0e1e9b60f949bebfab1dd154d830a"
+  integrity sha512-R9WB+0ihIYNEUQ3H7zOf7Gc4aUC6LXE8NF6Sx4aVVsIqRGEfBP30/X/jl/hU3z9K1D1DBE86sL/6fpDbAdy8Kw==
 
 react-native-gesture-handler@^2.3.2:
   version "2.3.2"
@@ -7666,10 +7666,10 @@ react-native-gesture-handler@^2.3.2:
     lodash "^4.17.21"
     prop-types "^15.7.2"
 
-react-native-localize@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/react-native-localize/-/react-native-localize-2.2.0.tgz#77d1ee8174679ac6b832c22fe5303b4070a5d72b"
-  integrity sha512-iGEVQSQHRMQzngjTAdV7E+6jdOUxr7ITXkFg7UlmqjTP55xwOmutdCeKD45nCCsUCYCkKhRfBH1+IXpRsTYWbA==
+react-native-localize@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/react-native-localize/-/react-native-localize-2.2.1.tgz#6fe646833691c6ee8a474df3c8b069402cb1dba8"
+  integrity sha512-BuPaQWvxLZG1NrCDGqgAnecDrNQu3LED9/Pyl4H2LwTMHcEngXpE5PfVntW2GiLumdr6nUOkWmMnh8PynZqrsw==
 
 react-native-reanimated@2.4.1:
   version "2.4.1"
