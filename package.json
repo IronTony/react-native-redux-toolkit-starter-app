@@ -53,7 +53,7 @@
     "react-i18next": "11.16.5",
     "react-native": "0.67.4",
     "react-native-flipper": "^0.142.0",
-    "react-native-gesture-handler": "^2.3.2",
+    "react-native-gesture-handler": "^2.4.2",
     "react-native-localize": "2.2.1",
     "react-native-reanimated": "2.4.1",
     "react-native-safe-area-context": "^4.2.4",
