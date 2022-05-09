@@ -290,9 +290,9 @@ PODS:
   - React-jsinspector (0.67.4)
   - React-logger (0.67.4):
     - glog
-  - react-native-flipper (0.142.0):
+  - react-native-flipper (0.145.0):
     - React-Core
-  - react-native-safe-area-context (4.2.4):
+  - react-native-safe-area-context (4.2.5):
     - RCT-Folly
     - RCTRequired
     - RCTTypeSafety
@@ -371,11 +371,11 @@ PODS:
     - React-Core
   - RNCMaskedView (0.1.11):
     - React
-  - RNGestureHandler (2.3.2):
+  - RNGestureHandler (2.4.2):
     - React-Core
   - RNLocalize (2.2.1):
     - React-Core
-  - RNReanimated (2.4.1):
+  - RNReanimated (2.8.0):
     - DoubleConversion
     - FBLazyVector
     - FBReactNativeSpec
@@ -383,7 +383,6 @@ PODS:
     - RCT-Folly
     - RCTRequired
     - RCTTypeSafety
-    - React
     - React-callinvoker
     - React-Core
     - React-Core/DevSupport
@@ -624,8 +623,8 @@ SPEC CHECKSUMS:
   React-jsiexecutor: cbdf37cebdc4f5d8b3d0bf5ccaa6147fd9de9f3d
   React-jsinspector: f4775ea9118cbe1f72b834f0f842baa7a99508d8
   React-logger: a1f028f6d8639a3f364ef80419e5e862e1115250
-  react-native-flipper: 6504d02aadad2cce9083b6437fc1927f8e2083bb
-  react-native-safe-area-context: f98b0b16d1546d208fc293b4661e3f81a895afd9
+  react-native-flipper: 1b78844db5b0de19bd64847c3b88cafc6cc119ba
+  react-native-safe-area-context: ebf8c413eb8b5f7c392a036a315eb7b46b96845f
   react-native-splash-screen: 4312f786b13a81b5169ef346d76d33bc0c6dc457
   react-native-version-number: b415bbec6a13f2df62bf978e85bc0d699462f37f
   React-perflogger: 0afaf2f01a47fd0fc368a93bfbb5bd3b26db6e7f
@@ -642,9 +641,9 @@ SPEC CHECKSUMS:
   ReactCommon: 07d0c460b9ba9af3eaf1b8f5abe7daaad28c9c4e
   RNCAsyncStorage: b03032fdbdb725bea0bd9e5ec5a7272865ae7398
   RNCMaskedView: 0e1bc4bfa8365eba5fbbb71e07fbdc0555249489
-  RNGestureHandler: 6e757e487a4834e7280e98e9bac66d2d9c575e9c
+  RNGestureHandler: 61628a2c859172551aa2100d3e73d1e57878392f
   RNLocalize: cbcb55d0e19c78086ea4eea20e03fe8000bbbced
-  RNReanimated: 32c91e28f5780937b8efc07ddde1bab8d373fe0b
+  RNReanimated: 46cdb89ca59ab7181334f4ed05a70e82ddb36751
   RNScreens: 40a2cb40a02a609938137a1e0acfbf8fc9eebf19
   RNSVG: 302bfc9905bd8122f08966dc2ce2d07b7b52b9f8
   RNVectorIcons: 7923e585eaeb139b9f4531d25a125a1500162a0b
