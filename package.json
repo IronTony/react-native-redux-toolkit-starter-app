@@ -82,7 +82,7 @@
     "@types/react": "17.0.43",
     "@types/react-native": "0.67.6",
     "@types/react-redux": "^7.1.23",
-    "@types/react-test-renderer": "^17.0.1",
+    "@types/react-test-renderer": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "5.22.0",
     "@typescript-eslint/parser": "5.22.0",
     "babel-jest": "28.1.0",
