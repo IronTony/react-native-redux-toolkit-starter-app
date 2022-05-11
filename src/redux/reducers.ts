@@ -1,4 +1,4 @@
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { allFilmsReducer } from '@redux/ghibli/reducers';
 import { persistCombineReducers } from 'redux-persist';
 

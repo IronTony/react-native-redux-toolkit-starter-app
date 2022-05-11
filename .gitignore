@@ -66,8 +66,9 @@ android/app/src/main/assets/index.android.bundle
 ios/assets/src
 ios/assets/app.json
 
-# CocoaPods
+# Ruby / CocoaPods
 /ios/Pods/
+/vendor/bundle/
 
 # project
 .vscode/

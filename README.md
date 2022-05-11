@@ -1,7 +1,10 @@
-# React Native Redux Toolkit Start App <!-- omit in toc -->
+# React Native Redux Toolkit Start App  <!-- omit in toc -->
 
 > A React Native boilerplate app to bootstrap your next app wit Redux Toolkit and Saga!
 
+## 🔥🔥🔥 Upgraded to the latest React-Native (> 0.68.x) with brand New Architecture (Fabric) 🔥🔥🔥
+
+<br/>
 <div align="center">
     <img src="./react-native-starter-kit.png" width="100%" /> 
 </div>
@@ -24,6 +27,7 @@
 
 # Table of Contents <!-- omit in toc -->
 
+- [🔥🔥🔥 Upgraded to the latest React-Native (> 0.68.x) with brand New Architecture (Fabric) 🔥🔥🔥](#-upgraded-to-the-latest-react-native--068x-with-brand-new-architecture-fabric-)
 - [🔥🔥 Checkout also my brand new React Native React-Query (no redux toolkit) here 🔥🔥](#-checkout-also-my-brand-new-react-native-react-query-no-redux-toolkit-here-)
 - [Installation :inbox_tray:](#installation-inbox_tray)
 - [Rename project and bundles :memo: :package:](#rename-project-and-bundles-memo-package)
@@ -33,6 +37,7 @@
   - [Run the app](#run-the-app)
   - [Generate app icons](#generate-app-icons)
   - [Generate Splashscreen](#generate-splashscreen)
+  - [To enabled React-Native (Fabric) new architecture](#to-enabled-react-native-fabric-new-architecture)
   - [Setup iOS](#setup-ios)
   - [Typescript (optional)](#typescript-optional)
 - [Roadmap :running:](#roadmap-running)
@@ -130,6 +135,10 @@ To setup the app splashscreen:
 yarn assets:splashscreen
 ```
 
+### To enabled React-Native (Fabric) new architecture
+
+Check the official documentation [here](https://reactnative.dev/docs/new-architecture-intro)
+
 ### Setup iOS
 
 To setup the environment to run on iOS, run
@@ -163,20 +172,20 @@ _REMEMBER: the entry point file in the root of the project MUST be index.js_
 ## Roadmap :running:
 
 ✅ Initial Setup<br/>
-✅ Add Splashscreen (https://github.com/crazycodeboy/react-native-splash-screen)<br/>
-✅ Add Toolbox (https://github.com/panz3r/react-native-toolbox)<br/>
-✅ Create tree folders structure<br/>
-✅ Add `redux-toolkit`<br/>
-✅ Add `redux-persist` (https://github.com/rt2zz/redux-persist)<br/>
-✅ Add `React Native Debugger`<br/>
-✅ Add `redux-saga`<br/>
-✅ Add `i18next`<br/>
-✅ Add `react-navigation v6` ❤️<br/>
-✅ Add new UI Design System (`UIKitten v5`)<br />
-✅ Add `Env` variables selection experimental way ⚗️⚗️⚗️<br />
-✅ Add Typescript (optional use. Read the DOC above)<br />
-✅ Add Travis<br />
-✅ Add DependaBot<br />
+✅ `react-native-splashscreen` (https://github.com/crazycodeboy/react-native-splash-screen)<br/>
+✅ `react-native-toolbox` to generate Splashscreen and icons automagically (https://github.com/panz3r/react-native-toolbox)<br/>
+✅ Standard tree folders structure<br/>
+✅ `React-Native 0.68.2 (new architecture)`<br/>
+✅ `redux-toolkit`<br/>
+✅ `redux-persist` (https://github.com/rt2zz/redux-persist)<br/>
+✅ `React Native Debugger`<br/>
+✅ `redux-saga`<br/>
+✅ `i18next`<br/>
+✅ `react-navigation v6` ❤️<br/>
+✅ `UIKitten v5`<br />
+✅ `Env` variables selection experimental way ⚗️⚗️⚗️<br />
+✅ Typescript (optional use. Read the DOC above)<br />
+
 
 ---
 

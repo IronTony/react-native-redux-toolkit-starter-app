@@ -1,6 +1,6 @@
 {
   "name": "react-native-starter-app",
-  "version": "3.9.2",
+  "version": "4.0.0",
   "private": true,
   "scripts": {
     "prepare": "run-p assets:* debugger:install",
@@ -42,8 +42,8 @@
   },
   "dependencies": {
     "@eva-design/eva": "^2.1.1",
-    "@react-native-community/async-storage": "1.12.1",
-    "@react-native-community/masked-view": "0.1.11",
+    "@react-native-async-storage/async-storage": "1.17.4",
+    "@react-native-masked-view/masked-view": "^0.2.6",
     "@react-navigation/native": "6.0.10",
     "@react-navigation/stack": "6.2.1",
     "@reduxjs/toolkit": "^1.8.1",
@@ -51,7 +51,7 @@
     "i18next": "21.8.0",
     "react": "17.0.2",
     "react-i18next": "11.16.9",
-    "react-native": "0.67.4",
+    "react-native": "0.68.2",
     "react-native-flipper": "0.145.0",
     "react-native-gesture-handler": "2.4.2",
     "react-native-localize": "2.2.1",
@@ -87,7 +87,7 @@
     "@typescript-eslint/parser": "5.22.0",
     "babel-jest": "28.1.0",
     "babel-plugin-module-resolver": "^4.1.0",
-    "eslint": "7.32.0",
+    "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react-hooks": "4.5.0",
