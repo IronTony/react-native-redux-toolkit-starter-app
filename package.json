@@ -77,7 +77,7 @@
     "@react-native-community/eslint-config": "3.0.1",
     "@react-native-community/eslint-plugin": "1.2.0",
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
-    "@types/jest": "27.5.0",
+    "@types/jest": "27.5.1",
     "@types/node": "17.0.31",
     "@types/react": "17.0.43",
     "@types/react-native": "0.67.6",
