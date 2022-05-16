@@ -74,7 +74,7 @@
     "@babel/preset-env": "7.17.10",
     "@babel/runtime": "7.17.9",
     "@panz3r/react-native-toolbox": "^3.0.0",
-    "@react-native-community/eslint-config": "3.0.1",
+    "@react-native-community/eslint-config": "3.0.2",
     "@react-native-community/eslint-plugin": "1.2.0",
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
     "@types/jest": "27.5.0",
