@@ -2,7 +2,7 @@
 
 > A React Native boilerplate app to bootstrap your next app wit Redux Toolkit and Saga!
 
-## 🔥🔥🔥 Upgraded to the latest React-Native (> 0.68.x) with brand New Architecture (Fabric) 🔥🔥🔥
+## 🔥🔥🔥 Upgraded to the latest React-Native (> 0.69.x) with brand New Architecture (Fabric) 🔥🔥🔥
 
 <br/>
 <div align="center">
@@ -27,7 +27,7 @@
 
 # Table of Contents <!-- omit in toc -->
 
-- [🔥🔥🔥 Upgraded to the latest React-Native (> 0.68.x) with brand New Architecture (Fabric) 🔥🔥🔥](#-upgraded-to-the-latest-react-native--068x-with-brand-new-architecture-fabric-)
+- [🔥🔥🔥 Upgraded to the latest React-Native (> 0.69.x) with brand New Architecture (Fabric) 🔥🔥🔥](#-upgraded-to-the-latest-react-native--069x-with-brand-new-architecture-fabric-)
 - [🔥🔥 Checkout also my brand new React Native React-Query (no redux toolkit) here 🔥🔥](#-checkout-also-my-brand-new-react-native-react-query-no-redux-toolkit-here-)
 - [Installation :inbox_tray:](#installation-inbox_tray)
 - [Rename project and bundles :memo: :package:](#rename-project-and-bundles-memo-package)
@@ -175,7 +175,7 @@ _REMEMBER: the entry point file in the root of the project MUST be index.js_
 ✅ `react-native-splashscreen` (https://github.com/crazycodeboy/react-native-splash-screen)<br/>
 ✅ `react-native-toolbox` to generate Splashscreen and icons automagically (https://github.com/panz3r/react-native-toolbox)<br/>
 ✅ Standard tree folders structure<br/>
-✅ `React-Native 0.68.2 (new architecture)`<br/>
+✅ `React-Native 0.69 (new architecture)`<br/>
 ✅ `redux-toolkit`<br/>
 ✅ `redux-persist` (https://github.com/rt2zz/redux-persist)<br/>
 ✅ `React Native Debugger`<br/>
