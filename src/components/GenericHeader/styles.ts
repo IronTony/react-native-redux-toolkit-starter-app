@@ -1,16 +1,16 @@
-import theme from '@theme';
-import { fonts } from '@theme/fonts';
+import customTheme from '@theme';
+import { theme } from 'native-base';
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   headerContainer: {
-    backgroundColor: theme.colors.headerBackground,
-    paddingHorizontal: theme.spacing.lg,
+    backgroundColor: customTheme.colors.headerBackground,
+    paddingHorizontal: theme.space[16],
     zIndex: 9999,
   },
   HeaderShadow: {
     elevation: 3,
-    shadowColor: theme.colors.cardShadow,
+    shadowColor: customTheme.colors.GREY_SHADOW_7,
     shadowOffset: { width: 0, height: 5 },
     shadowOpacity: 0.7,
     shadowRadius: 3,
@@ -18,12 +18,12 @@ const styles = StyleSheet.create({
   },
   backButtonContainer: {},
   // backButtonStyle: {
-  //   color: theme.colors.backButtonText,
+  //   color: customTheme.colors.backButtonText,
   //   fontFamily: fonts.boldOS,
   //   fontSize: 18,
   // },
   backButtonIcon: {
-    color: theme.colors.primary,
+    color: customTheme.colors.primary,
     marginRight: 8,
     fontSize: 24,
   },
@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   mainPageTitle: {
-    color: theme.colors.primary,
-    fontFamily: fonts.bold,
+    color: customTheme.colors.primary,
+    // fontFamily: fonts.bold,
     fontSize: 24,
     lineHeight: 24,
     textAlign: 'center',

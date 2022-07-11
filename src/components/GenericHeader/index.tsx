@@ -1,7 +1,7 @@
-import { Icon, TopNavigation } from '@ui-kitten/components';
+import { Flex, HStack, Icon, Pressable, Text } from 'native-base';
 import React, { FC, memo, ReactNode } from 'react';
-import { StyleProp, Text, TouchableOpacity, View, ViewStyle } from 'react-native';
-import styles from './styles';
+import { StyleProp, ViewStyle } from 'react-native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 interface IGenericHeader {
   BodyHeader?: ReactNode;
@@ -25,52 +25,60 @@ const GenericHeader: FC<IGenericHeader> = ({
   withShadow = false,
 }) => {
   return (
-    <TopNavigation
-      alignment="center"
-      style={[style, styles.headerContainer, withShadow && styles.HeaderShadow]}
-      title={() => (
-        <View style={styles.bodyContainer}>
-          {/*
-            You can pass the page name or a component that will be rendered in the middle of your Header
-          */}
-          <View style={styles.BodyContent}>
-            {!!title && (
-              <Text style={styles.mainPageTitle} numberOfLines={1} ellipsizeMode="tail">
-                {title}
-              </Text>
-            )}
-            {BodyHeader}
-          </View>
-        </View>
-      )}
-      accessoryLeft={() => (
-        <View>
-          {/*
+    <HStack
+      alignItems="center"
+      justifyContent="space-between"
+      // style={[style, styles.headerContainer, withShadow && styles.HeaderShadow]}
+      height="40px"
+      w="100%">
+      <Flex alignItems="center">
+        {/*
             The GenericHeader component accepts an onBackClicked prop.
             The route where you want to go is specified in the import of this Header in your scene component
           */}
-          {!!onBackClicked && (
-            <TouchableOpacity onPress={onBackClicked} style={styles.backButtonContainer}>
-              <Icon pack="Ionicons" name="arrow-back" style={styles.backButtonIcon} />
-              {/* <Trans style={styles.backButtonStyle} i18nKey="Header:back" /> */}
-            </TouchableOpacity>
-          )}
-          {/*
+        {!!onBackClicked && (
+          <Pressable onPress={onBackClicked}>
+            <Icon as={Ionicons} name="arrow-back" color="MIDNIGHT_BLUE" size="sm" />
+            {/* <Text style={styles.backButtonStyle} >{t('Header:back')}</Text> */}
+          </Pressable>
+        )}
+        {/*
             You can also pass a custom component defined in you scene component for the left section of the Header
           */}
-          {LeftAction}
-        </View>
-      )}
-      accessoryRight={() => (
-        <View>
-          {/*
+        {LeftAction}
+      </Flex>
+
+      <Flex>
+        {/*
+            You can pass the page name or a component that will be rendered in the middle of your Header
+          */}
+
+        {!!title && (
+          <Text
+            color="MIDNIGHT_BLUE"
+            fontSize="20px"
+            fontFamily="body"
+            fontWeight={700}
+            lineHeight="24px"
+            textAlign="center"
+            width="220px"
+            numberOfLines={1}
+            ellipsizeMode="tail">
+            {title}
+          </Text>
+        )}
+        {!subtitle ? <></> : <Text>{subtitle}</Text>}
+        {BodyHeader}
+      </Flex>
+
+      <Flex alignItems="center">
+        {/*
             You can also pass a custom component defined in you scene component for the right section of the Header
           */}
-          {RightAction}
-        </View>
-      )}
-      subtitle={evaProps => (!subtitle ? <></> : <Text {...evaProps}>{subtitle}</Text>)}
-    />
+
+        {RightAction}
+      </Flex>
+    </HStack>
   );
 };
 

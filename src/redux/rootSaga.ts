@@ -1,4 +1,4 @@
-import userSagas from '@redux/ghibli/sagas';
+import userSagas from '@redux/reqres/sagas';
 import { all, AllEffect, call, ForkEffect, spawn } from 'redux-saga/effects';
 
 function* rootSaga(): Generator<AllEffect<ForkEffect<void>>> {

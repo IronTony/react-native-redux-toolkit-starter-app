@@ -1,7 +1,7 @@
-import { NavigationContainerRef, StackActions } from '@react-navigation/native';
+import { createNavigationContainerRef, StackActions } from '@react-navigation/native';
 import { createRef } from 'react';
 
-export const navigationRef = createRef<NavigationContainerRef>();
+export const navigationRef = createNavigationContainerRef();
 export const isMountedRef = createRef();
 
 interface NavigateProps {

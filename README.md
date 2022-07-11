@@ -179,12 +179,15 @@ _REMEMBER: the entry point file in the root of the project MUST be index.js_
 ✅ `redux-toolkit`<br/>
 ✅ `redux-persist` (https://github.com/rt2zz/redux-persist)<br/>
 ✅ `React Native Debugger`<br/>
+✅ `React Native Flipper Integration`<br/>
 ✅ `redux-saga`<br/>
 ✅ `i18next`<br/>
 ✅ `react-navigation v6` ❤️<br/>
-✅ `UIKitten v5`<br />
+✅ `Nativebase v3` as design system<br />
 ✅ `Env` variables selection experimental way ⚗️⚗️⚗️<br />
 ✅ Typescript (optional use. Read the DOC above)<br />
+
+`UI Kitten` is not supported anymore!
 
 
 ---

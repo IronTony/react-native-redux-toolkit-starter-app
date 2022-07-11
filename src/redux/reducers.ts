@@ -1,9 +1,11 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { allFilmsReducer } from '@redux/ghibli/reducers';
+import { usersReducer } from '@redux/reqres/reducers';
 import { persistCombineReducers } from 'redux-persist';
+import messagesReducer from './messageHandler/reducers';
 
 const reducers = {
-  films: allFilmsReducer,
+  users: usersReducer,
+  messages: messagesReducer,
 };
 
 const persistConfig = {
@@ -11,7 +13,7 @@ const persistConfig = {
   storage: AsyncStorage,
   // There is an issue in the source code of redux-persist (default setTimeout does not cleaning)
   timeout: undefined,
-  whitelist: ['onBoard'],
+  whitelist: [''],
 };
 
 // Setup Reducers

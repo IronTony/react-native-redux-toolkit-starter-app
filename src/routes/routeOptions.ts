@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 export const routeOverlayOption = {
   cardStyle: { backgroundColor: 'transparent' },
   cardOverlayEnabled: true,

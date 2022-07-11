@@ -22,18 +22,15 @@ module.exports = {
       rules: {
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
-        '@typescript-eslint/no-inferrable-type': 'off',
-        'no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars': ['error'],
-        'no-extra-boolean-cast': 'off',
+        '@typescript-eslint/no-unused-vars': 'off',
         // All the @typescript-eslint/* rules here...
         '@typescript-eslint/no-unnecessary-type-arguments': 'error',
-        //'@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/prefer-nullish-coalescing': 'error',
         '@typescript-eslint/prefer-optional-chain': 'error',
-        '@typescript-eslint/explicit-module-boundary-types': 'error',
-        'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
-        'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        'react-native/no-inline-styles': 'off',
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warn',
       },
       parser: '@typescript-eslint/parser',
       parserOptions: {

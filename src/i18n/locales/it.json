@@ -9,15 +9,26 @@
   "Homepage": {
     "welcome": "Grazie per usare React Native Starter App\n😍 😘 🙏🏻",
     "releasedWithLove": "Creato e rilasciato con ❤️ per voi",
-    "goToAnotherPage": "Vai in un'altra pagina",
-    "openModal": "Apri la modale"
+    "gotoUsersList": "Vai alla pagina degli utenti",
+    "openModal": "Apri la modale",
+    "createNewUser": " Crea nuovo utente",
+    "ModifyUser": "Modifica utente",
+    "DeleteUser": "Cancella utente",
+    "UserCreated": "Utente creato con successo!",
+    "UserNotCreated": "Errore! Utente non creato!",
+    "UserModified": "Utente modificato",
+    "UserNotModified": "Errore! Utente non modificato",
+    "UserDeleted": "Utente eliminato",
+    "UserNotDeleted": "Errore! Utente non eliminato"
   },
-  "AnotherPage": {
-    "welcome": "Benvenuto in un'altra pagina",
-    "OtherPage": "Altra Pagina"
+  "UsersList": {
+    "UsersList": "Lista Utenti"
   },
   "ModalPage": {
     "PageName": "Modale",
     "thisIsAModal": "Questa è una modale!"
+  },
+  "UserDetails": {
+    "UserDetails": "Dettaglio utente"
   }
 }

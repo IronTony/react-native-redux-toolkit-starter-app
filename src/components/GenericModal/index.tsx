@@ -1,10 +1,9 @@
+import CSafeAreaView from '@components/CSafeAreaView';
 import GenericHeader from '@components/GenericHeader';
-import NHCSafeAreaView from '@components/NHCSafeAreaView';
 import { StackActions, useNavigation } from '@react-navigation/native';
-import { Icon } from '@ui-kitten/components';
+import { Icon, Pressable, ScrollView, Text } from 'native-base';
 import React, { useCallback, FC, ReactNode } from 'react';
-import { TouchableOpacity, ScrollView, Text } from 'react-native';
-import styles from './styles';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 interface IModalPage {
   children: ReactNode;
@@ -20,19 +19,29 @@ const ModalPage: FC<IModalPage> = ({ children, pageTitle }) => {
   }, [navigation, popAction]);
 
   return (
-    <NHCSafeAreaView>
+    <CSafeAreaView>
       <GenericHeader
-        BodyHeader={<Text style={styles.pageTitle}>{pageTitle}</Text>}
+        BodyHeader={
+          <Text color="ALIZARIN" fontFamily="body" fontStyle="normal" fontSize="xl" textAlign="center">
+            {pageTitle}
+          </Text>
+        }
         RightAction={
-          <TouchableOpacity onPress={closeModal}>
-            <Icon pack="MaterialCommunityIcons" name="close" style={styles.headerIconContent} />
-          </TouchableOpacity>
+          <Pressable onPress={closeModal}>
+            <Icon as={MaterialCommunityIcons} name="close" fontSize={24} marginRight={10} />
+          </Pressable>
         }
       />
-      <ScrollView contentContainerStyle={styles.content} style={styles.container}>
+      <ScrollView
+        _contentContainerStyle={{
+          flex: 1,
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+        backgroundColor="MIDNIGHT_BLUE">
         {children}
       </ScrollView>
-    </NHCSafeAreaView>
+    </CSafeAreaView>
   );
 };
 

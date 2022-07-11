@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC, memo, useEffect } from 'react';
 import { View } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 
@@ -17,4 +17,4 @@ const Splashscreen: FC = () => {
   return <View />;
 };
 
-export default React.memo(Splashscreen);
+export default memo(Splashscreen);

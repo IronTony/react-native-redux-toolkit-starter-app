@@ -1,35 +1,11 @@
 import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
-import Homepage from '@scenes/Homepage';
 import ModalPage from '@scenes/ModalPage';
-import OtherPage from '@scenes/OtherPage';
+import customTheme from '@theme';
 import React, { FC } from 'react';
 import { routeOverlayOption } from './routeOptions';
+import { MainStackScreen } from './stacks/MainStack';
 
 const RootStack = createStackNavigator();
-const MainStack = createStackNavigator();
-
-export const MainStackScreen: FC = () => {
-  return (
-    <MainStack.Navigator initialRouteName={'Home'}>
-      <MainStack.Screen
-        name="Home"
-        component={Homepage}
-        options={{
-          headerShown: false,
-          ...TransitionPresets.SlideFromRightIOS,
-        }}
-      />
-      <MainStack.Screen
-        name="OtherPage"
-        component={OtherPage}
-        options={{
-          headerShown: false,
-          ...TransitionPresets.SlideFromRightIOS,
-        }}
-      />
-    </MainStack.Navigator>
-  );
-};
 
 export const RootStackScreen: FC = () => {
   return (
@@ -45,7 +21,15 @@ export const RootStackScreen: FC = () => {
         name="MyModal"
         component={ModalPage}
         options={{
-          headerShown: false,
+          headerShown: true,
+          headerTitleAlign: 'center',
+          headerLeft: () => <></>,
+          headerLeftContainerStyle: {
+            paddingLeft: customTheme.space[5],
+          },
+          headerRightContainerStyle: {
+            paddingRight: customTheme.space[5],
+          },
           ...TransitionPresets.ModalPresentationIOS,
         }}
       />

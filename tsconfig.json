@@ -20,7 +20,7 @@
 
     /* Strict Type-Checking Options */
     "strict": true,                           /* Enable all strict type-checking options. */
-    "noImplicitAny": false,                   /* Raise error on expressions and declarations with an implied 'any' type. */
+    // "noImplicitAny": true,                 /* Raise error on expressions and declarations with an implied 'any' type. */
     // "strictNullChecks": true,              /* Enable strict null checks. */
     // "strictFunctionTypes": true,           /* Enable strict checking of function types. */
     // "strictPropertyInitialization": true,  /* Enable strict checking of property initialization in classes. */
@@ -60,36 +60,42 @@
     "jsx": "react-native",                    /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
     "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file.
 
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "@*": ["src/*"],
-      // "@assets/*": [
-      //   "src/assets/*"
-      // ],
-      // "@components/*": [
-      //   "src/components/*"
-      // ],
-      // "@i18n/*": [
-      //   "src/i18n/*"
-      // ],
-      // "@redux/*": [
-      //   "src/redux/*"
-      // ],
-      // "@routes/*": [
-      //   "src/routes/*"
-      // ],
-      // "@scenes/*": [
-      //   "src/scenes/*"
-      // ],
-      // "@services/*": [
-      //   "src/services/*"
-      // ],
-      // "@theme/*": [
-      //   "src/theme/*"
-      // ],
-      // "@utils/*": [
-      //   "src/utils/*"
-      // ],
+      "@api/*": [
+        "src/api/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@i18n/*": [
+        "src/i18n/*"
+      ],
+      "@redux/*": [
+        "src/redux/*"
+      ],
+      "@routes/*": [
+        "src/routes/*"
+      ],
+      "@scenes/*": [
+        "src/scenes/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+      "@theme/*": [
+        "src/theme/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
       "@env": [
         "src/env.js"
       ]

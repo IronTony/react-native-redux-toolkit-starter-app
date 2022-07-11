@@ -1,1 +1,1 @@
-export * from './ghibli/actions';
+export * from './reqres/actions';
