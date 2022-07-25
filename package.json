@@ -71,7 +71,7 @@
     "typescript": "4.7.4"
   },
   "devDependencies": {
-    "@babel/core": "7.18.5",
+    "@babel/core": "7.18.9",
     "@babel/preset-env": "7.18.2",
     "@babel/runtime": "7.18.3",
     "@forward-software/react-native-toolbox": "^3.0.0",
