@@ -70,7 +70,7 @@
     "redux-saga": "1.2.0"
   },
   "devDependencies": {
-    "@babel/core": "7.18.5",
+    "@babel/core": "7.19.6",
     "@babel/preset-env": "7.18.2",
     "@babel/runtime": "7.18.3",
     "@forward-software/react-native-toolbox": "^3.0.0",
