@@ -1,6 +1,6 @@
 # React Native Redux Toolkit Start App  <!-- omit in toc -->
 
-> A React Native boilerplate app to bootstrap your next app wit Redux Toolkit and Saga!
+> A React Native boilerplate app to bootstrap your next app with Redux Toolkit and Saga!
 
 ## 🔥🔥🔥 Upgraded to the latest React-Native (> 0.69.x) with brand New Architecture (Fabric) 🔥🔥🔥
 
