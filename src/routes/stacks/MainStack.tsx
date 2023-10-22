@@ -38,6 +38,7 @@ export const MainStackScreen: FC = () => {
         options={{
           headerShown: true,
           headerTitleAlign: 'center',
+          headerBackVisible: false,
         }}
       />
       <MainStack.Screen
@@ -46,6 +47,7 @@ export const MainStackScreen: FC = () => {
         options={{
           headerShown: true,
           headerTitleAlign: 'center',
+          headerBackVisible: false,
         }}
       />
     </MainStack.Navigator>
