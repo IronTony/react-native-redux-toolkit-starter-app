@@ -10,7 +10,7 @@ import { useDispatch, useSelector } from 'react-redux';
 function App() {
   const dispatch = useDispatch();
   const toast = useToast();
-  const toastIdRef = useRef();
+  const toastIdRef = useRef(null);
   const hasGeneralMessage = useSelector(messageHandlerFullInfo);
 
   const onCloseToast = useCallback(() => {
@@ -27,10 +27,11 @@ function App() {
         ),
         placement: 'top',
         onCloseComplete: () => dispatch(messageHandlerReset()),
-        duration: 5000,
+        duration: 3000,
       });
     }
-  }, [hasGeneralMessage, dispatch, toast, onCloseToast]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [hasGeneralMessage, dispatch]);
 
   return (
     <>

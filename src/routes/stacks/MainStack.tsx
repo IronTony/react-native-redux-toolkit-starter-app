@@ -38,13 +38,6 @@ export const MainStackScreen: FC = () => {
         options={{
           headerShown: true,
           headerTitleAlign: 'center',
-          // headerLeftContainerStyle: {
-          //   paddingLeft: customTheme.space[5],
-          // },
-          // headerRightContainerStyle: {
-          //   paddingRight: customTheme.space[5],
-          // },
-          //...TransitionPresets.SlideFromRightIOS,
         }}
       />
       <MainStack.Screen
@@ -53,13 +46,6 @@ export const MainStackScreen: FC = () => {
         options={{
           headerShown: true,
           headerTitleAlign: 'center',
-          // headerLeftContainerStyle: {
-          //   paddingLeft: customTheme.space[5],
-          // },
-          // headerRightContainerStyle: {
-          //   paddingRight: customTheme.space[5],
-          // },
-          //...TransitionPresets.SlideFromRightIOS,
         }}
       />
     </MainStack.Navigator>

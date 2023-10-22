@@ -86,7 +86,7 @@ const UsersList: FC = () => {
   useLayoutEffect(() => {
     setOptions({
       headerLeft: () => (
-        <Flex flex={1} justifyContent="center">
+        <Flex flex={0} justifyContent="center">
           <Pressable onPress={goBack}>
             <Icon as={MaterialIcons} name="arrow-back-ios" color="MIDNIGHT_BLUE" size="24px" />
           </Pressable>
