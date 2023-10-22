@@ -1,23 +1,25 @@
-import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
-import ModalPage from '@scenes/ModalPage';
-import customTheme from '@theme';
-import React, { FC } from 'react';
-import { routeOverlayOption } from './routeOptions';
-import { MainStackScreen } from './stacks/MainStack';
+import { NavigatorScreenParams } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { MainStackParamList, MainStackScreen } from '@routes/stacks/MainStack';
+import React from 'react';
 
-const RootStack = createStackNavigator();
+export type RootStackParamList = {
+  MainStack: NavigatorScreenParams<MainStackParamList>; // Assuming 'MainStack' is the name of the screen in your MainStackScreen
+};
 
-export const RootStackScreen: FC = () => {
+const RootStack = createNativeStackNavigator<RootStackParamList>();
+
+function RootStackScreen() {
   return (
-    <RootStack.Navigator screenOptions={{ presentation: 'modal', ...routeOverlayOption }}>
+    <RootStack.Navigator screenOptions={{ presentation: 'modal' }}>
       <RootStack.Screen
-        name="Main"
+        name="MainStack"
         component={MainStackScreen}
         options={{
           headerShown: false,
         }}
       />
-      <RootStack.Screen
+      {/* <RootStack.Screen
         name="MyModal"
         component={ModalPage}
         options={{
@@ -32,7 +34,9 @@ export const RootStackScreen: FC = () => {
           },
           ...TransitionPresets.ModalPresentationIOS,
         }}
-      />
+      /> */}
     </RootStack.Navigator>
   );
-};
+}
+
+export default RootStackScreen;

@@ -4,10 +4,14 @@ import { Text } from 'react-native';
 import { defaultLanguage, languagesResources } from './languageConfig';
 import RNLanguageDetector from './languageDetector';
 
+// @ts-nocheck
+// @ts-ignore
 i18n
+  // @ts-ignore
   .use(RNLanguageDetector)
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
+    // @ts-ignore
     debug: process.env.NODE_ENV === 'development',
     resources: languagesResources,
     compatibilityJSON: 'v3',

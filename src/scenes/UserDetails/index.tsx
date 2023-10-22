@@ -4,7 +4,6 @@ import { useNavigationBackAction } from '@hooks/useNavigationBack';
 import { Route, useFocusEffect, useNavigation, useRoute } from '@react-navigation/native';
 import { getUserDetailsRequest } from '@redux/actions';
 import { userDetails, userDetailsLoading } from '@redux/reqres/selectors';
-import { GenericNavigationProps } from '@routes/types';
 import { Avatar, Flex, Icon, Pressable, ScrollView, Text } from 'native-base';
 import { FC, useCallback, useLayoutEffect } from 'react';
 import * as React from 'react';
@@ -20,7 +19,7 @@ const UserDetails: FC = () => {
   const { t } = useTranslation();
   const dispatch = useDispatch();
   const route = useRoute<Route<'UserDetails', UserDetailsProps>>();
-  const { setOptions } = useNavigation<GenericNavigationProps>();
+  const { setOptions } = useNavigation();
   const goBack = useNavigationBackAction();
   const userId = route?.params?.userId;
   const detailsLoading = useSelector(userDetailsLoading);

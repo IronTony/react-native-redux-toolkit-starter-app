@@ -3,9 +3,11 @@
  */
 
 import { AppRegistry, LogBox } from 'react-native';
+import ContainerApp from 'src/ContainerApp';
+
 import { name as appName } from './app.json';
-import App from './src/App';
+
 
 // Remove YellowBox on Debug application screen
 LogBox.ignoreAllLogs(true);
-AppRegistry.registerComponent(appName, () => App);
+AppRegistry.registerComponent(appName, () => ContainerApp);

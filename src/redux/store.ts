@@ -8,12 +8,6 @@ import createSagaMiddleware from 'redux-saga';
 const sagaMiddleware = createSagaMiddleware();
 const middleware = [sagaMiddleware];
 
-if (__DEV__) {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const createDebugger = require('redux-flipper').default;
-  middleware.push(createDebugger());
-}
-
 // Create Store
 const store = configureStore({
   reducer: persistedRootReducer,
