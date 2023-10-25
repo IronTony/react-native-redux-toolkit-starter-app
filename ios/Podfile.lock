@@ -381,7 +381,7 @@ PODS:
   - react-native-mmkv (2.10.2):
     - MMKV (>= 1.2.13)
     - React-Core
-  - react-native-safe-area-context (4.7.3):
+  - react-native-safe-area-context (4.7.4):
     - React-Core
   - react-native-version-number (0.3.6):
     - React
@@ -499,7 +499,7 @@ PODS:
     - React-Core
   - RNLocalize (3.0.2):
     - React-Core
-  - RNScreens (3.26.0):
+  - RNScreens (3.27.0):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
   - RNSVG (13.14.0):
@@ -737,7 +737,7 @@ SPEC CHECKSUMS:
   React-jsinspector: 194e32c6aab382d88713ad3dd0025c5f5c4ee072
   React-logger: cebf22b6cf43434e471dc561e5911b40ac01d289
   react-native-mmkv: 9ae7ca3977e8ef48dbf7f066974eb844c20b5fd7
-  react-native-safe-area-context: 238cd8b619e05cb904ccad97ef42e84d1b5ae6ec
+  react-native-safe-area-context: 2cd91d532de12acdb0a9cbc8d43ac72a8e4c897c
   react-native-version-number: b415bbec6a13f2df62bf978e85bc0d699462f37f
   React-NativeModulesApple: 02e35e9a51e10c6422f04f5e4076a7c02243fff2
   React-perflogger: e3596db7e753f51766bceadc061936ef1472edc3
@@ -758,7 +758,7 @@ SPEC CHECKSUMS:
   ReactCommon: dd03c17275c200496f346af93a7b94c53f3093a4
   RNBootSplash: 85f6b879c080e958afdb4c62ee04497b05fd7552
   RNLocalize: dbea38dcb344bf80ff18a1757b1becf11f70cae4
-  RNScreens: 2a28f2973f4d0d4623e18629ebfc2c4adaceb39a
+  RNScreens: 3c2d122f5e08c192e254c510b212306da97d2581
   RNSVG: d00c8f91c3cbf6d476451313a18f04d220d4f396
   RNVectorIcons: 8b5bb0fa61d54cd2020af4f24a51841ce365c7e9
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
