@@ -7,25 +7,22 @@ import {
   allUsers,
   allUsersLoading,
   usersListCurrentPage,
-  usersListTotalPages,
-  usersListTotalResults,
+  usersListTotalPages, // usersListTotalResults,
 } from '@redux/reqres/selectors';
 import { User } from '@redux/reqres/types';
-import { GenericNavigationProps } from '@routes/types';
 import { isEmpty, isUndefined } from 'lodash';
 import { Avatar, FlatList, Flex, Icon, Pressable, Text } from 'native-base';
 import * as React from 'react';
 import { useCallback, FC, useLayoutEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import { useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 const UsersList: FC = () => {
   const { t } = useTranslation();
   const dispatch = useDispatch();
-  const navigation = useNavigation<GenericNavigationProps>();
-  const { setOptions } = useNavigation<GenericNavigationProps>();
+  const navigation = useNavigation();
+  const { setOptions } = useNavigation();
   const goBack = useNavigationBackAction();
   const onUsersListLoading = useSelector(allUsersLoading);
   const usersList = useSelector(allUsers);
@@ -35,8 +32,11 @@ const UsersList: FC = () => {
 
   const onGotoUserDetails = useCallback(
     (userId: number) => {
-      navigation.navigate('UserDetails', {
-        userId,
+      navigation.navigate('MainStack', {
+        screen: 'UserDetails',
+        params: {
+          userId,
+        },
       });
     },
     [navigation],
@@ -86,7 +86,7 @@ const UsersList: FC = () => {
   useLayoutEffect(() => {
     setOptions({
       headerLeft: () => (
-        <Flex flex={1} justifyContent="center">
+        <Flex flex={0} justifyContent="center">
           <Pressable onPress={goBack}>
             <Icon as={MaterialIcons} name="arrow-back-ios" color="MIDNIGHT_BLUE" size="24px" />
           </Pressable>

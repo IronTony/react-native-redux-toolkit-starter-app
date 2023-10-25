@@ -1,6 +1,5 @@
 import { useNavigationBackAction } from '@hooks/useNavigationBack';
 import { useNavigation } from '@react-navigation/native';
-import { GenericNavigationProps } from '@routes/types';
 import { Flex, Icon, Pressable, ScrollView, Text } from 'native-base';
 import React, { FC, useLayoutEffect } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -8,7 +7,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 const ModalPage: FC = () => {
   const { t } = useTranslation();
-  const { setOptions } = useNavigation<GenericNavigationProps>();
+  const { setOptions } = useNavigation();
   const goBack = useNavigationBackAction();
 
   useLayoutEffect(() => {

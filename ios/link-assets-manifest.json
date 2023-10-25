@@ -1,0 +1,45 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Lato-Black.ttf",
+      "sha1": "a001eb827743636e04f8efa7d4aeedf0541c46ac"
+    },
+    {
+      "path": "src/assets/fonts/Lato-BlackItalic.ttf",
+      "sha1": "b490ec02c69bb74f5b4f487c59e984891c8da71c"
+    },
+    {
+      "path": "src/assets/fonts/Lato-Bold.ttf",
+      "sha1": "542498221d97bee5bdbccf86ee8890bf8e8005c9"
+    },
+    {
+      "path": "src/assets/fonts/Lato-BoldItalic.ttf",
+      "sha1": "6bf491e78e16d3b9c8a55752e1bd658e15ed7f19"
+    },
+    {
+      "path": "src/assets/fonts/Lato-Italic.ttf",
+      "sha1": "190187b720ec2f2ff2e4281237e301000e09673f"
+    },
+    {
+      "path": "src/assets/fonts/Lato-Light.ttf",
+      "sha1": "ad0d178564445a535b15d417f5b18019923d3bab"
+    },
+    {
+      "path": "src/assets/fonts/Lato-LightItalic.ttf",
+      "sha1": "34388d9a3b64380c9f08d424d0adaa88a0d1650a"
+    },
+    {
+      "path": "src/assets/fonts/Lato-Regular.ttf",
+      "sha1": "e923c72eda5e50a87e18ff5c71e9ef4b3b6455a3"
+    },
+    {
+      "path": "src/assets/fonts/Lato-Thin.ttf",
+      "sha1": "07290446bee3f81ce501a3c3dbfde6097c70ca15"
+    },
+    {
+      "path": "src/assets/fonts/Lato-ThinItalic.ttf",
+      "sha1": "ff4a1a9fe2dcc41d993f4c5067a3baa1c456ff97"
+    }
+  ]
+}

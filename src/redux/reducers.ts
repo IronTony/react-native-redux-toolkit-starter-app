@@ -1,7 +1,7 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { usersReducer } from '@redux/reqres/reducers';
 import { persistCombineReducers } from 'redux-persist';
 import messagesReducer from './messageHandler/reducers';
+import { reduxStorage } from './storage';
 
 const reducers = {
   users: usersReducer,
@@ -10,7 +10,7 @@ const reducers = {
 
 const persistConfig = {
   key: 'root',
-  storage: AsyncStorage,
+  storage: reduxStorage,
   // There is an issue in the source code of redux-persist (default setTimeout does not cleaning)
   timeout: undefined,
   whitelist: [''],

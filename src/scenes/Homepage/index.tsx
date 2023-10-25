@@ -2,7 +2,6 @@ import EnvInfoView from '@components/AppVersion';
 import CSafeAreaView from '@components/CSafeAreaView';
 import { useNavigation } from '@react-navigation/native';
 import { createUserRequest, deleteUserRequest, modifyUserRequest } from '@redux/actions';
-import { GenericNavigationProps } from '@routes/types';
 import { Button, Flex, Icon, ScrollView, Text } from 'native-base';
 import React, { useCallback, FC, memo, useLayoutEffect } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -14,8 +13,8 @@ import styles from './styles';
 const Home: FC = () => {
   const { t, i18n } = useTranslation();
   const dispatch = useDispatch();
-  const navigation = useNavigation<GenericNavigationProps>();
-  const { setOptions } = useNavigation<GenericNavigationProps>();
+  const navigation = useNavigation();
+  const { setOptions } = useNavigation();
   const currentLocale = i18n.language;
 
   const switchLocaleToEn = useCallback(() => {
@@ -98,7 +97,7 @@ const Home: FC = () => {
         </Flex>
 
         <Button
-          onPress={() => navigation.navigate('Main', { screen: 'UsersList' })}
+          onPress={() => navigation.navigate('MainStack', { screen: 'UsersList' })}
           backgroundColor="SUN_FLOWER"
           mb="5px">
           <Flex flexDirection="row" alignItems="center">
@@ -136,7 +135,7 @@ const Home: FC = () => {
           </Flex>
         </Button>
 
-        <Button
+        {/* <Button
           alignSelf="center"
           backgroundColor="TRANSPARENT"
           borderColor="ALIZARIN"
@@ -146,7 +145,7 @@ const Home: FC = () => {
           <Text color="WHITE" fontFamily="body" fontStyle="normal">
             {t('Homepage:openModal')}
           </Text>
-        </Button>
+        </Button> */}
 
         <EnvInfoView />
       </ScrollView>
