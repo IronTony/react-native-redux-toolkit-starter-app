@@ -74,7 +74,7 @@
     "@types/lodash": "^4.14.200",
     "@types/metro-config": "^0.76.3",
     "@types/node": "^20.2.5",
-    "@types/react": "^18.0.24",
+    "@types/react": "^18.2.35",
     "@types/react-native-indicators": "^0.16.2",
     "@types/react-native-vector-icons": "^6.4.15",
     "@types/react-redux": "^7.1.23",
