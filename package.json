@@ -42,7 +42,7 @@
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/native-stack": "^6.9.15",
     "@reduxjs/toolkit": "1.9.7",
-    "axios": "^0.27.2",
+    "axios": "^1.6.1",
     "i18next": "^22.5.0",
     "lodash": "^4.17.21",
     "native-base": "3.4.28",
