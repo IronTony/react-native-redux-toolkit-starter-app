@@ -68,7 +68,7 @@
     "@babel/runtime": "^7.20.0",
     "@forward-software/react-native-toolbox": "^3.0.0",
     "@react-native/eslint-config": "^0.72.2",
-    "@react-native/metro-config": "^0.72.11",
+    "@react-native/metro-config": "^0.73.2",
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
     "@tsconfig/react-native": "^3.0.0",
     "@types/lodash": "^4.14.200",
