@@ -1,41 +1,35 @@
-import CToaster from '@components/CToaster';
+import { DARK_THEME, LIGHT_THEME } from '@constants/theme';
 import { messageHandlerReset } from '@redux/messageHandler/actions';
 import { messageHandlerFullInfo } from '@redux/messageHandler/selectors';
 import RootStackScreen from '@routes';
-import { useToast } from 'native-base';
-import React, { useCallback, useEffect, useRef } from 'react';
-import { StatusBar } from 'react-native';
+import React, { useEffect } from 'react';
+import { StatusBar, useColorScheme } from 'react-native';
+import Toast from 'react-native-toast-message';
 import { useDispatch, useSelector } from 'react-redux';
 
 function App() {
+  const colorScheme = useColorScheme() ?? LIGHT_THEME;
+  const isDarkMode = colorScheme === DARK_THEME;
   const dispatch = useDispatch();
-  const toast = useToast();
-  const toastIdRef = useRef(null);
   const hasGeneralMessage = useSelector(messageHandlerFullInfo);
-
-  const onCloseToast = useCallback(() => {
-    if (toastIdRef.current) {
-      toast.close(toastIdRef.current);
-    }
-  }, [toast]);
 
   useEffect(() => {
     if (hasGeneralMessage?.message) {
-      toastIdRef.current = toast.show({
-        render: () => (
-          <CToaster status={hasGeneralMessage?.status} title={hasGeneralMessage?.message} onClose={onCloseToast} />
-        ),
-        placement: 'top',
-        onCloseComplete: () => dispatch(messageHandlerReset()),
-        duration: 3000,
+      Toast.show({
+        position: 'top',
+        onHide: () => dispatch(messageHandlerReset()),
+        visibilityTime: 3000,
+        topOffset: 60,
+        type: hasGeneralMessage?.status,
+        text1: hasGeneralMessage?.message,
+        // text2: description.....
       });
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hasGeneralMessage, dispatch]);
 
   return (
     <>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
 
       <RootStackScreen />
     </>

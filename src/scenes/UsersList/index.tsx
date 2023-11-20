@@ -10,13 +10,15 @@ import {
   usersListTotalPages, // usersListTotalResults,
 } from '@redux/reqres/selectors';
 import { User } from '@redux/reqres/types';
+import { palette } from '@theme/colors';
 import { isEmpty, isUndefined } from 'lodash';
-import { Avatar, FlatList, Flex, Icon, Pressable, Text } from 'native-base';
 import * as React from 'react';
 import { useCallback, FC, useLayoutEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { FlatList, Pressable } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { useSelector, useDispatch } from 'react-redux';
+import { Avatar, Text, XStack, YStack } from 'tamagui';
 
 const UsersList: FC = () => {
   const { t } = useTranslation();
@@ -45,16 +47,19 @@ const UsersList: FC = () => {
   const renderItem = useCallback(
     ({ item }: { item: User }) => (
       <Pressable onPress={() => onGotoUserDetails(item?.id)}>
-        <Flex flex={1} flexDirection="row" paddingY="20px" key={item.id} alignItems="center">
-          <Avatar source={{ uri: item?.avatar }} size="md" />
+        <YStack flex={1} flexDirection="row" paddingVertical={10} key={item.id} alignItems="center" gap={10}>
+          <Avatar circular size="$6">
+            <Avatar.Image src={item?.avatar} />
+            {/* <Avatar.Fallback bc="red" /> */}
+          </Avatar>
+
           <Text
-            color="CLOUDS"
-            fontFamily="body"
+            color="$clouds"
+            fontFamily="$body"
             fontStyle="normal"
-            fontSize="md"
-            paddingY="10px"
-            paddingX="10px">{`${item.first_name} ${item.last_name}`}</Text>
-        </Flex>
+            fontWeight="900"
+            fontSize="$6">{`${item.first_name} ${item.last_name}`}</Text>
+        </YStack>
       </Pressable>
     ),
     [onGotoUserDetails],
@@ -86,14 +91,14 @@ const UsersList: FC = () => {
   useLayoutEffect(() => {
     setOptions({
       headerLeft: () => (
-        <Flex flex={0} justifyContent="center">
+        <XStack flex={0} justifyContent="center">
           <Pressable onPress={goBack}>
-            <Icon as={MaterialIcons} name="arrow-back-ios" color="MIDNIGHT_BLUE" size="24px" />
+            <MaterialIcons name="arrow-back-ios" color={palette.midnight_blue} size={14} />
           </Pressable>
-        </Flex>
+        </XStack>
       ),
       headerTitle: () => (
-        <Text fontSize="20px" fontFamily="body" fontWeight={700}>
+        <Text fontSize="$6" fontFamily="$body" color="$midnight_blue">
           {t('UsersList:UsersList')}
         </Text>
       ),
@@ -106,8 +111,10 @@ const UsersList: FC = () => {
 
       <FlatList
         data={usersList}
-        backgroundColor="pageBackground"
-        _contentContainerStyle={{
+        style={{
+          backgroundColor: palette.midnight_blue,
+        }}
+        contentContainerStyle={{
           padding: 15,
         }}
         renderItem={renderItem}

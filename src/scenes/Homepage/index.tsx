@@ -2,12 +2,13 @@ import EnvInfoView from '@components/AppVersion';
 import CSafeAreaView from '@components/CSafeAreaView';
 import { useNavigation } from '@react-navigation/native';
 import { createUserRequest, deleteUserRequest, modifyUserRequest } from '@redux/actions';
-import { Button, Flex, Icon, ScrollView, Text } from 'native-base';
+import { palette } from '@theme/colors';
 import React, { useCallback, FC, memo, useLayoutEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5';
 import { useDispatch } from 'react-redux';
+import { Button, ScrollView, Text, XStack, YStack } from 'tamagui';
 import styles from './styles';
 
 const Home: FC = () => {
@@ -40,112 +41,96 @@ const Home: FC = () => {
   useLayoutEffect(() => {
     setOptions({
       headerLeft: () => <></>,
-      headerTitle: () => <Icon as={FontAwesome5} name="react" color="PETER_RIVER" size="30px" />,
+      headerTitle: () => <FontAwesome5Icon name="react" color={palette.peter_river} size={20} />,
     });
   }, [setOptions]);
 
   return (
     <CSafeAreaView>
-      <ScrollView backgroundColor="pageBackground" _contentContainerStyle={styles.ContentViewContainer}>
-        <Text
-          color="WHITE"
-          fontFamily="body"
-          fontWeight={700}
-          fontStyle="normal"
-          fontSize="3xl"
-          paddingBottom="20px"
-          textAlign="center">
+      <ScrollView backgroundColor="$wet_asphalt" contentContainerStyle={styles.ContentViewContainer}>
+        <Text color="$white" fontFamily="$body" fontWeight="900" fontSize="$9" paddingBottom={20} textAlign="center">
           {t('Homepage:welcome')}
         </Text>
-        <Text
-          color="WHITE"
-          fontFamily="body"
-          fontWeight={400}
-          fontStyle="normal"
-          fontSize="sm"
-          paddingBottom="20px"
-          textAlign="center">
+        <Text color="$white" fontFamily="$body" fontWeight="100" fontSize="$3" paddingBottom={20} textAlign="center">
           {t('Homepage:releasedWithLove')}
         </Text>
 
-        <Flex flexDirection="row">
+        <YStack flexDirection="row" marginBottom={20}>
           <Button
-            backgroundColor="CARROT"
+            backgroundColor={currentLocale === 'it' ? '$nephritis' : '$carrot'}
             onPress={switchLocaleToIt}
             margin={2}
-            isPressed={currentLocale === 'it'}
-            _pressed={{
-              backgroundColor: currentLocale === 'it' ? 'primary' : 'tertiary',
+            pressStyle={{
+              backgroundColor: currentLocale === 'it' ? '$nephritis' : '$carrot',
             }}>
-            <Text color="WHITE" fontFamily="body" fontStyle="normal">
+            <Text color="$white" fontFamily="$body" fontStyle="normal">
               {t('common:italian')}
             </Text>
           </Button>
 
           <Button
-            backgroundColor="CARROT"
+            backgroundColor={currentLocale === 'en' ? '$nephritis' : '$carrot'}
             onPress={switchLocaleToEn}
             margin={2}
-            isPressed={currentLocale === 'en'}
-            _pressed={{
-              backgroundColor: currentLocale === 'en' ? 'primary' : 'tertiary',
+            pressStyle={{
+              backgroundColor: currentLocale === 'en' ? '$nephritis' : '$carrot',
             }}>
-            <Text color="WHITE" fontFamily="body" fontStyle="normal">
+            <Text color="$white" fontFamily="$body" fontStyle="normal">
               {t('common:english')}
             </Text>
           </Button>
-        </Flex>
+        </YStack>
 
         <Button
           onPress={() => navigation.navigate('MainStack', { screen: 'UsersList' })}
-          backgroundColor="SUN_FLOWER"
-          mb="5px">
-          <Flex flexDirection="row" alignItems="center">
-            <Icon as={EvilIcons} name="arrow-right" color="WHITE" marginRight={2} fontSize={20} />
-            <Text color="WHITE" fontFamily="body" fontStyle="normal">
+          backgroundColor="$sun_flower"
+          marginBottom={5}>
+          <XStack flexDirection="row" alignItems="center" gap={3}>
+            <EvilIcons name="arrow-right" color={palette.white} size={20} />
+            <Text color="$white" fontFamily="$body" fontStyle="normal">
               {t('Homepage:gotoUsersList')}
             </Text>
-          </Flex>
+          </XStack>
         </Button>
 
-        <Button onPress={onCreateUser} backgroundColor="SUN_FLOWER" mb="5px">
-          <Flex flexDirection="row" alignItems="center">
-            <Icon as={EvilIcons} name="arrow-right" color="WHITE" marginRight={2} fontSize={20} />
-            <Text color="WHITE" fontFamily="body" fontStyle="normal">
+        <Button onPress={onCreateUser} backgroundColor="$sun_flower" marginBottom={5}>
+          <XStack flexDirection="row" alignItems="center" gap={3}>
+            <EvilIcons name="arrow-right" color={palette.white} size={20} />
+            <Text color="$white" fontFamily="$body" fontStyle="normal">
               {t('Homepage:createNewUser')}
             </Text>
-          </Flex>
+          </XStack>
         </Button>
 
-        <Button onPress={onModifyUser} backgroundColor="SUN_FLOWER" mb="5px">
-          <Flex flexDirection="row" alignItems="center">
-            <Icon as={EvilIcons} name="arrow-right" color="WHITE" marginRight={2} fontSize={20} />
-            <Text color="WHITE" fontFamily="body" fontStyle="normal">
+        <Button onPress={onModifyUser} backgroundColor="$sun_flower" marginBottom={5}>
+          <XStack flexDirection="row" alignItems="center" gap={3}>
+            <EvilIcons name="arrow-right" color={palette.white} size={20} />
+            <Text color="$white" fontFamily="$body" fontStyle="normal">
               {t('Homepage:ModifyUser')}
             </Text>
-          </Flex>
+          </XStack>
         </Button>
 
-        <Button onPress={onDeleteUser} backgroundColor="SUN_FLOWER" mb="5px">
-          <Flex flexDirection="row" alignItems="center">
-            <Icon as={EvilIcons} name="arrow-right" color="WHITE" marginRight={2} fontSize={20} />
-            <Text color="WHITE" fontFamily="body" fontStyle="normal">
+        <Button onPress={onDeleteUser} backgroundColor="$sun_flower" marginBottom={5}>
+          <XStack flexDirection="row" alignItems="center" gap={3}>
+            <EvilIcons name="arrow-right" color={palette.white} size={20} />
+            <Text color="$white" fontFamily="$body" fontStyle="normal">
               {t('Homepage:DeleteUser')}
             </Text>
-          </Flex>
+          </XStack>
         </Button>
 
-        {/* <Button
+        <Button
           alignSelf="center"
-          backgroundColor="TRANSPARENT"
-          borderColor="ALIZARIN"
+          backgroundColor="transparent"
+          borderColor="$alizarin"
           borderWidth={1}
           marginTop={15}
           onPress={() => navigation.navigate('MyModal')}>
-          <Text color="WHITE" fontFamily="body" fontStyle="normal">
+          <Text color="$white" fontFamily="$body" fontStyle="normal">
             {t('Homepage:openModal')}
           </Text>
-        </Button> */}
+        </Button>
 
         <EnvInfoView />
       </ScrollView>

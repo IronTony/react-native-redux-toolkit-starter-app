@@ -1,5 +1,5 @@
-import { Box } from 'native-base';
 import React, { FC, ReactNode } from 'react';
+import { YStack } from 'tamagui';
 
 interface CSafeAreaViewProps {
   children: ReactNode;
@@ -7,9 +7,9 @@ interface CSafeAreaViewProps {
 
 const CSafeAreaView: FC<CSafeAreaViewProps> = ({ children }) => {
   return (
-    <Box width="100%" height="100%">
+    <YStack flex={1} width="100%" height="100%">
       {children}
-    </Box>
+    </YStack>
   );
 };
 

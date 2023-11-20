@@ -1,9 +1,9 @@
-import customTheme from '@theme';
+import { palette } from '@theme/colors';
 import { Platform, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   fullPageLoader: {
-    backgroundColor: customTheme.colors.BLACK_OPACITY_7,
+    backgroundColor: palette.black_opacity_7,
     ...Platform.select({
       ios: {
         height: '100%',

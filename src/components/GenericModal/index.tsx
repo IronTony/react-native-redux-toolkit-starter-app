@@ -1,9 +1,10 @@
 import CSafeAreaView from '@components/CSafeAreaView';
 import GenericHeader from '@components/GenericHeader';
 import { StackActions, useNavigation } from '@react-navigation/native';
-import { Icon, Pressable, ScrollView, Text } from 'native-base';
 import React, { useCallback, FC, ReactNode } from 'react';
+import { Pressable } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import { ScrollView, Text } from 'tamagui';
 
 interface IModalPage {
   children: ReactNode;
@@ -22,23 +23,23 @@ const ModalPage: FC<IModalPage> = ({ children, pageTitle }) => {
     <CSafeAreaView>
       <GenericHeader
         BodyHeader={
-          <Text color="ALIZARIN" fontFamily="body" fontStyle="normal" fontSize="xl" textAlign="center">
+          <Text color="$alizarin" fontFamily="$body" fontStyle="normal" fontSize="$5" textAlign="center">
             {pageTitle}
           </Text>
         }
         RightAction={
-          <Pressable onPress={closeModal}>
-            <Icon as={MaterialCommunityIcons} name="close" fontSize={24} marginRight={10} />
+          <Pressable onPress={closeModal} style={{ marginRight: 10 }}>
+            <MaterialCommunityIcons name="close" size={24} />
           </Pressable>
         }
       />
       <ScrollView
-        _contentContainerStyle={{
+        contentContainerStyle={{
           flex: 1,
           alignItems: 'center',
           justifyContent: 'center',
         }}
-        backgroundColor="MIDNIGHT_BLUE">
+        backgroundColor="$midnight_blue">
         {children}
       </ScrollView>
     </CSafeAreaView>

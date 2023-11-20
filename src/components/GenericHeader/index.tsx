@@ -1,7 +1,9 @@
-import { Flex, HStack, Icon, Pressable, Text } from 'native-base';
+import { palette } from '@theme/colors';
 import React, { FC, memo, ReactNode } from 'react';
-import { StyleProp, ViewStyle } from 'react-native';
+import { Pressable, StyleProp, ViewStyle } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { Text, XStack } from 'tamagui';
+import styles from './styles';
 
 interface IGenericHeader {
   BodyHeader?: ReactNode;
@@ -25,20 +27,20 @@ const GenericHeader: FC<IGenericHeader> = ({
   withShadow = false,
 }) => {
   return (
-    <HStack
+    <XStack
       alignItems="center"
       justifyContent="space-between"
-      // style={[style, styles.headerContainer, withShadow && styles.HeaderShadow]}
-      height="40px"
-      w="100%">
-      <Flex alignItems="center">
+      style={[style, styles.headerContainer, withShadow && styles.HeaderShadow]}
+      height={40}
+      width="100%">
+      <XStack alignItems="center">
         {/*
             The GenericHeader component accepts an onBackClicked prop.
             The route where you want to go is specified in the import of this Header in your scene component
           */}
         {!!onBackClicked && (
           <Pressable onPress={onBackClicked}>
-            <Icon as={Ionicons} name="arrow-back" color="MIDNIGHT_BLUE" size="sm" />
+            <Ionicons name="arrow-back" color={palette.midnight_blue} size={12} />
             {/* <Text style={styles.backButtonStyle} >{t('Header:back')}</Text> */}
           </Pressable>
         )}
@@ -46,22 +48,21 @@ const GenericHeader: FC<IGenericHeader> = ({
             You can also pass a custom component defined in you scene component for the left section of the Header
           */}
         {LeftAction}
-      </Flex>
+      </XStack>
 
-      <Flex>
+      <XStack alignItems="center" width="100%">
         {/*
             You can pass the page name or a component that will be rendered in the middle of your Header
           */}
 
         {!!title && (
           <Text
-            color="MIDNIGHT_BLUE"
-            fontSize="20px"
-            fontFamily="body"
-            fontWeight={700}
-            lineHeight="24px"
+            color="$midnight_blue"
+            fontSize="$4"
+            fontFamily="$body"
+            fontWeight="500"
             textAlign="center"
-            width="220px"
+            width={220}
             numberOfLines={1}
             ellipsizeMode="tail">
             {title}
@@ -69,16 +70,16 @@ const GenericHeader: FC<IGenericHeader> = ({
         )}
         {!subtitle ? <></> : <Text>{subtitle}</Text>}
         {BodyHeader}
-      </Flex>
+      </XStack>
 
-      <Flex alignItems="center">
+      <XStack>
         {/*
             You can also pass a custom component defined in you scene component for the right section of the Header
           */}
 
         {RightAction}
-      </Flex>
-    </HStack>
+      </XStack>
+    </XStack>
   );
 };
 

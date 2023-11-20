@@ -1,18 +1,24 @@
+import { DARK_THEME, LIGHT_THEME } from '@constants/theme';
+import toastConfig from '@constants/toast';
 import '@i18n';
-import { NavigationContainer } from '@react-navigation/native';
+import { DarkTheme, DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { persistor, store } from '@redux/store';
 import { navigationRef } from '@routes/utils';
-import customTheme from '@theme';
-import { NativeBaseProvider } from 'native-base';
+import appConfig from '@theme';
 import React, { ReactElement, Suspense, useCallback, useEffect } from 'react';
-import { Text } from 'react-native';
+import { Text, useColorScheme } from 'react-native';
 import RNBootSplash from 'react-native-bootsplash';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-context';
+import Toast from 'react-native-toast-message';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import App from 'src/App';
+import { TamaguiProvider } from 'tamagui';
 
 function ContainerApp(): ReactElement {
+  const colorScheme = useColorScheme() ?? LIGHT_THEME;
+  const isDarkMode = colorScheme === DARK_THEME;
+
   const hideBootSplash = useCallback(async () => {
     await RNBootSplash.hide({ fade: true });
   }, []);
@@ -25,12 +31,14 @@ function ContainerApp(): ReactElement {
     <Suspense fallback="Loading...">
       <Provider store={store}>
         <PersistGate loading={<Text>Loading...</Text>} persistor={persistor}>
-          <SafeAreaProvider>
-            <NavigationContainer ref={navigationRef}>
-              <NativeBaseProvider theme={customTheme}>
+          <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+            <TamaguiProvider config={appConfig} defaultTheme={colorScheme}>
+              <NavigationContainer ref={navigationRef} theme={isDarkMode ? DarkTheme : DefaultTheme}>
                 <App />
-              </NativeBaseProvider>
-            </NavigationContainer>
+              </NavigationContainer>
+
+              <Toast config={toastConfig} />
+            </TamaguiProvider>
           </SafeAreaProvider>
         </PersistGate>
       </Provider>
