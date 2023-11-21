@@ -1,4 +1,4 @@
 export type messageHandlerPayload = {
-  status: 'info' | 'warning' | 'success' | 'error';
+  status: 'info' | 'success' | 'error';
   message: string;
 };

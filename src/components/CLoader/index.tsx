@@ -1,9 +1,9 @@
-import theme from '@theme';
-import { Flex } from 'native-base';
+import { palette } from '@theme/colors';
 import * as React from 'react';
 import { FC } from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
 import { MaterialIndicator } from 'react-native-indicators';
+import { XStack } from 'tamagui';
 import styles from './styles';
 
 interface ICLoader {
@@ -13,11 +13,11 @@ interface ICLoader {
   fullPage?: boolean;
 }
 
-const CLoader: FC<ICLoader> = ({ color = theme.colors.SUN_FLOWER, size = 40, style = {}, fullPage = false }) => {
+const CLoader: FC<ICLoader> = ({ color = palette.sun_flower, size = 40, style = {}, fullPage = false }) => {
   return (
-    <Flex flex={1} justifyContent="center" alignItems="center" style={[fullPage && styles.fullPageLoader, style]}>
+    <XStack flex={1} justifyContent="center" alignItems="center" style={[fullPage && styles.fullPageLoader, style]}>
       <MaterialIndicator color={color} size={size} />
-    </Flex>
+    </XStack>
   );
 };
 

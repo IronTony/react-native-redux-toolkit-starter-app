@@ -1,10 +1,12 @@
 import { NavigatorScreenParams } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { MainStackParamList, MainStackScreen } from '@routes/stacks/MainStack';
+import ModalPage from '@scenes/ModalPage';
 import React from 'react';
 
 export type RootStackParamList = {
   MainStack: NavigatorScreenParams<MainStackParamList>; // Assuming 'MainStack' is the name of the screen in your MainStackScreen
+  MyModal: undefined;
 };
 
 const RootStack = createNativeStackNavigator<RootStackParamList>();
@@ -19,22 +21,16 @@ function RootStackScreen() {
           headerShown: false,
         }}
       />
-      {/* <RootStack.Screen
+      <RootStack.Screen
         name="MyModal"
         component={ModalPage}
         options={{
           headerShown: true,
           headerTitleAlign: 'center',
           headerLeft: () => <></>,
-          headerLeftContainerStyle: {
-            paddingLeft: customTheme.space[5],
-          },
-          headerRightContainerStyle: {
-            paddingRight: customTheme.space[5],
-          },
-          ...TransitionPresets.ModalPresentationIOS,
+          headerBackVisible: false,
         }}
-      /> */}
+      />
     </RootStack.Navigator>
   );
 }

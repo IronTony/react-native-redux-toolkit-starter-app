@@ -1,16 +1,15 @@
-import customTheme from '@theme';
-import { theme } from 'native-base';
+import { palette } from '@theme/colors';
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   headerContainer: {
-    backgroundColor: customTheme.colors.headerBackground,
-    paddingHorizontal: theme.space[16],
+    backgroundColor: palette.white,
+    paddingHorizontal: 16,
     zIndex: 9999,
   },
   HeaderShadow: {
     elevation: 3,
-    shadowColor: customTheme.colors.GREY_SHADOW_7,
+    shadowColor: palette.grey_shadow_7,
     shadowOffset: { width: 0, height: 5 },
     shadowOpacity: 0.7,
     shadowRadius: 3,
@@ -23,7 +22,7 @@ const styles = StyleSheet.create({
   //   fontSize: 18,
   // },
   backButtonIcon: {
-    color: customTheme.colors.primary,
+    color: palette.peter_river,
     marginRight: 8,
     fontSize: 24,
   },
@@ -32,7 +31,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   mainPageTitle: {
-    color: customTheme.colors.primary,
+    color: palette.peter_river,
     // fontFamily: fonts.bold,
     fontSize: 24,
     lineHeight: 24,

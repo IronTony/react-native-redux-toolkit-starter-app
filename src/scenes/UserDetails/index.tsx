@@ -4,12 +4,14 @@ import { useNavigationBackAction } from '@hooks/useNavigationBack';
 import { Route, useFocusEffect, useNavigation, useRoute } from '@react-navigation/native';
 import { getUserDetailsRequest } from '@redux/actions';
 import { userDetails, userDetailsLoading } from '@redux/reqres/selectors';
-import { Avatar, Flex, Icon, Pressable, ScrollView, Text } from 'native-base';
+import { palette } from '@theme/colors';
 import { FC, useCallback, useLayoutEffect } from 'react';
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Pressable } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { useDispatch, useSelector } from 'react-redux';
+import { Avatar, ScrollView, Text, YStack } from 'tamagui';
 
 interface UserDetailsProps {
   userId: number;
@@ -29,11 +31,11 @@ const UserDetails: FC = () => {
     setOptions({
       headerLeft: () => (
         <Pressable onPress={goBack}>
-          <Icon as={MaterialIcons} name="arrow-back-ios" color="MIDNIGHT_BLUE" size="24px" />
+          <MaterialIcons name="arrow-back-ios" color={palette.midnight_blue} size={14} />
         </Pressable>
       ),
       headerTitle: () => (
-        <Text fontSize="20px" fontFamily="body" fontWeight={700}>
+        <Text fontSize="$6" fontFamily="$body" color="$midnight_blue">
           {t('UserDetails:UserDetails')}
         </Text>
       ),
@@ -53,20 +55,25 @@ const UserDetails: FC = () => {
       {detailsLoading && <CLoader fullPage />}
 
       <ScrollView
-        backgroundColor="pageBackground"
-        _contentContainerStyle={{
-          padding: '15px',
+        backgroundColor="$wet_asphalt"
+        contentContainerStyle={{
+          padding: 15,
         }}
         showsVerticalScrollIndicator={false}>
-        <Avatar source={{ uri: userDetailsData?.avatar }} size="lg" />
-        <Flex>
-          <Text color="CLOUDS" fontFamily="body" fontStyle="normal" fontSize="md" paddingY="10px">
+        <Avatar circular size="$6">
+          <Avatar.Image src={userDetailsData?.avatar} />
+          {/* <Avatar.Fallback bc="red" /> */}
+        </Avatar>
+
+        <YStack paddingVertical={10} gap={10}>
+          <Text color="$clouds" fontFamily="$body" fontStyle="normal" fontWeight="900" fontSize="$8">
             {`${userDetailsData?.first_name} ${userDetailsData?.last_name}`}
           </Text>
-        </Flex>
-        <Text color="CLOUDS" fontFamily="body" fontStyle="normal" fontSize="md" paddingY="10px">
-          {userDetailsData?.email}
-        </Text>
+
+          <Text color="$clouds" fontFamily="$body" fontStyle="normal" fontSize="$7">
+            {userDetailsData?.email}
+          </Text>
+        </YStack>
       </ScrollView>
     </CSafeAreaView>
   );

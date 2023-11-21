@@ -1,9 +1,10 @@
 import { useNavigationBackAction } from '@hooks/useNavigationBack';
 import { useNavigation } from '@react-navigation/native';
-import { Flex, Icon, Pressable, ScrollView, Text } from 'native-base';
 import React, { FC, useLayoutEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Pressable } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import { ScrollView, Stack, Text } from 'tamagui';
 
 const ModalPage: FC = () => {
   const { t } = useTranslation();
@@ -13,29 +14,29 @@ const ModalPage: FC = () => {
   useLayoutEffect(() => {
     setOptions({
       headerTitle: () => (
-        <Text fontSize="20px" fontFamily="body" fontWeight={700}>
+        <Text fontSize="$4" fontFamily="$body" fontWeight="700">
           {t('ModalPage:PageName')}
         </Text>
       ),
       headerRight: () => (
-        <Flex flex={1} justifyContent="center">
+        <Stack justifyContent="center">
           <Pressable onPress={goBack}>
-            <Icon as={MaterialCommunityIcons} name="close" fontSize="24px" marginX="16px" />
+            <MaterialCommunityIcons name="close" /*fontSize="24px" marginX="16px"*/ />
           </Pressable>
-        </Flex>
+        </Stack>
       ),
     });
   }, [goBack, setOptions, t]);
 
   return (
     <ScrollView
-      _contentContainerStyle={{
+      contentContainerStyle={{
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
       }}
-      backgroundColor="MIDNIGHT_BLUE">
-      <Text color="CLOUDS" textAlign="center" fontFamily="body" fontStyle="normal">
+      backgroundColor="$midnight_blue">
+      <Text color="$clouds" textAlign="center" fontFamily="$body" fontStyle="normal">
         {t('ModalPage:thisIsAModal')}
       </Text>
     </ScrollView>

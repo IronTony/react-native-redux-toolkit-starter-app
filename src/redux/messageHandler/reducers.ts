@@ -2,7 +2,7 @@ import { createReducer } from '@reduxjs/toolkit';
 import { messageHandlerSet, messageHandlerReset } from './actions';
 
 export interface IMessageHandler {
-  status: 'info' | 'warning' | 'success' | 'error' | undefined;
+  status: 'info' | 'success' | 'error' | undefined;
   message: string | undefined;
 }
 
