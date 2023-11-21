@@ -230,11 +230,9 @@ On Windows, after installation, do this: <img src="https://user-images.githubuse
 ✅ `redux-saga`<br/>
 ✅ `i18next`<br/>
 ✅ `react-navigation v6` ❤️<br/>
-✅ `Nativebase v3` as design system<br />
+✅ `Tamagui` as design system<br />
 ✅ `Env` variables selection experimental way ⚗️⚗️⚗️<br />
 ✅ Typescript (optional use. Read the DOC above)<br />
-
-`UI Kitten` is not supported anymore!
 
 
 ---
