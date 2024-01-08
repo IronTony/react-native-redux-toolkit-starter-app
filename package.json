@@ -42,7 +42,7 @@
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/native-stack": "^6.9.17",
     "@reduxjs/toolkit": "1.9.7",
-    "@tamagui/shorthands": "^1.78.0",
+    "@tamagui/shorthands": "^1.82.9",
     "@tamagui/themes": "^1.78.0",
     "axios": "^0.27.2",
     "i18next": "^22.5.0",
