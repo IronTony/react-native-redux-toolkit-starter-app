@@ -43,7 +43,7 @@
     "@react-navigation/native-stack": "^6.9.17",
     "@reduxjs/toolkit": "1.9.7",
     "@tamagui/shorthands": "^1.78.0",
-    "@tamagui/themes": "^1.78.0",
+    "@tamagui/themes": "^1.88.2",
     "axios": "^0.27.2",
     "i18next": "^22.5.0",
     "lodash": "^4.17.21",
