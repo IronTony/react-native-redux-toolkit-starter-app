@@ -8915,10 +8915,10 @@ react-native-indicators@^0.17.0:
   dependencies:
     prop-types "^15.5.10"
 
-react-native-localize@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/react-native-localize/-/react-native-localize-3.0.3.tgz#31c880162bb9bb7e3768da2fd02dd55608dea60e"
-  integrity sha512-wlVIyg9lQac/Mg23aVKQAcnRkJgROjTUxZHFO4oqKpXkMa1XkvZ4DhhFc6TPnZX0O8YKvrTUsN3x8xMzVpAosg==
+react-native-localize@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/react-native-localize/-/react-native-localize-3.0.6.tgz#6df2e317038c0cafe051184b2f0280f89ef8050c"
+  integrity sha512-pfwwNKRfXcxp0LZEzj5oW2/uo5oZOhiQ4PYlg8uLlsl9pDLcWg03yLCHohTWKX02vE/BFz9hkrHT/nQtlO/iFg==
 
 react-native-mmkv@^2.11.0:
   version "2.11.0"
