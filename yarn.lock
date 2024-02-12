@@ -2807,10 +2807,10 @@
     "@tamagui/use-controllable-state" "1.78.0"
     "@tamagui/use-keyboard-visible" "1.78.0"
 
-"@tamagui/shorthands@^1.78.0":
-  version "1.78.0"
-  resolved "https://registry.yarnpkg.com/@tamagui/shorthands/-/shorthands-1.78.0.tgz#56f3a8a574bdac72e237cf5b88dff4369d32d1a8"
-  integrity sha512-rP9zxYGVIhLj/Tc/hrMdXg6ror+EXwMRjEY0gQHexksegu5waT8CGIQjgqz4crgT1Q2wBbbljO8qCwj4GiTPNQ==
+"@tamagui/shorthands@^1.89.20":
+  version "1.89.20"
+  resolved "https://registry.yarnpkg.com/@tamagui/shorthands/-/shorthands-1.89.20.tgz#6b78d84f1100d602a331e2bbaee3523feeb8615a"
+  integrity sha512-u6NGd3jc5Wm96IYkATFLPCIHXPMfdgPB3gVW4/jpPJWbNlzLXvlFv1UiB8AxoABz7rNhzpVOaoIthdNax0K4Ww==
 
 "@tamagui/simple-hash@1.78.0":
   version "1.78.0"
