@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bolt-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="50%" stop-color="#FFC107" />
+      <stop offset="100%" stop-color="#FF8F00" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="#1A1A2E" />
+  <circle cx="256" cy="256" r="230" fill="none" stroke="url(#bolt-gradient)" stroke-width="3" opacity="0.4" />
+
+  <!-- Lightning bolt -->
+  <g filter="url(#glow)">
+    <path
+      d="M 296 56
+         L 176 248
+         L 248 248
+         L 216 456
+         L 336 232
+         L 264 232
+         Z"
+      fill="url(#bolt-gradient)"
+    />
+  </g>
+
+  <!-- Subtle inner highlight on bolt -->
+  <path
+    d="M 288 80
+       L 192 244
+       L 252 244
+       L 224 432
+       L 324 240
+       L 268 240
+       Z"
+    fill="none"
+    stroke="#FFF8E1"
+    stroke-width="1.5"
+    opacity="0.25"
+  />
+</svg>

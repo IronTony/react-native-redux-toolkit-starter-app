@@ -1,0 +1,7 @@
+.git/
+.planning/
+**/.DS_Store
+docs/**
+!docs/img/
+!docs/img/banner-dark.svg
+.claude/

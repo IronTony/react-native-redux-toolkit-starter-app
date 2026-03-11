@@ -1,0 +1,33 @@
+{
+  "name": "create-voltrn-boilerplate",
+  "version": "8.0.0",
+  "description": "CLI to scaffold fully dynamic React Native or Expo apps with customizable screens, navigation, auth, i18n, and more. Always built on the latest packages.",
+  "main": "index.js",
+  "keywords": [
+    "react-native",
+    "expo",
+    "cli",
+    "typescript",
+    "starter-kit",
+    "boilerplate",
+    "mmkv",
+    "i18next",
+    "splashscreen"
+  ],
+  "author": "IronTony",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IronTony/react-native-redux-toolkit-starter-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IronTony/react-native-redux-toolkit-starter-app/issues"
+  },
+  "homepage": "https://github.com/IronTony/react-native-redux-toolkit-starter-app#readme",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "create-voltrn-boilerplate": "index.js"
+  }
+}

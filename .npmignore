@@ -1,0 +1,9 @@
+# Development files
+.git/
+.gitignore
+.planning/
+.claude/
+.DS_Store
+
+# Documentation (README.md is auto-included by npm)
+docs/
