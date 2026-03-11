@@ -18,12 +18,12 @@
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IronTony/react-native-redux-toolkit-starter-app.git"
+    "url": "git+https://github.com/IronTony/voltrn-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/IronTony/react-native-redux-toolkit-starter-app/issues"
+    "url": "https://github.com/IronTony/voltrn-cli/issues"
   },
-  "homepage": "https://github.com/IronTony/react-native-redux-toolkit-starter-app#readme",
+  "homepage": "https://github.com/IronTony/voltrn-cli#readme",
   "engines": {
     "node": ">=22"
   },
