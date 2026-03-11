@@ -1,10 +1,10 @@
-# Create VoltRN Boilerplate
+# VoltRN CLI (React Native/Expo project dynamic boilerplate)
 
 <p align="center">
   <img src="docs/img/banner-dark.svg" alt="VoltRN CLI Banner" width="100%" />
 </p>
 
-A powerful CLI tool to quickly scaffold React Native and Expo TypeScript projects with best practices.
+A powerful CLI tool to quickly scaffold **React Native** and **Expo** TypeScript projects with best practices.
 
 ## Features
 
@@ -26,7 +26,7 @@ A powerful CLI tool to quickly scaffold React Native and Expo TypeScript project
 
 Before installing the CLI, make sure you have the following installed:
 
-- **Node.js** (v14 or higher recommended)
+- **Node.js** (v22 or higher recommended)
 - **npm** (v6 or higher) or **yarn**
 - For React Native CLI projects: **Xcode** (macOS) and **Android Studio** (for Android development)
 - For Expo projects: **Expo CLI** (optional, but recommended)
