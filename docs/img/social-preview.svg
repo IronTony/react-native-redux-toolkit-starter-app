@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="aurora" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF8F00"/>
+      <stop offset="25%" stop-color="#FFC107"/>
+      <stop offset="50%" stop-color="#FFD700"/>
+      <stop offset="75%" stop-color="#FFC107"/>
+      <stop offset="100%" stop-color="#FF8F00"/>
+    </linearGradient>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f1e"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="0.8" fill="#ffffff" opacity="0.06"/>
+    </pattern>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF8F00" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#FFC107" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#FFD700" stop-opacity="0.2"/>
+      <stop offset="70%" stop-color="#FFC107" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#FF8F00" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bolt-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FFC107"/>
+      <stop offset="100%" stop-color="#FF8F00"/>
+    </linearGradient>
+    <radialGradient id="bolt-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#FFC107" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FF8F00" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="bolt-shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0.75 0 0 0 0  0 0 0 0 0  0 0 0 0.4 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bg-grad)"/>
+  <rect width="1280" height="640" fill="url(#grid)"/>
+
+  <!-- Aurora glow behind the gradient line -->
+  <ellipse cx="640" cy="52" rx="600" ry="40" fill="url(#glow)"/>
+
+  <!-- Top gradient line -->
+  <rect x="80" y="48" width="1120" height="3" rx="1.5" fill="url(#aurora)"/>
+
+  <!-- Bolt glow circle -->
+  <circle cx="640" cy="220" r="120" fill="url(#bolt-glow)"/>
+
+  <!-- Lightning bolt icon (centered) -->
+  <g transform="translate(640, 220) scale(1.8)" filter="url(#bolt-shadow)">
+    <path
+      d="M 10 -65
+         L -18 8
+         L 12 8
+         L 0 75
+         L 34 -4
+         L 4 -4
+         Z"
+      fill="url(#bolt-gradient)"
+    />
+  </g>
+
+  <!-- Title -->
+  <text x="640" y="380" text-anchor="middle" font-family="ui-monospace, 'Cascadia Code', 'Fira Code', Menlo, Monaco, 'Courier New', monospace" font-size="56" font-weight="700" fill="#f1f5f9" letter-spacing="-0.5">
+    VoltRN CLI
+  </text>
+
+  <!-- Subtitle -->
+  <text x="640" y="425" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" fill="#FFC107" font-style="italic">
+    React Native &amp; Expo CLI Boilerplate
+  </text>
+
+  <!-- Description -->
+  <text x="640" y="475" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#6b7280">
+    Scaffold production-ready projects with navigation, auth, i18n, and theming
+  </text>
+
+  <!-- Bottom gradient line -->
+  <rect x="80" y="588" width="1120" height="3" rx="1.5" fill="url(#aurora)"/>
+
+  <!-- Bottom accent dots (centered) -->
+  <circle cx="600" cy="560" r="3" fill="#FF8F00" opacity="0.6"/>
+  <circle cx="615" cy="560" r="3" fill="#F97316" opacity="0.6"/>
+  <circle cx="630" cy="560" r="3" fill="#FFC107" opacity="0.6"/>
+  <circle cx="645" cy="560" r="3" fill="#FFD700" opacity="0.6"/>
+  <circle cx="660" cy="560" r="3" fill="#FFC107" opacity="0.6"/>
+  <circle cx="675" cy="560" r="3" fill="#F97316" opacity="0.6"/>
+  <circle cx="690" cy="560" r="3" fill="#FF8F00" opacity="0.6"/>
+</svg>

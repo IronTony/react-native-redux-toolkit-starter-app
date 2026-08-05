@@ -5,4 +5,6 @@ node_modules/
 docs/**
 !docs/img/
 !docs/img/banner-dark.svg
+!docs/img/social-preview.svg
+!docs/img/terminal-view.png
 .claude/
